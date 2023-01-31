@@ -4,8 +4,43 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe33f98a750b8c5a51b30c78bd3fab21",
+    "content-hash": "6ea1cf56f75aca2f6aacee04f9724bc0",
     "packages": [
+        {
+            "name": "alienator/ourwatchedmovies",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alienator/ourwatchedmovies.git",
+                "reference": "2fc00ef61c66ee6b9bce0573f156d106b45f86d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alienator/ourwatchedmovies/zipball/2fc00ef61c66ee6b9bce0573f156d106b45f86d7",
+                "reference": "2fc00ef61c66ee6b9bce0573f156d106b45f86d7",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Core\\": "src/Core/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "support": {
+                "source": "https://github.com/alienator/ourwatchedmovies/tree/main",
+                "issues": "https://github.com/alienator/ourwatchedmovies/issues"
+            },
+            "time": "2023-01-28T22:08:55+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.10.2",
@@ -7761,7 +7796,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "alienator/ourwatchedmovies": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

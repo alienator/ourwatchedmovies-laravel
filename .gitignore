@@ -19,7 +19,7 @@ yarn-error.log
 
 #Emacs temp files
 \#*\#
-~*
+*~
 
 #nohup
 nohup.out
