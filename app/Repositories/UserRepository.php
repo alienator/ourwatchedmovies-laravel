@@ -24,7 +24,14 @@ class UserRepository implements \Core\User\UserRepository
         return $this->entity;
     }
 
-    public function save($user, string $password = ''):void {
+    public function save(\Core\User\User $user, string $password = ''):void {
+        $model = User::create([
+            'name' => $user->getName(),
+            'email' => $user->getEmail(),
+            'password' => $password
+        ]);
+
+        $model->save();
     }
 }
 

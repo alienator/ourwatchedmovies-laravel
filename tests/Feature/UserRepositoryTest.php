@@ -31,4 +31,22 @@ class UserRepositroyTest extends TestCase
         
         $this->assertEquals($expected, $user);
     }
+
+    public function test_it_should_insert_an_user()
+    {
+        $name  = 'test2';
+        $email = 'aa@bb.com';
+        $pass  = '123BB';
+        
+        $user = new \Core\User\User(0, $name, $email);
+        
+        $repo = new UserRepository();
+        $repo->save($user, $pass);
+        
+        $this->assertDatabaseHas('users', [
+            'name' => $name,
+            'email' => $email,
+            'password' => $pass
+        ]);
+    }
 }
