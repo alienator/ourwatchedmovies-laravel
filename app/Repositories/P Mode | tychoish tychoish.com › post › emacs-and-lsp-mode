@@ -1,0 +1,231 @@
+                                                                            Link List
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Links
+
+ 1. Brave Search [Rel]
+    https://cdn.search.brave.com/serp/v1/static/brand/1abed3d27215094c00f2b8b240ce9ecf9c86e1d4081ab9eac8959ba57b5c8318-opensearch.xml
+ 2. apple-touch-icon [Rel]
+    https://cdn.search.brave.com/serp/v1/static/brand/8eabe183f0d1f2cb3e2916b7b20c310efd196d740c8cecd341732fcd396fb665-apple-touch-icon.png
+ 3. icon [Rel]
+    https://cdn.search.brave.com/serp/v1/static/brand/16c26cd189da3f0f7ba4e55a584ddde6a7853c9cc340ff9f381afc6cb18e9a1e-favicon-32x32.png
+ 4. icon [Rel]
+    https://cdn.search.brave.com/serp/v1/static/brand/9b3cd14668935362449eebb1854f575091a1169bf51aba6a8c17b39f64a9d07e-favicon-16x16.png
+ 5. manifest [Rel]
+    https://cdn.search.brave.com/serp/v1/static/brand/76c2eb434b6bb7c0a14d0769cb059c45b92a0076ce585ce47b024edff641d98d-site-webmanifest
+ 6. mask-icon [Rel]
+    https://cdn.search.brave.com/serp/v1/static/brand/dec70f98955eb6e2c347d2467f82672502d1348d40e0d40e1f7e2bab0d857708-safari-pinned-tab.svg
+ 7. preconnect [Rel]
+    https://cdn.search.brave.com/
+ 8. preconnect [Rel]
+    https://imgs.search.brave.com/
+ 9. preconnect [Rel]
+    https://tiles.search.brave.com/
+10. preload [Rel]
+    https://cdn.search.brave.com/serp/v1/static/fonts/poppins/62f952cd4056978a484c60e45d085979c975ab7fc2dff352e5bfe7479976aaeb-latin-normal-400.woff2
+11. preload [Rel]
+    https://cdn.search.brave.com/serp/v1/static/fonts/poppins/83732ba1336a6eb212ff82ef2cedeaf0a157b91e5990153f732e1b6378685165-latin-normal-500.woff2
+12. preload [Rel]
+    https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-400.woff2
+13. preload [Rel]
+    https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-500.woff2
+14. preload [Rel]
+    https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-600.woff2
+15. icon [Rel]
+    https://cdn.search.brave.com/serp/v1/static/brand/d6a7857f7f3c2d5e1a55d27a8e25b39a31c4c5d093ff479aeb1b99d0faca5c71-favicon.ico
+16. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/css/6cedc56d016eced794b0f6391565851f7194212341117ee82dbb5500a7246a36-spectre.min.css
+17. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/css/a94064d9a6d2a4299a0467a718537a29c408258cff323d008327199fdd1f4d76-icons.css
+18. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/css/746981b06aef8da36af5f917e17427a258b18e7c9380202487096f63a8800a4c-search.css
+19. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/css/components/5b80d896e998b1bcb9c8ede3c49ccea915d9d8622e5654d5c000a4811564faf6-results.css
+20. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/serp-js/suggest/cd6def7ab41f641b3778ed873418e76c4a8e34019884efdc44c19e7948435fb3-main.bundle.css
+21. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/serp-js/sticky-header/604254e172fc15ac84af281b9ce81dbd2e5896dc1272ddd107900ec9a1a9b263-main.bundle.css
+22. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/serp-js/filters/f157fb02f8f559985a7560af5997c779c9fd77f1236b623804b9e885af9cd9c8-main.bundle.css
+23. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/serp-js/settings/9deaee771395c60776595682eaac84458663cb4e7480a1c9318a184e522ade4a-main.bundle.css
+24. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/serp-js/feedback/cd6a4938c68a6192d1f2db42dad5c28b5807f0031f28b2a6816d72c1331360b6-main.bundle.css
+25. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/serp-js/searchElsewhere/7323ae61ef966e3a9c47f39c8676889ab91f4149045fae083407907ca87a259d-main.bundle.css
+26. stylesheet [Rel]
+    https://cdn.search.brave.com/serp/v1/static/serp-js/paid/034d2cad0827367096e02997fce4dc117a3c25b8c4d0f54e25b052d056caca36-main.bundle.css
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Anchors
+
+ 1. Brave logo Brave logo Brave logo
+    https://search.brave.com/
+ 2. All
+    https://search.brave.com/search?q=emacs%20lsp%20php%20implement%20inerface%20functions&source=web
+ 3. Images
+    https://search.brave.com/images?q=emacs%20lsp%20php%20implement%20inerface%20functions&source=web
+ 4. News
+    https://search.brave.com/news?q=emacs%20lsp%20php%20implement%20inerface%20functions&source=web
+ 5. Videos
+    https://search.brave.com/videos?q=emacs%20lsp%20php%20implement%20inerface%20functions&source=web
+ 6. Goggles ^BETA
+    https://search.brave.com/goggles?q=emacs%20lsp%20php%20implement%20inerface%20functions&source=web
+ 7. emacs lsp php implement interface functions
+    https://search.brave.com/search?spellcheck=0&q=emacs+lsp+php+implement+interface+functions
+ 8. emacs lsp php implement inerface functions
+    https://search.brave.com/search?spellcheck=0&q=emacs+lsp+php+implement+inerface+functions
+ 9. 🌐 GitHub - manateelazycat/lsp-bridge: Fastest LSP client for Emacs github.com › manateelazycat › lsp-bridge
+    https://github.com/manateelazycat/lsp-bridge
+10. 🌐 GitHub - emacs-php/phpactor.el: Interface to Phpactor (an intelligent ... github.com › emacs-php › phpactor.el
+    https://github.com/emacs-php/phpactor.el
+11. 🌐 flycheck + lsp on User talk:ArielGlenn/Emacs as a PHP IDE mediawiki.org › wiki › Topic:Vw6qkl80mrq9ey2g
+    https://www.mediawiki.org/wiki/Topic:Vw6qkl80mrq9ey2g
+12. 🌐 PHP layer develop.spacemacs.org › layers › +lang › php › README.html
+    https://develop.spacemacs.org/layers/+lang/php/README.html
+13. 🌐 PHP (intelephense) - LSP Mode - LSP support for Emacs emacs-lsp.github.io › lsp-mode › page › lsp-intelephense
+    https://emacs-lsp.github.io/lsp-mode/page/lsp-intelephense/
+14. 🌐 GitHub - Declspeck/lsp-php: Moved to emacs-lsp/lsp-php github.com › Declspeck › lsp-php
+    https://github.com/Declspeck/lsp-php
+15. 🌐 PHP with lsp-mode on Emacs dev.to › gayanhewa › php-with-lsp-mode-on-emacs-5c77
+    https://dev.to/gayanhewa/php-with-lsp-mode-on-emacs-5c77
+16. 🌐 Emacs and LSP Mode | tychoish tychoish.com › post › emacs-and-lsp-mode
+    https://tychoish.com/post/emacs-and-lsp-mode/
+17. 🌐 GitHub - emacs-lsp/lsp-mode: Emacs client/library for the Language ... github.com › emacs-lsp › lsp-mode
+    https://github.com/emacs-lsp/lsp-mode
+18. 🌐 LSP Mode - Language Server Protocol support for Emacs - LSP Mode ... emacs-lsp.github.io › lsp-mode
+    https://emacs-lsp.github.io/lsp-mode/
+19. Google
+    https://search.brave.com/search?q=emacs%20lsp%20php%20implement%20inerface%20functions%20!g
+20. Bing
+    https://search.brave.com/search?q=emacs%20lsp%20php%20implement%20inerface%20functions%20!b
+21. Mojeek
+    https://search.brave.com/search?q=emacs%20lsp%20php%20implement%20inerface%20functions%20!mojeek
+22. 🌐 PHP (Serenata) - LSP Mode - LSP support for Emacs emacs-lsp.github.io › lsp-mode › page › lsp-serenata
+    https://emacs-lsp.github.io/lsp-mode/page/lsp-serenata/
+23. 🌐 EmacsWiki: Php Mode emacswiki.org › emacs › PhpMode
+    https://www.emacswiki.org/emacs/PhpMode
+24. 🌐 PHP with lsp-mode on Emacs. Emacs is a pretty decent editor. When I… medium.com › @gayanhewa › php-with-lsp-mode-on-emacs-1738db957448
+    https://medium.com/@gayanhewa/php-with-lsp-mode-on-emacs-1738db957448
+25. 🌐 I'm having the worst time trying to get PHP working with lsp ... reddit.com › r › emacs › comments › 7xz6bd › im_having_the_worst_time_trying_to_get_php
+    https://www.reddit.com/r/emacs/comments/7xz6bd/im_having_the_worst_time_trying_to_get_php/
+26. 🌐 PHP (felixbecker) - LSP Mode - LSP support for Emacs emacs-lsp.github.io › lsp-mode › page › lsp-php
+    https://emacs-lsp.github.io/lsp-mode/page/lsp-php/
+27. 🌐 r/emacs - Requesting help with PHP and LSP reddit.com › r › emacs › comments › 8t3qlv › requesting_help_with_php_and_lsp
+    https://www.reddit.com/r/emacs/comments/8t3qlv/requesting_help_with_php_and_lsp/
+28. 🌐 Writing PHP with Emacs - philnewton.net philnewton.net › books › php-with-emacs
+    https://www.philnewton.net/books/php-with-emacs/
+29. 🌐 debugging - How do I solve `Lisp error: (void-function -compose)` ... emacs.stackexchange.com › questions › 63621 ›
+    how-do-i-solve-lisp-error-void-function-compose-when-using-lsp-dart
+    https://emacs.stackexchange.com/questions/63621/how-do-i-solve-lisp-error-void-function-compose-when-using-lsp-dart
+30. 🌐 How to find interface implementations with `gopls` and `lsp-mode`? ... emacs.stackexchange.com › questions › 74048 ›
+    how-to-find-interface-implementations-with-gopls-and-lsp-mode
+    https://emacs.stackexchange.com/questions/74048/how-to-find-interface-implementations-with-gopls-and-lsp-mode
+31. 🌐 Doom Emacs Configuration abdelhakbougouffa.pro › posts › config
+    https://abdelhakbougouffa.pro/posts/config/
+32. Next
+    https://search.brave.com/search?q=emacs%20lsp%20php%20implement%20interface%20functions&offset=1&spellcheck=0
+33. Brave Search Premium
+    https://account.brave.com/?intent=checkout&product=search
+34. Brave Search Help
+    https://search.brave.com/help
+35. Transparency Report
+    https://brave.com/transparency/
+36. Report a security issue
+    https://hackerone.com/brave
+37. Status
+    https://status.brave.com/
+38. Brave Browser
+    https://brave.com/download/
+39. Brave Search
+    https://search.brave.com/
+40. Brave Wallet
+    https://brave.com/wallet
+41. Brave Talk
+    https://talk.brave.com/
+42. Brave Firewall + VPN
+    https://brave.com/firewall-vpn/
+43. Brave Playlist
+    https://brave.com/playlist/
+44. Brave News
+    https://brave.com/brave-news/
+45. Brave Rewards
+    https://brave.com/brave-rewards/
+46. Privacy Policy
+    https://search.brave.com/help/privacy-policy
+47. Terms of Use
+    https://brave.com/terms-of-use/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Images
+
+ 1. Brave Search
+    https://cdn.search.brave.com/serp/v1/static/brand/373c0fe6934b2f59b99a51a3a3c2d5091535c1d19cb361ed6d110ff0c4927b58-brave-logo-light.svg
+ 2. Brave Search
+    https://cdn.search.brave.com/serp/v1/static/brand/d28fc5b7b2908fbaed2ee4b7a14f282c6f9821df14c5da9c5b711d6b19dcd2fd-brave-logo-dark.svg
+ 3. Brave Search
+    https://cdn.search.brave.com/serp/v1/static/brand/7aad80c1b58c70bab482ce1e3c4e332fba2eab52180bfca5b012b571a31d2696-brave-logo-small.svg
+ 4. 🌐
+    https://imgs.search.brave.com/v8685zI4XInM0zxlNI2s7oE_2Sb-EL7lAy81WXbkQD8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw
+ 5. 🌐
+    https://imgs.search.brave.com/v8685zI4XInM0zxlNI2s7oE_2Sb-EL7lAy81WXbkQD8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw
+ 6. 🌐
+    https://imgs.search.brave.com/1Kj5Un0zDNUQpLC8W010QPPNy2jHDQ103K40JdL1HvA/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvZjI1N2IxMjc3/NTFlNWZiMjFmZjlh/NDgyZTJmYmNkN2U1/MzdiY2EyZjkzYWRj/NDJhZThlNTk2MDJi/N2MyZjcxMi93d3cu/bWVkaWF3aWtpLm9y/Zy8
+ 7. 🌐
+    https://imgs.search.brave.com/CW1QWBr9XmQx0CnHLq8zFzLXZ8XRtRzPVYs2wuv5Fr4/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvMTAyMDRhZGQ1/NzY2NWY1MDc2MjJl/NzkwM2I3OTRkNjY2/M2IyZGJkYzEwNWM5/NjJiOGIxYjBhZTBi/NDkzZmY1OC9kZXZl/bG9wLnNwYWNlbWFj/cy5vcmcv
+ 8. 🌐
+    https://imgs.search.brave.com/Kd44zD0LZQlgsvh8s5NkI5AjmJS5BW42We4maiqJ9eQ/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWExYTcxZWQ0/MThkZjJmMTA5ZmIz/ZDIwYWU0MjQzOTMz/NDBjNWI5Yjg0NzYy/YzJlNDk0M2I1NWQ3/Y2QzMDQwMy9lbWFj/cy1sc3AuZ2l0aHVi/LmlvLw
+ 9. 🌐
+    https://imgs.search.brave.com/v8685zI4XInM0zxlNI2s7oE_2Sb-EL7lAy81WXbkQD8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw
+10. 🌐
+    https://imgs.search.brave.com/FaEtouLTfSwkXgplyNDpjpkyr8vp09Q-DMY8HWnC6Pw/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvNTg5MTcxNDBh/N2U4ODc4MDg0NWQ4/MzU0YWJkNDY3ZWRm/MjUxY2U1YjY5MzJm/YWRlOTI4YjAyZDI1/ZjU0MmJjNi9kZXYu/dG8v
+11. 🌐
+    https://imgs.search.brave.com/HAhfGlNUo4FXgM0uiNqeE7Kc2f9WbElepCZ_xbentjE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYzYzZjYyOTEw/OWVkZmM0ODcyZGVk/ZTFmNTlhYmQyOTAz/YzM2NmU1NDUyYzEz/NjY3NjY1Y2VhMWQ4/ZmRjOWQzZC90eWNo/b2lzaC5jb20v
+12. 🌐
+    https://imgs.search.brave.com/v8685zI4XInM0zxlNI2s7oE_2Sb-EL7lAy81WXbkQD8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw
+13. 🌐
+    https://imgs.search.brave.com/Kd44zD0LZQlgsvh8s5NkI5AjmJS5BW42We4maiqJ9eQ/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWExYTcxZWQ0/MThkZjJmMTA5ZmIz/ZDIwYWU0MjQzOTMz/NDBjNWI5Yjg0NzYy/YzJlNDk0M2I1NWQ3/Y2QzMDQwMy9lbWFj/cy1sc3AuZ2l0aHVi/LmlvLw
+14. 🌐
+    https://imgs.search.brave.com/Kd44zD0LZQlgsvh8s5NkI5AjmJS5BW42We4maiqJ9eQ/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWExYTcxZWQ0/MThkZjJmMTA5ZmIz/ZDIwYWU0MjQzOTMz/NDBjNWI5Yjg0NzYy/YzJlNDk0M2I1NWQ3/Y2QzMDQwMy9lbWFj/cy1sc3AuZ2l0aHVi/LmlvLw
+15. 🌐
+    https://imgs.search.brave.com/-mI7VLWXx5696JICERSqTDZAQa1kif-3f3jOaw-4jWk/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYzUyMGQ0MzNi/NTdkMDMxMDYzYmNm/Y2JhNTBjOWVlY2Fh/YWRkM2ZjNDFmYTY1/ZmVmZWYyODFmZjA5/ZjI4N2QyZi93d3cu/ZW1hY3N3aWtpLm9y/Zy8
+16. 🌐
+    https://imgs.search.brave.com/qvE2kIQCiAsnPv2C6P9xM5J2VVWdm55g-A-2Q_yIJ0g/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvOTZhYmQ1N2Q4/NDg4ZDcyODIyMDZi/MzFmOWNhNjE3Y2E4/Y2YzMThjNjljNDIx/ZjllZmNhYTcwODhl/YTcwNDEzYy9tZWRp/dW0uY29tLw
+17. 🌐
+    https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8
+18. 🌐
+    https://imgs.search.brave.com/Kd44zD0LZQlgsvh8s5NkI5AjmJS5BW42We4maiqJ9eQ/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvYWExYTcxZWQ0/MThkZjJmMTA5ZmIz/ZDIwYWU0MjQzOTMz/NDBjNWI5Yjg0NzYy/YzJlNDk0M2I1NWQ3/Y2QzMDQwMy9lbWFj/cy1sc3AuZ2l0aHVi/LmlvLw
+19. 🌐
+    https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8
+20. 🌐
+    https://imgs.search.brave.com/5RsrCCfhOx_ge5ZE7Pd1eMZ_qCAhsRSAicCFgyZcJkE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvZWUyZGJiODQz/NTYzNzc3ZDg0N2Jm/MmRlZjYxMWQ5ZGRl/MDBmOTFkMDVlZjE2/OWMwNDUwNTE2MDIy/YmVjNDAyNi93d3cu/cGhpbG5ld3Rvbi5u/ZXQv
+21. 🌐
+    https://imgs.search.brave.com/ptrkX05NJWgezSinjYSvreC8vF3GbIZsr2NfmAHb2vQ/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvOTgzMGQ4NDdm/MzMxMGVhNTg0OWEz/ZTlkYWJhYTRlODNl/OTU4YzBiYjQ0MjAz/MzIwMjA2YWJjMjIy/MDhkYWYwZi9lbWFj/cy5zdGFja2V4Y2hh/bmdlLmNvbS8
+22. 🌐
+    https://imgs.search.brave.com/ptrkX05NJWgezSinjYSvreC8vF3GbIZsr2NfmAHb2vQ/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvOTgzMGQ4NDdm/MzMxMGVhNTg0OWEz/ZTlkYWJhYTRlODNl/OTU4YzBiYjQ0MjAz/MzIwMjA2YWJjMjIy/MDhkYWYwZi9lbWFj/cy5zdGFja2V4Y2hh/bmdlLmNvbS8
+23. 🌐
+    https://imgs.search.brave.com/J5yrs3WmXn_v0gwhWeEmobv4mKjVGnVvQq7_0wYB6wY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/
+    bnMvNWUxY2IwMWVj/NjVlZTE2NGUxYzg5/ZTMwNzk2OTA5NjM4/ZjQ3MzQ2NzUzMDU2/MjRiZjk0YTU0N2Ni/YjcwYzA3NC9hYmRl/bGhha2JvdWdvdWZm/YS5wcm8v
+

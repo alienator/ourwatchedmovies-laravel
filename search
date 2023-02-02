@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<html class="no-js " lang="en-us">
+  <head>
+        
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="Search the web privately ...">
+    <meta property="og:title" content="Brave Search">
+    <meta property="og:description"  content="Search the web privately ...">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://search.brave.com/">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:image" content="https://cdn.search.brave.com/serp/v1/static/brand/0afc6092b0fe05d8a9414d0b27ee3749523d824099384649a75b6a4c22d1cf54-ogImg.png" />
+    <meta property="og:image:width" content="307" />
+    <meta property="og:image:height" content="291" />
+    <meta property="og:site_name" content="Brave Search">
+    <meta name="keywords" content="brave, search">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+        <link rel="search" type="application/opensearchdescription+xml" title="Brave Search" href="https://cdn.search.brave.com/serp/v1/static/brand/1abed3d27215094c00f2b8b240ce9ecf9c86e1d4081ab9eac8959ba57b5c8318-opensearch.xml">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.search.brave.com/serp/v1/static/brand/8eabe183f0d1f2cb3e2916b7b20c310efd196d740c8cecd341732fcd396fb665-apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.search.brave.com/serp/v1/static/brand/16c26cd189da3f0f7ba4e55a584ddde6a7853c9cc340ff9f381afc6cb18e9a1e-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.search.brave.com/serp/v1/static/brand/9b3cd14668935362449eebb1854f575091a1169bf51aba6a8c17b39f64a9d07e-favicon-16x16.png">
+    <link rel="manifest" crossorigin="anonymous" href="https://cdn.search.brave.com/serp/v1/static/brand/76c2eb434b6bb7c0a14d0769cb059c45b92a0076ce585ce47b024edff641d98d-site-webmanifest">
+    <link rel="mask-icon" href="https://cdn.search.brave.com/serp/v1/static/brand/dec70f98955eb6e2c347d2467f82672502d1348d40e0d40e1f7e2bab0d857708-safari-pinned-tab.svg">
+    <link href="https://cdn.search.brave.com" rel="preconnect" crossorigin="anonymous"/>
+    <link href="https://imgs.search.brave.com" rel="preconnect" crossorigin="anonymous"/>
+    <link href="https://tiles.search.brave.com" rel="preconnect" crossorigin="anonymous"/>
+    <link rel="preload" href="https://cdn.search.brave.com/serp/v1/static/fonts/poppins/62f952cd4056978a484c60e45d085979c975ab7fc2dff352e5bfe7479976aaeb-latin-normal-400.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.search.brave.com/serp/v1/static/fonts/poppins/83732ba1336a6eb212ff82ef2cedeaf0a157b91e5990153f732e1b6378685165-latin-normal-500.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-400.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-500.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-600.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <title>ravel - Brave Search</title>
+    <style type="text/css">
+      /* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 100;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/c650f535721033ca5afa9c68a5c1bd70637028c2e0b0f8ebcff2fdce11573bd2-devanagari-italic-100.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 100;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/47e6236135e78708022a5f5bd7f56f4aaab5e35f43d97ba33aad6c1b37103749-latin-ext-italic-100.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 100;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/722bc07f9d6a783d4a62b663269d40428799edb2843224ecd487e4c588d15e15-latin-italic-100.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/0e64cf498a4867f9b7cf153fb9d8569ff0bd089392d14e89a5f5f4e84759119a-devanagari-italic-200.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/4b35a38e5a4485723a28724a8917c6171ecb080fca13a03f5adaf4cc5c5d15cd-latin-ext-italic-200.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/b5a0288aab72ac189e6c2fa2bc7232cb387823c25b448dafd190cb796d8b841d-latin-italic-200.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/1c78c9001d478b352b05b40e4bc29848c7f7f9255894658a413eeb5e5be76c2a-devanagari-italic-300.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/0cd63c58561c6b1da8fee3cbd658db8de2ecb7b8d01e15f4e8f10e3eeb569dc7-latin-ext-italic-300.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/72f7772bbd1553050e9f9fac7743e738d8198a66db22e25081d34df57742915a-latin-italic-300.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/5adce0af2fcf1dd7bc3d10524723348e340821e4ab16c5f9ec7dcd6dbdd19a16-devanagari-italic-400.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/d56b6e88fb17b5ced63d62c86312d3206a7d7b81977bb140d8ebeeb746ee8673-latin-ext-italic-400.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/1e4089579c06162025fc17d05480632f6b5474d319e561b09f93bbb788c3b6c4-latin-italic-400.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/90e703554a31d972fcec1361a09e9ecd00131bdbb4882f428744bb9d7ea4b69e-devanagari-italic-500.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/9feb91da2e41fc87de0e31102951d448b2a49de63f31eb341bb1561e80c6197a-latin-ext-italic-500.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/f8fe6ea265fd2573db30ea96f1c45e687346590bf8c148ad5fe1bae5233344b3-latin-italic-500.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/3feeceb6c3f109112b82c50e66b7ed00f9a0cb56f91626e0bde54d50f5fe49a1-devanagari-italic-600.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/fa18ad37ca04766d110454522e78b29da1c97d10be0b97b825199519ea709210-latin-ext-italic-600.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/fcc143967de11f77b052abef863f3ba51965d220b64b194d87c027280cbc3a12-latin-italic-600.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/4f5e7c85c54a5d8cbf1b77a2644ac4f61ed45eb544016e295751fa7a8d72b8ed-devanagari-italic-700.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/0095e6b776ea71d89a0cb86b5a898385535a89a7c591c21a332d92051ed0c85d-latin-ext-italic-700.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/715fb7e969638157269e2997e375101ac1faaecc5cbc7108135593147b9de361-latin-italic-700.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/269697e9d7fdcff81d4a3c0d4976f7c0e368b8515c2d343ebf915e8835428ab5-devanagari-italic-800.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/134252ee3a260848c1d5c1b3b2ca033e29e007022eacfed8c4e5a7ef33476c13-latin-ext-italic-800.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/7dfa53cdc4842b1f401893c57ba451f586960b91deae9cd35172a9bfbb220632-latin-italic-800.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 900;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/42bdb6bd6ef6d30243d54aededb8aef1b9aa8265345d7e041acc4da72bbf1b2b-devanagari-italic-900.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 900;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/b40572e22754a4adf3a4df9c15ca25e4980434ed1416e4bee1986c542930023f-latin-ext-italic-900.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 900;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/5c2dfc580fb4e7cf830bb1761c722d6d6366dd5a48073d5441ef4bba22c89fd6-latin-italic-900.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 100;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/f12c08abd174b73f0af1c314c645105bb17a7a6e6eae7fef01d39180aae6666d-devanagari-normal-100.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 100;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/2dc3fee289862517ed4fadc7bdd862d113bf9867b0e3947dc3221a7227659df8-latin-ext-normal-100.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 100;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/3241ffd729339a74b4cfc65e4f28317f3e206c66cd78814a184c1b48f6e83f05-latin-normal-100.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/0ce849a4d4b9cbad38014a71db2493650f57f4c8a424e69435fded3896229f23-devanagari-normal-200.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/f3e5e5a5ef39accd8a4ae3767dbcc8636078008f6c021a37852de4ee1ab0f757-latin-ext-normal-200.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/c7c673276ca86d3abf047cd0a09445d54f6aa08a538064bd7d2986e0461d788a-latin-normal-200.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/2faf467ad260b89a4f37c47d7e30eb76d7c091d1a008b7632d6fe699819c3490-devanagari-normal-300.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/c329f6898705dbfe94e824b6339e9a9a9e3222b6cb9bc31d9a36a5cdaa1e1a78-latin-ext-normal-300.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/52aa7ab9afecb948d53d6e4344d1f26f026afc1dfc5b9a42f8a02b355dc093e2-latin-normal-300.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/638a41dff8c7f8792fd523f1117001da8e88c5af8e7275adb3ea1c0d84e0c4c9-devanagari-normal-400.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/3d3ee9fff0c0638d6be371b340998add5db736ee819002304994825f60e2f79d-latin-ext-normal-400.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/62f952cd4056978a484c60e45d085979c975ab7fc2dff352e5bfe7479976aaeb-latin-normal-400.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/899bf34c628fc9520a49fc279c0a748d122ba0b4afdf490be8d8594defc0bdcf-devanagari-normal-500.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/7adedff536bdab6118c96051ba1860a08dd4aeb02596c947778ad997f53af377-latin-ext-normal-500.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/83732ba1336a6eb212ff82ef2cedeaf0a157b91e5990153f732e1b6378685165-latin-normal-500.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/0d002b3cb2bd9e954d9b3d5dc4c29057d800a07a57651a3e6a72b2324fc4dad6-devanagari-normal-600.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/f0a1fda3988f2e339e5d95671fc7a0b36d60d6257a711e334c478c96a3f63189-latin-ext-normal-600.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/39a7b74b934c298b66d1a04bd2c9518401fcaff19a95997109491862214e8bf5-latin-normal-600.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/f7a2b834106fcdfe41da37c4fb2d076403fe7a18f23119d467cb06af63c175ea-devanagari-normal-700.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/1303cbb760e15d2ee5d5e6e8fbb14cd8a4927f9b06aea0afa484d2d8cb08ffd9-latin-ext-normal-700.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/dac21f906a1d3b3b9db54983de7d598a2bc0d49f9ae84f23073c2e7f9faf1e7d-latin-normal-700.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/3a35fcf7505e0be53bd08a58e679959329ee7feca1fd913c92a055495ba16c65-devanagari-normal-800.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/94ecb4abaae6a45d145d796a8b2dba2b905cbd73682f9365211fc3ee3f5da738-latin-ext-normal-800.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/f7e0073b780cf927f4481aca2a8dc34a8336b22313bb974c505b7ab23c4412f5-latin-normal-800.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/4ff16e3bcc969a5ba05851873de1fcee4120bd43ce9f3f3269f2dcd4ba697894-devanagari-normal-900.woff2") format("woff2");
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/3832fea63294e1a168992314bd8b8f62c679a0cdc62753f0277dfe973af371ea-latin-ext-normal-900.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/poppins/460782f9a0fe02f1aee8eca2ff5a0891a3d758b81950db9f066735b2c7e750ff-latin-normal-900.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/85b39e2274ec3893248b07fd65c8d561e85c4d1163a9cc4eea94cfa557864c9e-cyrillic-ext-normal-200.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/8e18f9afd16b14d25727ebd53881d7f727cb202eaeac6bef7f2168ec5d2ec470-cyrillic-normal-200.woff2") format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/a110f1c3caca1bc53e5b7e51f33da596ac2faf7ffba34d2c209122c8fdb75e28-greek-normal-200.woff2") format("woff2");
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a24dc8345fc1e0b77afb130165aeddc9d4644681fd02161e569061d6bf27da6-vietnamese-normal-200.woff2") format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/9c30612563bb1de5c55a33d94eaee47efba80644d1f91607841629b40134c73d-latin-ext-normal-200.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-200.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/85b39e2274ec3893248b07fd65c8d561e85c4d1163a9cc4eea94cfa557864c9e-cyrillic-ext-normal-300.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/8e18f9afd16b14d25727ebd53881d7f727cb202eaeac6bef7f2168ec5d2ec470-cyrillic-normal-300.woff2") format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/a110f1c3caca1bc53e5b7e51f33da596ac2faf7ffba34d2c209122c8fdb75e28-greek-normal-300.woff2") format("woff2");
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a24dc8345fc1e0b77afb130165aeddc9d4644681fd02161e569061d6bf27da6-vietnamese-normal-300.woff2") format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/9c30612563bb1de5c55a33d94eaee47efba80644d1f91607841629b40134c73d-latin-ext-normal-300.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-300.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/85b39e2274ec3893248b07fd65c8d561e85c4d1163a9cc4eea94cfa557864c9e-cyrillic-ext-normal-400.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/8e18f9afd16b14d25727ebd53881d7f727cb202eaeac6bef7f2168ec5d2ec470-cyrillic-normal-400.woff2") format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/a110f1c3caca1bc53e5b7e51f33da596ac2faf7ffba34d2c209122c8fdb75e28-greek-normal-400.woff2") format("woff2");
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a24dc8345fc1e0b77afb130165aeddc9d4644681fd02161e569061d6bf27da6-vietnamese-normal-400.woff2") format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/9c30612563bb1de5c55a33d94eaee47efba80644d1f91607841629b40134c73d-latin-ext-normal-400.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-400.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/85b39e2274ec3893248b07fd65c8d561e85c4d1163a9cc4eea94cfa557864c9e-cyrillic-ext-normal-500.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/8e18f9afd16b14d25727ebd53881d7f727cb202eaeac6bef7f2168ec5d2ec470-cyrillic-normal-500.woff2") format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/a110f1c3caca1bc53e5b7e51f33da596ac2faf7ffba34d2c209122c8fdb75e28-greek-normal-500.woff2") format("woff2");
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a24dc8345fc1e0b77afb130165aeddc9d4644681fd02161e569061d6bf27da6-vietnamese-normal-500.woff2") format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/9c30612563bb1de5c55a33d94eaee47efba80644d1f91607841629b40134c73d-latin-ext-normal-500.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-500.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/85b39e2274ec3893248b07fd65c8d561e85c4d1163a9cc4eea94cfa557864c9e-cyrillic-ext-normal-600.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/8e18f9afd16b14d25727ebd53881d7f727cb202eaeac6bef7f2168ec5d2ec470-cyrillic-normal-600.woff2") format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/a110f1c3caca1bc53e5b7e51f33da596ac2faf7ffba34d2c209122c8fdb75e28-greek-normal-600.woff2") format("woff2");
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a24dc8345fc1e0b77afb130165aeddc9d4644681fd02161e569061d6bf27da6-vietnamese-normal-600.woff2") format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/9c30612563bb1de5c55a33d94eaee47efba80644d1f91607841629b40134c73d-latin-ext-normal-600.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-600.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/85b39e2274ec3893248b07fd65c8d561e85c4d1163a9cc4eea94cfa557864c9e-cyrillic-ext-normal-700.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/8e18f9afd16b14d25727ebd53881d7f727cb202eaeac6bef7f2168ec5d2ec470-cyrillic-normal-700.woff2") format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/a110f1c3caca1bc53e5b7e51f33da596ac2faf7ffba34d2c209122c8fdb75e28-greek-normal-700.woff2") format("woff2");
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a24dc8345fc1e0b77afb130165aeddc9d4644681fd02161e569061d6bf27da6-vietnamese-normal-700.woff2") format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/9c30612563bb1de5c55a33d94eaee47efba80644d1f91607841629b40134c73d-latin-ext-normal-700.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-700.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/85b39e2274ec3893248b07fd65c8d561e85c4d1163a9cc4eea94cfa557864c9e-cyrillic-ext-normal-800.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/8e18f9afd16b14d25727ebd53881d7f727cb202eaeac6bef7f2168ec5d2ec470-cyrillic-normal-800.woff2") format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/a110f1c3caca1bc53e5b7e51f33da596ac2faf7ffba34d2c209122c8fdb75e28-greek-normal-800.woff2") format("woff2");
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a24dc8345fc1e0b77afb130165aeddc9d4644681fd02161e569061d6bf27da6-vietnamese-normal-800.woff2") format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/9c30612563bb1de5c55a33d94eaee47efba80644d1f91607841629b40134c73d-latin-ext-normal-800.woff2") format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: optional;
+    src: url("https://cdn.search.brave.com/serp/v1/static/fonts/manrope/2a4d6bfcfe61641b5155affac466a844f84fe11ba88db396cd6b8f8bcb927f0a-latin-normal-800.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}    </style>
+
+    <style type="text/css">
+      html {
+        font-size: 20px;
+      }
+      :root {
+    /* Fonts */
+    --brand-font: 'Poppins', Helvetica, sans-serif;
+    --main-font: 'Manrope', Helvetica, sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, monospace;
+    --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    /* Containers */
+    --main-column-width: 632px;
+    --normal-snippet-width: 600px;
+    --search-form-width: 700px;
+    --search-form-height: 45px;
+
+    /* TODO: Paddings, Margins */
+    --main-content-padding: 175px;
+    --border-radius-xlarge: 16px;
+    --border-radius-large: 12px;
+    --border-radius: 8px;
+    --border-radius-sm: 4px;
+    --border-radius-xs: 2px;
+    --border-radius-0: 0px;
+    --rh-result-padding: 1rem;
+    --base-padding: 16px;
+
+    /* text */
+    --text-sm:  0.66rem;
+    --text-sm-2: 12px;
+    --text-xs:  11px;
+
+    /* blur */
+    --blur: blur(4px);
+
+    /* effects */
+    --elevation-07: 0px 8px 40px -8px rgba(0, 0, 0, 0.2), 0px 2.75px 9px rgba(0, 0, 0, 0.02);
+}          </style>
+
+        <style type="text/css">
+      :root {
+        color-scheme: light;
+        /* colors */
+--body-bg: #F2F4F7;
+--bg-glassy: #ffffffb3;
+--bg-1: #EBEEF3;
+--bg-2: #e5e5e5;
+--bg-02: #F8F9FA; /* this is the 02 color from the Brave Design System */
+--bg-04: #F2F4F7;
+--bg-green: #a7f0ba;
+--bg-blue: #d0e2ff;
+--bg-red: #ffd6e8;
+--bg-favicon: var(--search-bgd-04);
+--bg-scrim: rgba(34, 37, 49, 0.40);
+
+--bg-form-control-selected: #E1E2F6;
+--bg-form-control-unselected: #DADCE8;
+--form-control-selected: #4C54D2;
+--form-control-hover: #4C54D2;
+--form-control-focus: #A0A5EB;
+
+/**
+* Search widget styles
+*/
+
+/**
+* Settings drawer styles
+*/
+--settings-header-bg: #FFFFFF;
+--settings-header-text: #222531;
+--settings-header-icon: #222531;
+--settings-widget-text: #808A9D;
+--settings-item-text: #3F4C63;
+--settings-item-icon: #A1A5E4;
+--settings-item-border: #EFF2F5;
+--settings-item-border-2: #D8DFE8;
+--settings-dark-theme-btn: #343A40;
+--settings-btn-bg: rgba(225, 226, 246, 0.5);
+--settings-btn-text: #4C54D2;
+--settings-widget-outline: #C7CFDC;
+--settings-independent-score: #4C54D2;
+--settings-global-score: #F1724A;
+--brave-supporter-bg: #EAEEF4;
+--brave-supporter-text: #2267BE;
+
+--context-menu-header-border: #E6E8F5;
+
+--color-primary: #27292f;
+--color-primary-2: #0D0C10;
+--color-primary-3: #212529; /* this variable should go away */
+--color-white: #ffffff;
+--color-gray-2: #828d9f;
+--color-gray-3: #58667E;
+--color-gray-4: #5A626D;
+--color-gray-5: #7E8790; /* this variable should go away */
+--color-gray-6: #CFD6E4;
+--color-green: #0f9d58;
+--color-red: #d23f31;
+--color-blue: #0043ce;
+--info-color: #828D9F; /* Temporary variable name */
+
+--link-primary: #1841d2;
+--link-secondary: #3861FB;
+--link-visited: #9C86F5;
+--snippet-url: #A6B0C3; /* Temporary variable name */
+
+--separator-dot: #A6B0C3;
+
+/* THEME NEW */
+--theme-purple: #4C54D2;
+--theme-yellow: #F8BE2D;
+
+/* Borders related */
+--border-color: #E2E8ED;
+
+/* Brave UI Design System */
+--text-01: #212529;
+--text-02: #495057;
+--text-03: #868E96;
+--interactive-04: #353DAB;
+--interactive-05: #4C54D2;
+--interactive-06: #737ADE;
+--interactive-07: #212529;
+--interactive-08: #AEB1C2;
+--focus-border: #A0A5EB;
+--divider-01: #E9E9F4;
+--disabled: #DADCE8;
+
+/* Brave UI Design System Derivatives */
+--btn-filled-bg: var(--interactive-05);
+--btn-filled-bg-hover: var(--interactive-04);
+--btn-filled-text-active: rgba(255, 255, 255, 0.7);
+--btn-filled-bg-active: rgba(53, 61, 171, 0.7);
+--btn-filled-text-disabled: #ffff;
+
+--btn-outline-border: var(--interactive-08);
+--btn-outline-border-hover: var(--interactive-05);
+--btn-outline-text: var(--interactive-07);
+--btn-outline-text-hover: var(--interactive-05);
+--btn-outline-text-active: rgba(76, 84, 210, 0.7);
+--btn-outline-border-active: rgba(76, 84, 210, 0.7);
+--btn-outline-text-disabled: #C2C4CF;
+
+--btn-icon-svg-hover: var(--interactive-05);
+--btn-icon-bg-hover: rgba(160, 165, 235, 0.16);
+--btn-icon-svg-active: rgba(76, 84, 210, 0.7);
+
+/* CODE SNIPPETS THEME */
+--code-bg-0: #F8FAFD;
+--code-border: #EFF2F5;
+--code-color-1: #96979D;
+--code-color-2: #58667E;
+--code-color-3: #49964B;
+--code-color-4: #127DB2;
+--code-color-5: #9D2E99;
+
+/* SHADOWS */
+--shadow-1: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+--shadow-2: 0 1px 6px rgba(32, 33, 36, 0.28);
+
+/* New Color Scheme */
+--search-bgd-01: #E3E5EA;
+--search-bgd-02: #F2F4F7;
+--search-bgd-03: #F9FAFD;
+--search-bgd-04: #FFFFFF;
+--search-bgd-05: #ECEEF2;
+--search-bgd-06: #FFFFFF;
+--search-bgd-07: #F9FAFD;
+--search-bgd-08: #1E2028;
+--search-line-01: #ECEEF2;
+--search-line-02: #AFB3C1;
+--search-text-01: #242731;
+--search-text-02: #333744;
+--search-text-03: #434756;
+--search-text-04: #636876;
+--search-text-05: #7E8292;
+--search-text-06: #9599A9;
+--search-text-09: #087783;
+--search-text-10: #EA3A0D;
+--search-interactive-01: #1841D2;
+--search-interactive-02: #7431DD;
+--search-interactive-03: #6318F5;
+--search-interactive-04: #3861FB;
+--search-interactive-05: #A0A5EB;
+
+/* Leo Design system colors */
+--gray-30: #E2E3E7;
+--gray-60: #8C90A1;
+--gray-90: #424552;
+--gray-110: #1D1F25;
+--gray-120: #121316;
+--green-40: #31803E;
+
+--secondary-90: #2B34AD;      }
+
+      @media (prefers-color-scheme: light) {
+        :root:not(.dark) .theme--dark {
+          display: none !important;
+        }
+      }
+
+      :root.light .theme--dark {
+        display: none !important;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root:not(.light) {
+          color-scheme: dark;
+          /* colors */
+--body-bg: #1E2028;
+--bg-glassy: #1A1C23;
+--bg-1: #313543;
+--bg-2: #282828;
+--bg-02: #17171F; /* this is the 02 color from the Brave Design System */
+--bg-04: #1E2027;
+--bg-green: #a7f0ba;
+--bg-blue: #d0e2ff;
+--bg-red: #ffd6e8;
+--bg-favicon: #4B5062;
+--bg-scrim: rgba(34, 37, 49, 0.6);
+
+--bg-form-control-selected: #7679B1;
+--bg-form-control-unselected: #5E6175;
+--form-control-selected: #4436E1;
+--form-control-hover: #D0D2F7;
+--form-control-focus: #A0A5EB;
+
+/**
+* Search widget styles
+*/
+
+/**
+* Settings drawer styles
+*/
+--settings-header-bg: #222531;
+--settings-header-text: #F8FAFD;
+--settings-header-icon: #808A9D;
+--settings-widget-text: #828D9F;
+--settings-item-text: #CFD6E4;
+--settings-item-icon: #A1A5E4;
+--settings-item-border: #2B3445;
+--settings-item-border-2: #3F4C63;
+--settings-dark-theme-btn: #343A40;
+--settings-btn-bg: #3A3F55;
+--settings-btn-text: #CFD6E4;
+--settings-widget-outline: #3F4C63;
+--settings-independent-score: #7078FF;
+--settings-global-score: #FF845D;
+--brave-supporter-bg: #252730;
+--brave-supporter-text: #2267BE;
+
+--context-menu-header-border: #58667E;
+
+--color-primary: #c9d4dc;
+--color-primary-2: #bcbcbc;
+--color-primary-3: #c9d4dc; /* this variable should go away */
+--color-white: #ffffff;
+--color-gray-2: #a6b0c3;
+--color-gray-3: #A6B0C3;
+--color-gray-4: #7E8790;
+--color-gray-5: #7E8790; /* this variable should go away */
+--color-gray-6: #828d9f;
+--color-green: #0f9d58;
+--color-red: #d23f31;
+--color-blue: #0043ce;
+--info-color: #828D9F; /* Temporary variable name */
+
+--link-primary: #EFF2F5;
+--link-secondary: #CFD6E4;
+--link-visited: #A0A5EB;
+--snippet-url: #6E798D; /* Temporary variable name */
+
+--separator-dot: #808a9d;
+
+/* THEME NEW */
+--theme-purple: #7675fd;
+--theme-yellow: #F8BE2D;
+
+/* Borders related */
+--border-color: #333;
+
+/* Brave UI Design System */
+--blurple-300: #A0A5EB;
+--text-01: #F8FAFD;
+--text-02: #C2C4CF;
+--text-03: #84889C;
+--interactive-04: #353DAB;
+--interactive-05: #4C54D2;
+--interactive-06: #737ADE;
+--interactive-07: #F0F2FF;
+--interactive-08: #5E6175;
+--focus-border: #555889;
+--divider-01: #3B3E4F;
+--disabled: #343A40;
+
+/* Brave UI Design System Derivatives */
+--btn-filled-bg: var(--interactive-05);
+--btn-filled-bg-hover: var(--interactive-06);
+--btn-filled-text-active: rgba(255, 255, 255, 0.7);
+--btn-filled-bg-active: rgba(115, 122, 222, 0.7);
+--btn-filled-text-disabled: #677078;
+
+--btn-outline-border: var(--interactive-08);
+--btn-outline-border-hover: var(--interactive-06);
+--btn-outline-text: var(--interactive-07);
+--btn-outline-text-hover: var(--blurple-300);
+--btn-outline-text-active: rgba(160, 165, 235, 0.7);
+--btn-outline-border-active: rgba(115, 122, 222, 0.7);
+--btn-outline-text-disabled: #495057;
+
+--btn-icon-svg-hover: var(--blurple-300);
+--btn-icon-bg-hover: rgba(160, 165, 235, 0.32);
+--btn-icon-svg-active: rgba(160, 165, 235, 0.7);
+
+/* CODE SNIPPETS THEME */
+--code-bg-0: #2F313C;
+--code-border: #22232A;
+--code-color-1: #525964;
+--code-color-2: #ACBBD5;
+--code-color-3: #7FA569;
+--code-color-4: #5198D4;
+--code-color-5: #B26AC7;
+
+/* SHADOWS */
+--shadow-1: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+--shadow-2: 0 1px 6px rgba(32, 33, 36, 0.28);
+
+/* New Color Scheme */
+--search-bgd-01: #121418;
+--search-bgd-02: #17191E;
+--search-bgd-03: #1A1C23;
+--search-bgd-04: #1E2028;
+--search-bgd-05: #242731;
+--search-bgd-06: #242731;
+--search-bgd-07: #1E2028;
+--search-bgd-08: #17191E;
+--search-line-01: #333744;
+--search-line-02: #636876;
+--search-text-01: #ECEEF2;
+--search-text-02: #C9CCD7;
+--search-text-03: #AFB3C1;
+--search-text-04: #9599A9;
+--search-text-05: #7E8292;
+--search-text-06: #636876;
+--search-text-09: #997B08;
+--search-text-10: #FB542B;
+--search-interactive-01: #7799E5;
+--search-interactive-02: #7166A9;
+--search-interactive-03: #796DB5;
+--search-interactive-04: #5483ED;
+--search-interactive-05: #A0A5EB;
+
+/* Leo Design system colors */
+--gray-30: #2E3039;
+--gray-60: #6B7084;
+--gray-90: #C6C8D0;
+--gray-110: #EEEFF1;
+--gray-120: #F6F6F7;
+--green-40: #3FA450;
+
+--secondary-90: #C3C6F0;        }
+
+        :root:not(.light) .theme--light {
+          display: none !important;
+        }
+      }
+
+      :root.dark {
+        color-scheme: dark;
+        /* colors */
+--body-bg: #1E2028;
+--bg-glassy: #1A1C23;
+--bg-1: #313543;
+--bg-2: #282828;
+--bg-02: #17171F; /* this is the 02 color from the Brave Design System */
+--bg-04: #1E2027;
+--bg-green: #a7f0ba;
+--bg-blue: #d0e2ff;
+--bg-red: #ffd6e8;
+--bg-favicon: #4B5062;
+--bg-scrim: rgba(34, 37, 49, 0.6);
+
+--bg-form-control-selected: #7679B1;
+--bg-form-control-unselected: #5E6175;
+--form-control-selected: #4436E1;
+--form-control-hover: #D0D2F7;
+--form-control-focus: #A0A5EB;
+
+/**
+* Search widget styles
+*/
+
+/**
+* Settings drawer styles
+*/
+--settings-header-bg: #222531;
+--settings-header-text: #F8FAFD;
+--settings-header-icon: #808A9D;
+--settings-widget-text: #828D9F;
+--settings-item-text: #CFD6E4;
+--settings-item-icon: #A1A5E4;
+--settings-item-border: #2B3445;
+--settings-item-border-2: #3F4C63;
+--settings-dark-theme-btn: #343A40;
+--settings-btn-bg: #3A3F55;
+--settings-btn-text: #CFD6E4;
+--settings-widget-outline: #3F4C63;
+--settings-independent-score: #7078FF;
+--settings-global-score: #FF845D;
+--brave-supporter-bg: #252730;
+--brave-supporter-text: #2267BE;
+
+--context-menu-header-border: #58667E;
+
+--color-primary: #c9d4dc;
+--color-primary-2: #bcbcbc;
+--color-primary-3: #c9d4dc; /* this variable should go away */
+--color-white: #ffffff;
+--color-gray-2: #a6b0c3;
+--color-gray-3: #A6B0C3;
+--color-gray-4: #7E8790;
+--color-gray-5: #7E8790; /* this variable should go away */
+--color-gray-6: #828d9f;
+--color-green: #0f9d58;
+--color-red: #d23f31;
+--color-blue: #0043ce;
+--info-color: #828D9F; /* Temporary variable name */
+
+--link-primary: #EFF2F5;
+--link-secondary: #CFD6E4;
+--link-visited: #A0A5EB;
+--snippet-url: #6E798D; /* Temporary variable name */
+
+--separator-dot: #808a9d;
+
+/* THEME NEW */
+--theme-purple: #7675fd;
+--theme-yellow: #F8BE2D;
+
+/* Borders related */
+--border-color: #333;
+
+/* Brave UI Design System */
+--blurple-300: #A0A5EB;
+--text-01: #F8FAFD;
+--text-02: #C2C4CF;
+--text-03: #84889C;
+--interactive-04: #353DAB;
+--interactive-05: #4C54D2;
+--interactive-06: #737ADE;
+--interactive-07: #F0F2FF;
+--interactive-08: #5E6175;
+--focus-border: #555889;
+--divider-01: #3B3E4F;
+--disabled: #343A40;
+
+/* Brave UI Design System Derivatives */
+--btn-filled-bg: var(--interactive-05);
+--btn-filled-bg-hover: var(--interactive-06);
+--btn-filled-text-active: rgba(255, 255, 255, 0.7);
+--btn-filled-bg-active: rgba(115, 122, 222, 0.7);
+--btn-filled-text-disabled: #677078;
+
+--btn-outline-border: var(--interactive-08);
+--btn-outline-border-hover: var(--interactive-06);
+--btn-outline-text: var(--interactive-07);
+--btn-outline-text-hover: var(--blurple-300);
+--btn-outline-text-active: rgba(160, 165, 235, 0.7);
+--btn-outline-border-active: rgba(115, 122, 222, 0.7);
+--btn-outline-text-disabled: #495057;
+
+--btn-icon-svg-hover: var(--blurple-300);
+--btn-icon-bg-hover: rgba(160, 165, 235, 0.32);
+--btn-icon-svg-active: rgba(160, 165, 235, 0.7);
+
+/* CODE SNIPPETS THEME */
+--code-bg-0: #2F313C;
+--code-border: #22232A;
+--code-color-1: #525964;
+--code-color-2: #ACBBD5;
+--code-color-3: #7FA569;
+--code-color-4: #5198D4;
+--code-color-5: #B26AC7;
+
+/* SHADOWS */
+--shadow-1: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+--shadow-2: 0 1px 6px rgba(32, 33, 36, 0.28);
+
+/* New Color Scheme */
+--search-bgd-01: #121418;
+--search-bgd-02: #17191E;
+--search-bgd-03: #1A1C23;
+--search-bgd-04: #1E2028;
+--search-bgd-05: #242731;
+--search-bgd-06: #242731;
+--search-bgd-07: #1E2028;
+--search-bgd-08: #17191E;
+--search-line-01: #333744;
+--search-line-02: #636876;
+--search-text-01: #ECEEF2;
+--search-text-02: #C9CCD7;
+--search-text-03: #AFB3C1;
+--search-text-04: #9599A9;
+--search-text-05: #7E8292;
+--search-text-06: #636876;
+--search-text-09: #997B08;
+--search-text-10: #FB542B;
+--search-interactive-01: #7799E5;
+--search-interactive-02: #7166A9;
+--search-interactive-03: #796DB5;
+--search-interactive-04: #5483ED;
+--search-interactive-05: #A0A5EB;
+
+/* Leo Design system colors */
+--gray-30: #2E3039;
+--gray-60: #6B7084;
+--gray-90: #C6C8D0;
+--gray-110: #EEEFF1;
+--gray-120: #F6F6F7;
+--green-40: #3FA450;
+
+--secondary-90: #C3C6F0;      }
+
+      :root.dark .theme--light {
+        display: none !important;
+      }
+    </style>
+
+    <link rel="icon" href="https://cdn.search.brave.com/serp/v1/static/brand/d6a7857f7f3c2d5e1a55d27a8e25b39a31c4c5d093ff479aeb1b99d0faca5c71-favicon.ico">
+    <link href="https://cdn.search.brave.com/serp/v1/static/css/6cedc56d016eced794b0f6391565851f7194212341117ee82dbb5500a7246a36-spectre.min.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/css/a94064d9a6d2a4299a0467a718537a29c408258cff323d008327199fdd1f4d76-icons.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/css/746981b06aef8da36af5f917e17427a258b18e7c9380202487096f63a8800a4c-search.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/css/components/5b80d896e998b1bcb9c8ede3c49ccea915d9d8622e5654d5c000a4811564faf6-results.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/css/components/7135128cd1183c1e792be470aa1080a41fa57093c9b50b2f2c359178ce2a5dcb-carousel.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/searchCTA/7dd07a004cf7cc685a85e5d89ba5d2a3bb5db842c1be90cce2c149e47b0f8187-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/definitions/a1a18121ddba6b19026a75ca69ec24864eea5b6053073ca2548d35f2eef0aef6-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/infobox/e465b01fbc257460b613ac1aaa1cd2c1c7e075a379fb7ef50fad76cd72c73eaf-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/discussions/e7ffa14d2222b362f6fbfd892075677b70f47e77dce864db7e89008baf8b62ac-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/suggest/cd6def7ab41f641b3778ed873418e76c4a8e34019884efdc44c19e7948435fb3-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/sticky-header/604254e172fc15ac84af281b9ce81dbd2e5896dc1272ddd107900ec9a1a9b263-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/filters/f157fb02f8f559985a7560af5997c779c9fd77f1236b623804b9e885af9cd9c8-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/settings/9deaee771395c60776595682eaac84458663cb4e7480a1c9318a184e522ade4a-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/feedback/cd6a4938c68a6192d1f2db42dad5c28b5807f0031f28b2a6816d72c1331360b6-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/searchElsewhere/7323ae61ef966e3a9c47f39c8676889ab91f4149045fae083407907ca87a259d-main.bundle.css" rel="stylesheet" />
+<link href="https://cdn.search.brave.com/serp/v1/static/serp-js/paid/034d2cad0827367096e02997fce4dc117a3c25b8c4d0f54e25b052d056caca36-main.bundle.css" rel="stylesheet" />
+  </head>
+
+  <body class="is-pc ">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="height:0;position:absolute;width:0"><defs><linearGradient id="gradient02-alt" x1="16.53" x2="-.379" y1="15.918" y2="3.159" gradientUnits="userSpaceOnUse"><stop stop-color="#BF14A2"/><stop offset="1" stop-color="#F73A1C"/></linearGradient></defs></svg>
+    <div id="paid"></div>
+
+    
+
+<header id="site-header" class="navbar">
+  <!-- backdrop-filter does not seem to work properly in Firefox see: https://bugzilla.mozilla.org/show_bug.cgi?id=1591674 -->
+    <div id="search-container" class="flex">
+    <div class="flex">
+    <a id="nav-logo" href="/" class="btn btn-link">
+      <img alt="Brave logo" class="logo-large theme--dark" title="Brave Search"
+        src="https://cdn.search.brave.com/serp/v1/static/brand/373c0fe6934b2f59b99a51a3a3c2d5091535c1d19cb361ed6d110ff0c4927b58-brave-logo-light.svg" />
+      <img alt="Brave logo" class="logo-large theme--light" title="Brave Search"
+        src="https://cdn.search.brave.com/serp/v1/static/brand/d28fc5b7b2908fbaed2ee4b7a14f282c6f9821df14c5da9c5b711d6b19dcd2fd-brave-logo-dark.svg" />
+      <img alt="Brave logo" class="logo-small" title="Brave Search"
+        src="https://cdn.search.brave.com/serp/v1/static/brand/7aad80c1b58c70bab482ce1e3c4e332fba2eab52180bfca5b012b571a31d2696-brave-logo-small.svg" />
+    </a>
+    <div class="searchform-container">
+  <form class="form" action="/search" method="GET" id="searchform">
+        <span id="search-icon" class="no-display">
+      <svg width="15" height="15" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57212 13.1442C2.94254 13.1442 0 10.2016 0 6.57173C0 2.94248 2.94268 0 6.57212 0C10.2016 0 13.1442 2.94248 13.1442 6.57173C13.1442 8.05658 12.6519 9.42642 11.8215 10.5269L16.3528 15.0581C16.7103 15.4156 16.7103 15.9952 16.3528 16.3527C15.9953 16.7102 15.4157 16.7102 15.0582 16.3527L10.527 11.8215C9.42657 12.6519 8.05682 13.1442 6.57212 13.1442ZM6.57212 11.2665C3.97956 11.2665 1.87775 9.16463 1.87775 6.57184C1.87775 3.97952 3.97966 1.87775 6.57212 1.87775C9.16458 1.87775 11.2665 3.97952 11.2665 6.57184C11.2665 9.16463 9.16468 11.2665 6.57212 11.2665Z" fill="#C2C4CF"/>
+      </svg>
+    </span>
+    <div class="searchbox-wrapper">
+      <input
+        id="searchbox"
+        type="text"
+        class="form-input"
+        placeholder="Search the web privately…"
+        name="q"
+        value="ravel"
+        autocapitalize="off"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+        aria-label="Search"
+        title="Search"
+        aria-autocomplete="both"
+        aria-haspopup="false"
+        maxlength="2048"
+              />
+    </div>
+    <input name="source" value="web" type="hidden">
+                                    <input name="" value="" type="hidden" id="goggleQueryParam">
+                <button id="submit-button" class="btn btn--filled input-group-btn">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill-rule="evenodd" d="M1.6 7.336a5.736 5.736 0 1 1 11.471 0 5.736 5.736 0 0 1-11.471 0ZM7.336 0a7.336 7.336 0 1 0 4.957 12.743l3.56 3.561a.8.8 0 0 0 1.132-1.131l-3.636-3.636A7.336 7.336 0 0 0 7.335 0Z" clip-rule="evenodd"/></svg>    </button>
+      </form>
+</div>    </div>
+    <div id="settings"></div>
+  </div>
+  </header>
+<div class="" id="navbar-tabs">
+  <div class="container-80" id="nav-tabs-container">
+    
+<nav id="nav-tabs">
+  <ul id="primary-tabs">
+              <li class="active">
+       <a href="/search?q=ravel&source=web">
+        <span class="icon-wrapper">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill-rule="evenodd" d="M1.6 7.336a5.736 5.736 0 1 1 11.471 0 5.736 5.736 0 0 1-11.471 0ZM7.336 0a7.336 7.336 0 1 0 4.957 12.743l3.56 3.561a.8.8 0 0 0 1.132-1.131l-3.636-3.636A7.336 7.336 0 0 0 7.335 0Z" clip-rule="evenodd"/></svg>        </span>
+        <span>
+                    All
+                  </span>
+      </a>
+    </li>
+
+          <li>
+       <a href="/images?q=ravel&source=web">
+        <span class="icon-wrapper">
+          <svg class="icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.492 2.093h-8a2.6 2.6 0 00-2.6 2.6v8a2.6 2.6 0 002.6 2.6h8a2.6 2.6 0 002.6-2.6v-8a2.6 2.6 0 00-2.6-2.6zm-8-1.4a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4v-8a4 4 0 00-4-4h-8zm5.46 7.048a.7.7 0 01.514.156l2.971 2.447a.7.7 0 01-.89 1.08L10.12 9.427l-2.172 2.676a.7.7 0 01-1.001.088l-1.142-.987L4.55 12.86a.7.7 0 01-1.116-.845L5.14 9.763a.7.7 0 011.016-.107l1.16 1.003 2.162-2.663a.7.7 0 01.473-.255zM4.34 5.291a.5.5 0 111 0 .5.5 0 01-1 0zm.5-1.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/></svg>        </span>
+        <span>
+                    Images
+                  </span>
+      </a>
+    </li>
+
+          <li>
+       <a href="/news?q=ravel&source=web">
+        <span class="icon-wrapper">
+          <svg class="icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.317 2.093h-.225a.8.8 0 00-.575.768v2.133h3.022a.575.575 0 00.378-.14v-.161a2.6 2.6 0 00-2.6-2.6zm0-1.4c.685 0 1.33.172 1.893.475a3.556 3.556 0 012.104 3.359c.002.055.003.11.003.166v8a4 4 0 01-4 4h-8a4 4 0 01-4-4v-8a4 4 0 014-4h8zm2.222 5.501c.13 0 .256-.014.378-.04v6.539a2.6 2.6 0 01-2.6 2.6h-8a2.6 2.6 0 01-2.6-2.6v-8a2.6 2.6 0 012.6-2.6h6.153a1.994 1.994 0 00-.153.768v2.333a1 1 0 001 1h3.222zM3.615 4.808a.6.6 0 000 1.2h4a.6.6 0 000-1.2h-4zm-.6 2.937a.6.6 0 01.6-.6h8a.6.6 0 110 1.2h-8a.6.6 0 01-.6-.6zm.6 1.866a.6.6 0 000 1.2h8a.6.6 0 000-1.2h-8z"/></svg>        </span>
+        <span>
+                    News
+                  </span>
+      </a>
+    </li>
+
+          <li>
+       <a href="/videos?q=ravel&source=web">
+        <span class="icon-wrapper">
+          <svg class="icon" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.283 1.408h2.161c.2 0 .395.026.58.073L10.296 4.21H7.483l2.78-2.78a.462.462 0 00.02-.02zm-1.507 0H6.067a.544.544 0 01-.02.022l-2.78 2.78h2.708l2.8-2.802zM1.759 4.21l2.8-2.8H3.557a2.311 2.311 0 00-2.312 2.31v.49h.515zm10.046 0h2.95v-.49c0-.676-.29-1.284-.753-1.707L11.805 4.21zM1.245 5.454h13.51v7.154a2.311 2.311 0 01-2.31 2.311h-8.89a2.311 2.311 0 01-2.31-2.31V5.453zM0 3.719A3.556 3.556 0 013.556.164h8.888A3.556 3.556 0 0116 3.719v8.89a3.556 3.556 0 01-3.556 3.555H3.556A3.556 3.556 0 010 12.608V3.72zm7.22 8.674l2.933-1.694a.978.978 0 000-1.693L7.22 7.312a.978.978 0 00-1.466.847v3.387a.978.978 0 001.466.847zm-.222-3.772l2.133 1.232-2.133 1.231V8.621z" clip-rule="evenodd"/></svg>        </span>
+        <span>
+                    Videos
+                  </span>
+      </a>
+    </li>
+
+          <li>
+       <a href="/goggles?q=ravel&source=web">
+        <span class="icon-wrapper">
+          <svg class="icon" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 2.74286C21 2.29821 20.6478 1.93929 20.2115 1.93929H19.4458C18.5487 0.760714 17.1452 0 15.5682 0H5.43179C3.85482 0 2.45131 0.760714 1.55419 1.93929H0.788486C0.35219 1.93929 0 2.29821 0 2.74286C0 3.1875 0.325907 3.51429 0.737672 3.54107C0.599249 4.00357 0.525657 4.49286 0.525657 5C0.525657 7.76071 2.7229 10 5.43179 10C8.14068 10 10.3379 7.76071 10.3379 5C10.3379 3.69107 9.84381 2.49821 9.03429 1.60714H11.9657C11.1562 2.49821 10.6621 3.69107 10.6621 5C10.6621 7.76071 12.8593 10 15.5682 10C18.2771 10 20.4743 7.76071 20.4743 5C20.4743 4.49286 20.399 4.00357 20.2623 3.54107C20.6741 3.51429 21 3.16964 21 2.74286ZM5.43179 8.39286C3.59374 8.39286 2.10263 6.87321 2.10263 5C2.10263 3.12679 3.59374 1.60714 5.43179 1.60714C7.26984 1.60714 8.76095 3.12679 8.76095 5C8.76095 6.87321 7.26984 8.39286 5.43179 8.39286ZM15.5682 8.39286C13.7302 8.39286 12.239 6.87321 12.239 5C12.239 3.12679 13.7302 1.60714 15.5682 1.60714C17.4063 1.60714 18.8974 3.12679 18.8974 5C18.8974 6.87321 17.4063 8.39286 15.5682 8.39286Z" fill="currentColor"/></svg>        </span>
+        <span>
+                    <span class="flex-hcenter"> Goggles <sup>BETA</sup></span>
+                  </span>
+      </a>
+    </li>
+
+      </ul>
+  <ul id="secondary-tabs">
+    <li id="tools-info"></li>
+    <li class="tabs-divider"></li>
+    <li id="feedback"></li>
+  </ul>
+</nav>  </div>
+</div>
+
+<div class="">
+  <div class="container-80">
+    <div id="search-filters"></div>
+  </div>
+</div>
+<main id="search-main">
+    
+                                          
+
+  <div class="container-80">
+        
+        
+
+        <div id="ask-for-location"></div>
+
+  </div>
+
+  <div class="container-80 flex">
+    <div id="results" class="section">
+
+                                                                                                                                                                                                
+            
+      
+      
+      
+            
+
+                              <div id="cta" class="inactive">
+  <div class="widget" id="searchCTA"></div>
+</div>
+
+      
+                              
+<style>
+    #rh-definitions {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        background-color: var(--search-bgd-04);
+        border-radius: var(--border-radius-large);
+    }
+    .is-mobile #rh-definitions {
+        border-radius: 0;
+    }
+    #rh-definitions .header {
+        overflow-wrap: break-word;
+        font-weight: 700;
+        font-family: var(--main-font);
+        font-size: 24px;
+        line-height: 20px;
+        gap: 6px;
+        margin-bottom: 0;
+    }
+
+    #rh-definitions h6 {
+        color: var(--gray-110);
+        font-family: var(--main-font);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    #rh-definitions h6.pronunciation {
+        font-weight: 600;
+    }
+
+    #play-definition-audio {
+        padding: 0;
+    }
+
+    #play-definition-audio:active {
+        color: var(--color-primary);
+    }
+
+    #play-definition-audio .icon-wrapper {
+        padding: 0;
+    }
+
+    #play-definition-audio .icon-wrapper svg {
+        --size: 18px;
+    }
+
+    #rh-definitions ol {
+        margin: 0 0 0 12px;
+    }
+
+    #rh-definitions li {
+        color: var(--gray-120);
+        font-size: 13px;
+        margin-top: 4px;
+    }
+
+    #rh-definitions li::marker {
+        color: var(--gray-60);
+    }
+
+    #rh-definitions .attribution {
+        border: 1px solid var(--gray-30);
+        padding: 8px 12px;
+        border-radius: var(--border-radius);
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--gray-60);
+    }
+
+    #rh-definitions .attribution cite {
+        font-style: normal;
+    }
+
+    #rh-definitions .attribution:first-letter {
+        text-transform: uppercase;
+    }
+
+    #rh-definitions .hidden,
+    #rh-definitions .js-hidden {
+        display: none;
+    }
+
+    #rh-definitions.show-all section.hidden {
+        display: block;
+    }
+
+    #rh-definitions.show-all li.hidden {
+        display: list-item;
+    }
+</style>
+
+<div id="rh-definitions" data-loc="main" data-pos="1" data-type="rich"
+  data-subtype="definitions" data-ref-pos="0">
+    <section>
+        <h5 class="header h5 color-primary flex-row">
+            ravel
+                        <button id="play-definition-audio" class="btn btn--icon btn--tiny js-hidden">
+                <div class="icon-wrapper icon-left">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 18C4.03725 18 0 13.9628 0 9C0 4.03725 4.03725 0 9 0C13.9628 0 18 4.03725 18 9C18 13.9628 13.9628 18 9 18ZM9 1.5C4.8645 1.5 1.5 4.8645 1.5 9C1.5 13.1355 4.8645 16.5 9 16.5C13.1355 16.5 16.5 13.1355 16.5 9C16.5 4.8645 13.1355 1.5 9 1.5ZM12.2687 9.8294C12.8571 9.43303 12.8571 8.56697 12.2687 8.17061L8.30866 5.50324C7.64443 5.05584 6.75 5.53178 6.75 6.33264L6.75 11.6674C6.75 12.4682 7.64443 12.9442 8.30866 12.4968L12.2687 9.8294Z" fill="currentColor"/>
+</svg>                </div>
+            </button>
+                    </h5>
+                                    <h6 class="h6 pronunciation">
+                    răv′əl
+                </h6>
+                        <noscript>
+                <h6 class="h6 pronunciation">
+                    răv′əl
+                </h6>
+            </noscript>
+            </section>
+            <section class="">
+            <h6 class="h6">intransitive verb</h6>
+            <ol>
+                                    <li class="text-sm">To separate the fibers or threads of (cloth, for example); unravel.</li>
+                                    <li class="text-sm">To clarify by separating the aspects of.</li>
+                                    <li class="text-sm">To tangle or complicate.</li>
+                                    <li class="text-sm hidden">To become separated into its component threads; unravel or fray.</li>
+                                    <li class="text-sm hidden">To become tangled or confused.</li>
+                            </ol>
+        </section>
+            <section class="hidden">
+            <h6 class="h6">noun</h6>
+            <ol>
+                                    <li class="text-sm">A raveling.</li>
+                                    <li class="text-sm">A broken or discarded thread.</li>
+                                    <li class="text-sm">A tangle.</li>
+                            </ol>
+        </section>
+        <section class="attribution">
+        <cite>from The American Heritage® Dictionary of the English Language, 5th Edition.</cite>
+        <a
+            target="_self"
+            href="https://www.wordnik.com/words/ravel"
+        >
+            More at Wordnik
+        </a>
+    </section>
+            <audio
+            id="pronunciation-audio"
+            src="/api/rhfetch?rhtype=definitions&word=ravel&source=ahd-5"
+            preload="none"
+        />
+    </div>
+
+
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="2" data-type="web" data-ref-pos="0" >
+  <a href="https://en.wikipedia.org/wiki/Maurice_Ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/0kxnVOiqv-faZvOJc7zpym4Zin1CTs1f1svfNZSzmfU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Maurice Ravel - Wikipedia
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">en.wikipedia.org</span>
+      <span class="url-path">› wiki  › Maurice_Ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            April 7, 2002 -
+            Joseph Maurice <strong>Ravel</strong> (7 March 1875 – 28 December 1937) was a French composer, pianist and conductor. He is often associated with Impressionism along with his elder contemporary Claude Debussy, although both composers rejected the term. In the 1920s and 1930s <strong>Ravel</strong> was internationally regarded ...
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div id="infobox" class="infobox fdb" data-loc="main" data-pos="0" data-type="infobox"
+  data-subtype="generic" data-ref-pos="3">
+  <div class="infobox-header">
+    <div class="infobox-header-text">
+      <a class="infobox-title" href="https://en.wikipedia.org/wiki/Maurice_Ravel" target="_self" rel="noopener">
+        Maurice Ravel
+              </a>
+            <div class="infobox-description">
+        French composer
+      </div>
+          </div>
+  </div>
+
+            <div class="infobox-thumbnail">
+        <a href="/images?origin=search&q=ravel&source=web" target="_self" rel="noopener">
+                    <div class="thumb" style="background-image: url(https://imgs.search.brave.com/LWIkK_B6yWo1i3tvHQ71Z3y75905EUT-T6788N4sxT0/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi83Lzc4L01h/dXJpY2VfUmF2ZWxf/MTkyNS5qcGcvNTEy/cHgtTWF1cmljZV9S/YXZlbF8xOTI1Lmpw/Zw)"></div>
+                  </a>
+      </div>
+      
+
+  
+
+    
+
+  <div class="body">
+            <div class="mb-6">
+      Joseph Maurice Ravel (7 March 1875 – 28 December 1937) was a French composer, pianist and conductor. He is often associated with Impressionism along with his elder contemporary Claude Debussy, although both composers rejected the term. In the 1920s and 1930s Ravel was internationally regarded ...
+                  <a class="infobox-source" href="https://en.wikipedia.org/wiki/Maurice_Ravel" target="_self" rel="noopener">Wikipedia</a>
+          </div>
+      </div>
+
+     <div class="section-divider"></div>
+  
+    
+    
+      <div class="body">
+        
+        <div id="hidden-atttributes" class="no-display">
+          </div>
+
+    <div id="infobox-attrs"></div>
+  </div>
+
+
+  
+    
+    <div id="profiles" class="body">
+  <div>
+    <h6>Profiles</h6>
+    <div class="links">
+            <a title="Wikipedia" href="https://en.wikipedia.org/wiki/Maurice_Ravel" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/0kxnVOiqv-faZvOJc7zpym4Zin1CTs1f1svfNZSzmfU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw" class="avatar avatar-sm">
+        Wikipedia
+      </a>
+            <a title="IMDb" href="https://www.imdb.com/name/nm0712315/" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/_XzIkQDCEJ7aNlT3HlNUHBRcj5nQ9R4TiU4cHpSn7BY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmU3MjU1MmUz/MDhkYjY0OGFlYzY3/ZDVlMmQ4NWZjZDhh/NzZhOGZlZjNjNGE5/M2M0OWI1Y2M2ZjQy/MWE5ZDc3OC93d3cu/aW1kYi5jb20v" class="avatar avatar-sm">
+        IMDb
+      </a>
+            <a title="Britannica" href="https://www.britannica.com/biography/Maurice-Ravel" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/hcLf2uAEj_yDbSzYRgdkKMQIWeIcfmsuchdJkpCh2_g/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJmYzgxOWRk/Y2FhNWI2MzQzMjQ4/MWVhZDZhNGY3ZjY0/MDgxZTM3YWU5MzYz/NGU2MzM3Y2Y2YTYz/M2IyM2Y0NC93d3cu/YnJpdGFubmljYS5j/b20v" class="avatar avatar-sm">
+        Britannica
+      </a>
+            <a title="Quora" href="https://www.quora.com/topic/Maurice-Ravel-composer" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/h-UMKefr-GC4QAyvmDqJX6In84keNLnjKLoM-VE4l_w/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjg3ZTk4MDVm/ZTE3YzUxZTc4Yjc3/YTE2MGI3MGVhNmQ2/MGE0Yjc4NzRhMmM1/ODMxYTIwNzI1ZjI0/NDkyZDI2Yy93d3cu/cXVvcmEuY29tLw" class="avatar avatar-sm">
+        Quora
+      </a>
+            <a title="Spotify" href="https://open.spotify.com/artist/17hR0sYHpx7VYTMRfFUOmY" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/WHOwdur76otS2SiFY6oLQKilXu1j5thjPTB0lyHTgWU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDExZTQ1OTU0/NTllYzVjMzBiOTcy/N2Y2NTkzYzEyM2Nm/ZDY5ZTIxZGUyZmEz/ZGEzYzY5ZmE4ZTcw/M2ZjMWViYS9vcGVu/LnNwb3RpZnkuY29t/Lw" class="avatar avatar-sm">
+        Spotify
+      </a>
+            <a title="Discogs" href="https://www.discogs.com/artist/216140" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/wiL6NpYx2AuTTCyk7k4zRFavvuTvMX0hizhYI9aMXXI/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmM4NWVkYzdh/ODRiZGUzODU4MjA3/ZjljOTg4N2Q5Zjk4/NDIzMWFiYWM1YmFh/NmQ1MGU0ZjgzOWUx/ZDZiMzJiZS93d3cu/ZGlzY29ncy5jb20v" class="avatar avatar-sm">
+        Discogs
+      </a>
+            <a title="BBC" href="https://www.bbc.co.uk/programmes/p01qd3tx" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/YzN5JuligKE-3JKR26Y8XxIyhq5T15YLvP1ybZJvg84/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTEzZDM0NjY3/NDc3MDEyZjI5ZGY3/OTJkMmMyOWU1MGNj/ZjQ5ZGU0Y2U4ZTEx/NzYzMWI1NWE2NDY4/YTk0MThkZC93d3cu/YmJjLmNvLnVrLw" class="avatar avatar-sm">
+        BBC
+      </a>
+            <a title="Apple" href="https://music.apple.com/artist/11636" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/LiGjmdMD8TAJYHPKqMTOdvEMF6hkK_Ts57KXBcdqzw0/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTNkNjhlY2Nk/MjdmYzU4MTc4OTg4/OTQ3NzIxMTVlMjQ1/ODMzZWQzZjY2ZWNk/OThjMDBmN2VjNzU3/NTRmYWVmZS9tdXNp/Yy5hcHBsZS5jb20v" class="avatar avatar-sm">
+        Apple
+      </a>
+            <a title="LOC" href="https://id.loc.gov/authorities/n79108396" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/Ym5rn_5y_vE79NovleU0vDRAhX-Nsse8MelHSW4qRx0/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzMyOGFmMGY2/NDAyODg4ZjFhZjNm/Zjc2MWM4Njg4Mzk2/M2Q0YzJiNDhmMmM0/ZDg5NGFlM2ZmNzc1/ZGEyZjA0Yy9pZC5s/b2MuZ292Lw" class="avatar avatar-sm">
+        LOC
+      </a>
+            <a title="Allmusic" href="https://www.allmusic.com/artist/mn0000932757" class="chip" target="_self" rel="noopener">
+        <img alt=" " src="https://imgs.search.brave.com/twKhJty6OqpB8rMQjVQA70EpFZpJ19fZp8URn43Zc7c/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmIyNWM1YWQz/YTg5MmJlOWUwMTVm/MTI1YTlhYWQwNGMy/YTgxOWNiODMzZDg0/ZjUzODVkZTIyODc0/MjA0OTU3Zi93d3cu/YWxsbXVzaWMuY29t/Lw" class="avatar avatar-sm">
+        Allmusic
+      </a>
+          </div>
+  </div>
+</div>
+
+
+    <div class="footer">
+  <div class="attribution text-xs">
+    Data from
+        <a href="https://en.wikipedia.org/wiki/Maurice_Ravel" rel="noopener">Wikipedia</a>
+            </div>
+  <div id="infobox-feedback"></div>
+</div>
+
+
+</div>
+
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="4" data-type="web" data-ref-pos="1" >
+  <a href="https://www.britannica.com/biography/Maurice-Ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/hcLf2uAEj_yDbSzYRgdkKMQIWeIcfmsuchdJkpCh2_g/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJmYzgxOWRk/Y2FhNWI2MzQzMjQ4/MWVhZDZhNGY3ZjY0/MDgxZTM3YWU5MzYz/NGU2MzM3Y2Y2YTYz/M2IyM2Y0NC93d3cu/YnJpdGFubmljYS5j/b20v" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Maurice Ravel | Biography, Music, Bolero, Compositions, &amp; Facts ...
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">britannica.com</span>
+      <span class="url-path">  › entertainment &amp; pop culture  › music, classical</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                            <p class="snippet-description">
+            December 24, 2022 -
+            Maurice <strong>Ravel</strong>, in full Joseph-Maurice <strong>Ravel</strong>, (born March 7, 1875, Ciboure, France—died December 28, 1937, Paris), French composer of Swiss-Basque descent, noted for his musical craftsmanship and perfection of form and style in such works as Boléro (1928), Pavane pour une infante défunte ...
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="5" data-type="web" data-ref-pos="2" >
+  <a href="https://www.merriam-webster.com/dictionary/ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/cOCJWSLzigV9ZdOOx_PnKirLH7Of4mrHPWjjqTMdexc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzYwYjQ3N2Jj/NTBhNDkxYTExNjU0/NTFhZDdlMGI0NjJh/Y2M1ODcwOWQwYzc5/YTI2MmZkZjIxMGFk/N2NkZWMzYy93d3cu/bWVycmlhbS13ZWJz/dGVyLmNvbS8" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Ravel Definition &amp; Meaning - Merriam-Webster
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">merriam-webster.com</span>
+      <span class="url-path">› dictionary  › ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            August 26, 2020 -
+            The meaning of <strong>RAVEL</strong> is to become unwoven, untwisted, or unwound : fray. How to use <strong>ravel</strong> in a sentence.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                                <div id="discussions">
+  </div>
+
+      
+                                                  
+        <div class="snippet">
+    <a href="https://www.youtube.com/watch?v=qhEOs8y5-6c" class="result-header" target="_self" rel="noopener">
+      <span class="snippet-title"><div class="favicon-wrapper">
+          <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/Ux4Hee4evZhvjuTKwtapBycOGjGDci2Gvn2pbSzvbC0/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v" loading="lazy" width="16" height="16" />
+        </div>
+        <em></em>Ravel: Complete Piano Music - YouTube
+      </span>
+      <cite class="snippet-url">
+        <span class="netloc">youtube.com</span>
+        <span class="url-path">› watch</span>
+              </cite>
+    </a>
+
+    <div class="video-snippet flex mt-5" data-macro="video">
+  <a href="https://www.youtube.com/watch?v=qhEOs8y5-6c" class="video-thumb" target="_self" rel="noopener">
+    <img src="https://imgs.search.brave.com/2A-G0FiuX_epExZArSZWfrl-WWXovbMcyE1gHfdtKOM/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9x/aEVPczh5NS02Yy9o/cWRlZmF1bHQuanBn" loading="lazy" alt=" "/>
+    <div class="play-icon">
+      <span class="icon-wrapper" style="--size: 40px">
+        <svg class="icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path d="M8.897 16.307a8 8 0 100-16 8 8 0 000 16zm-1.291-4.94a.4.4 0 01-.63-.328V5.575a.4.4 0 01.63-.327l3.902 2.731a.4.4 0 010 .656l-3.902 2.731z"/></svg>      </span>
+    </div>
+      </a>
+  <div class="min-w-0">
+    <p class="snippet-description">
+      For Ravel, the piano was an orchestra in a box, with the capacity for almost infinite variety of tone colour and rhythmic subtlety.Composer: Maurice RavelArt...</p>
+    <p class="snippet-description published-time">
+            <span class="text-bold">Published: </span> August 28, 2017
+      <span class="mr-15"></span>
+                </p>
+  </div>
+</div>
+
+
+  </div>
+
+  
+    
+              
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="8" data-type="web" data-ref-pos="3" >
+  <a href="https://www.dictionary.com/browse/ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/Gx1w8aF0Cqdu18OPjWCa4yq-O3eIguMtYbxWwb2zfpk/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDU4NGVmMWYw/ODRkZTIwYzRlODY4/MzM1MDdmODRkYjVm/NzEyNWIzNzM2ZWU3/ZDgyYjRmNzIyM2Nl/ZWY3ZDY0NC93d3cu/ZGljdGlvbmFyeS5j/b20v" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Ravel Definition &amp; Meaning | Dictionary.com
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">dictionary.com</span>
+      <span class="url-path">› browse  › ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            <strong>Ravel</strong> definition, to disentangle or unravel the threads or fibers of (a woven or knitted fabric, rope, etc.). See more.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="9" data-type="web" data-ref-pos="4" >
+  <a href="https://www.classical-music.com/reviews/chamber/dutilleux-stephen-hough-ravel-string-quartets-etc/" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/KG0ZtbfClU5dVF7WXVhGDzkzwkKk8kQSnPgA8m-vAT0/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDI3ZmQxZTZi/NzkxMzcwNThkMTg0/YTNmMjQyNjE1MGNl/MzQxMjRkYjMxMWNi/MGRiOTU1ZDdkZTQx/NTExZThjZC93d3cu/Y2xhc3NpY2FsLW11/c2ljLmNvbS8" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Dutilleux • Stephen Hough • Ravel: String Quartets etc - Chamber ...
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">classical-music.com</span>
+      <span class="url-path">  › home  › reviews  › chamber</span>
+          </cite>
+  </a>
+    <div class="product">
+  <div class="flex-hcenter mt-5">
+    <div class="thumb-wrapper">
+      <div class="thumb" style="background-image: url('https://imgs.search.brave.com/G7YrpD_rhQGXwhEVkFaAUdfI64VtbM_Y4JyucIHFQ-0/rs:fit:360:283:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/LmNvLnVrL3Byb2R1/Y3Rpb24vdm9sYXRp/bGUvc2l0ZXMvMjQv/MjAyMy8wMS9DREE2/ODQwMEhvdWdoLTg5/NWJiODkuanBnP3F1/YWxpdHk9OTAmcmVz/aXplPTkwMCw5MDA');"
+        data-original="None">
+      </div>
+    </div>
+    <div>
+      <div class="color-primary">Dutilleux • Stephen Hough • Ravel: String Quartets etc</div>
+            <div class="description text-sm">Dutilleux • Stephen Hough • Ravel Stephen Hough: String Quartet No. 1, ‘Les Six recontres’; Dutilleux: String Quartet, ‘Ainsi la nuit’; Ravel: String Quartet Takács Quartet Hyperion CDA68400 67:48 mins 
+
+[image id=&quot;178955&quot; size=&quot;landscape_thumbnail&quot; align=&quot;none&quot;]
+&lt;p&gt;&lt;strong&gt;Dutilleux • Stephen Hough • Ravel&lt;/strong&gt;
+Stephen Hough: String Quartet No. 1, ‘Les Six recontres’; Dutilleux: String Quartet, ‘Ainsi la nuit’; Ravel: String Quartet
+Takács Quartet
+&lt;em&gt;Hyperion CDA68400  67:48 mins&lt;/em&gt;&lt;/p&gt;
+
+
+
+
+&lt;p&gt;This recording really is a joy from start to finish. In the Ravel, the very first bars are pl</div>
+            <div class="flex mt-5">
+                <div class="r-attr text-sm mr-15">
+          <style>
+  /* RATING */
+  .r {
+    align-items: center;
+    display: flex;
+    margin-top: -2px;
+    color: var(--color-gray-2);
+  }
+  .rating {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 58.5px;
+    height: 14px;
+    margin-top: -1px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMiAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgNy4xOTM0MUMyLjYxMjkgNC44NzA4MyAzLjE5MzU1IDYuMDE2MTMgNS44MDY0NSAwLjVDNy44NTkgNC45MzE5NSA5LjA3Njg1IDUuNTA3NTMgMTEuMzIyNiA2LjkwMzA4QzguNTI4MTQgOC45NTQwNSA3LjIxMzUzIDEwLjM5MzcgNS44MDY0NSAxNEM0LjQ3NzY1IDEwLjU0IDMuMTIzNjYgOS4yMjc1OCAwIDcuMTkzNDFaIiBmaWxsPSIjRDRERUU1IiBmaWxsLW9wYWNpdHk9IjAuOCIvPgo8L3N2Zz4K);
+  }
+  .rating-ta {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 58.5px;
+    height: 14px;
+    margin-top: -1px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1OC41IiBoZWlnaHQ9IjE0IiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNjQgMTIiPjxkZWZzLz48cGF0aCBmaWxsPSIjMDBhYTZjIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiA2QTYgNiAwIDExMCA2YTYgNiAwIDAxMTIgMHptLTEuNSAwYTQuNSA0LjUgMCAxMS05IDAgNC41IDQuNSAwIDAxOSAwem04LjUgNmE2IDYgMCAxMDAtMTIgNiA2IDAgMDAwIDEyem0wLTEuNWE0LjUgNC41IDAgMTAwLTkgNC41IDQuNSAwIDAwMCA5ek0zOCA2YTYgNiAwIDExLTEyIDAgNiA2IDAgMDExMiAwem0tMS41IDBhNC41IDQuNSAwIDExLTkgMCA0LjUgNC41IDAgMDE5IDB6bTguNSA2YTYgNiAwIDEwMC0xMiA2IDYgMCAwMDAgMTJ6bTAtMS41YTQuNSA0LjUgMCAxMDAtOSA0LjUgNC41IDAgMDAwIDl6TTU4IDEyYTYgNiAwIDEwMC0xMiA2IDYgMCAwMDAgMTJ6bTAtMS41YTQuNSA0LjUgMCAxMDAtOSA0LjUgNC41IDAgMDAwIDl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+  }
+  .rating .stars, .rating-ta .stars {
+    background-repeat: repeat-x;
+    overflow: hidden;
+    position: relative;
+  }
+  .rating .stars span {
+    height: 14px;
+    top: 1px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMiAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgNy4xOTM0MUMyLjYxMjkgNC44NzA4MyAzLjE5MzU1IDYuMDE2MTMgNS44MDY0NSAwLjVDNy44NTkgNC45MzE5NSA5LjA3Njg1IDUuNTA3NTMgMTEuMzIyNiA2LjkwMzA4QzguNTI4MTQgOC45NTQwNSA3LjIxMzUzIDEwLjM5MzcgNS44MDY0NSAxNEM0LjQ3NzY1IDEwLjU0IDMuMTIzNjYgOS4yMjc1OCAwIDcuMTkzNDFaIiBmaWxsPSIjRkZBODAwIi8+Cjwvc3ZnPgo=);
+    background-repeat: repeat-x;
+    display: block;
+  }
+  .rating-ta .stars span {
+    height: 14px;
+    top: 1px;
+    background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgNjQgMTIiIHdpZHRoPSI1OC41IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0ibTEyIDZjMCAzLjMxMzcxLTIuNjg2MjkgNi02IDZzLTYtMi42ODYyOS02LTYgMi42ODYyOS02IDYtNiA2IDIuNjg2MjkgNiA2em0xMyAwYzAgMy4zMTM3MS0yLjY4NjMgNi02IDZzLTYtMi42ODYyOS02LTYgMi42ODYzLTYgNi02IDYgMi42ODYyOSA2IDZ6bTcgNmMzLjMxMzcgMCA2LTIuNjg2MjkgNi02cy0yLjY4NjMtNi02LTYtNiAyLjY4NjI5LTYgNiAyLjY4NjMgNiA2IDZ6bTE5LTZjMCAzLjMxMzcxLTIuNjg2MyA2LTYgNnMtNi0yLjY4NjI5LTYtNiAyLjY4NjMtNiA2LTYgNiAyLjY4NjI5IDYgNnptNyA2YzMuMzEzNyAwIDYtMi42ODYyOSA2LTZzLTIuNjg2My02LTYtNi02IDIuNjg2MjktNiA2IDIuNjg2MyA2IDYgNnoiIGZpbGw9IiMwMGFhNmMiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
+    background-repeat: repeat-x;
+    display: block;
+  }
+
+</style>
+
+
+<div class="r">
+
+  
+    <div class="rating">
+    <span class="stars">
+      <span style="width: 58.5px;" ></span>
+    </span>
+  </div>
+  
+    <div class="ml-5">
+        <span class="text-xs">(5.0)</span>
+      </div>
+  
+</div>
+
+        </div>
+              </div>
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                        
+<div id="search-elsewhere" class="text-gray">
+  <noscript>
+    <div class="panel">
+            <div class="flex-hcenter flex-wrap">
+        <span class="icon-wrapper mr-10">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill-rule="evenodd" d="M1.6 7.336a5.736 5.736 0 1 1 11.471 0 5.736 5.736 0 0 1-11.471 0ZM7.336 0a7.336 7.336 0 1 0 4.957 12.743l3.56 3.561a.8.8 0 0 0 1.132-1.131l-3.636-3.636A7.336 7.336 0 0 0 7.335 0Z" clip-rule="evenodd"/></svg>        </span>
+        <span class="mr-15">Find elsewhere</span>
+        <a class="chip mr-10" href="/search?q=ravel !g" rel="noopener">Google</a>
+        <a class="chip mr-10" href="/search?q=ravel !b" rel="noopener">Bing</a>
+        <a class="chip mr-10" href="/search?q=ravel !mojeek" rel="noopener">Mojeek</a>
+      </div>
+          </div>
+  </noscript>
+</div>
+
+
+            
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="11" data-type="web" data-ref-pos="5" >
+  <a href="https://www.youtube.com/watch?v=3tQs6l4d8hM" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/Ux4Hee4evZhvjuTKwtapBycOGjGDci2Gvn2pbSzvbC0/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>The Best of Maurice Ravel - YouTube
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">youtube.com</span>
+      <span class="url-path">  › noah johnson</span>
+          </cite>
+  </a>
+    <div class="video-snippet flex mt-5" data-macro="video">
+  <a href="https://www.youtube.com/watch?v=3tQs6l4d8hM" class="video-thumb" target="_self" rel="noopener">
+    <img src="https://imgs.search.brave.com/TjktFv40bShrLYFJY_mktoTH2wnwqQRDvG-uBVrpNag/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS8z/dFFzNmw0ZDhoTS9t/YXhyZXNkZWZhdWx0/LmpwZw" loading="lazy" alt=" "/>
+    <div class="play-icon">
+      <span class="icon-wrapper" style="--size: 40px">
+        <svg class="icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path d="M8.897 16.307a8 8 0 100-16 8 8 0 000 16zm-1.291-4.94a.4.4 0 01-.63-.328V5.575a.4.4 0 01.63-.327l3.902 2.731a.4.4 0 010 .656l-3.902 2.731z"/></svg>      </span>
+    </div>
+        <div class="duration">01:10:53</div>
+      </a>
+  <div class="min-w-0">
+    <p class="snippet-description">
+      Enjoy the best music of Maurice <strong>Ravel</strong>! A tracklist is below. The pieces which are marked with a star I see as exceptional interpretations. (click show more)*...</p>
+    <p class="snippet-description published-time">
+            <span class="text-bold">Published: </span> March 26, 2017
+      <span class="mr-15"></span>
+                  <span class="text-bold">Views: </span> 1M
+          </p>
+  </div>
+</div>
+
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="12" data-type="web" data-ref-pos="6" >
+  <a href="https://www.classicfm.com/composers/ravel/" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/Eydqxlm5UPNkmz62f-xWXMsih4iO422rsU1D2LfSsao/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjY1MjY5ZGFl/NTI1NzkwMDNiMDVl/Zjc1MDVjMDJjYzY4/NDJhM2M2NjgwOGMy/Mzk5NTU4YTNlMTY3/NzhhNmU1ZC93d3cu/Y2xhc3NpY2ZtLmNv/bS8" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Ravel - Composers - Classic FM
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">classicfm.com</span>
+      <span class="url-path">› composers  › ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            Listen live to Classic FM online radio. Discover classical music and find out more about the best classical composers, musicians and their works.
+    </p>
+  </div>
+
+  
+  
+    
+<div class="item-attributes">
+  </div>
+
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="13" data-type="web" data-ref-pos="7" >
+  <a href="https://www.geeksforgeeks.org/numpy-ravel-python/" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/fhzcfv5xltx6-YBvJI9RZgS7xZo0dPNaASsrB8YOsCs/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjBhOGQ3MmNi/ZWE5N2EwMmZjYzA1/ZTI0ZTFhMGUyMTE0/MGM0ZTBmMWZlM2Y2/Yzk2ODMxZTRhYTBi/NDdjYTE0OS93d3cu/Z2Vla3Nmb3JnZWVr/cy5vcmcv" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>numpy.ravel() in Python - GeeksforGeeks
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">geeksforgeeks.org</span>
+      <span class="url-path">› numpy-ravel-python</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                            <p class="snippet-description">
+            March 28, 2022 -
+            A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="14" data-type="web" data-ref-pos="8" >
+  <a href="https://en.wiktionary.org/wiki/ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/kSrIoIQfDYkjlcJ29aESL2BGdfrSyD2cKEy1jhCduQ4/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGRhMWY0NGNi/NmRhZWY4ODQ1NWEw/ODdmYTRmZDM1OWEy/Mjk4NWZiOGQ2ZDIy/MjE4YzkyZWRiYjI2/OWU5YjI3Zi9lbi53/aWt0aW9uYXJ5Lm9y/Zy8" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>ravel - Wiktionary
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">en.wiktionary.org</span>
+      <span class="url-path">› wiki  › ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            The verb is borrowed from Dutch ravelen, rafelen (“to tangle, become entangled; to fray; to unweave”) [and other forms]; further etymology uncertain. It has been suggested that the verb is originally derived from the noun, but the Oxford English Dictionary regards this as “very ...
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="15" data-type="web" data-ref-pos="9" >
+  <a href="https://www.javatpoint.com/numpy-ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/VCO3CU_wmtl9ifo36rjShBl9RWQ4gyco5R0pvoIvWzc/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGEzNWYyYTE2/YTUzYTgyNzkxNDEx/ODZiNzYwMTgyYWZl/YjU0NDQ5ZDdiNDAw/YmU3MzYyMjc1MDhl/MzJkNzljMy93d3cu/amF2YXRwb2ludC5j/b20v" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>numpy.ravel() in Python - Javatpoint
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">javatpoint.com</span>
+      <span class="url-path">› numpy-ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            numpy.<strong>ravel</strong>() in Python with NumPy Introduction, Environment Setup, ndarray, Data Types, Array Creation, Attributes, Existing Data, Indexing and Slicing, Advanced Indexing, Broadcasting, Array Manipulation, Matrix Library, Matplotlib etc.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="16" data-type="web" data-ref-pos="10" >
+  <a href="https://www.bl.uk/people/maurice-ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/8rif8tBf8ZhTVqhIYO7kssJSwSHQkZbVvgSKSJOZN_c/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2Q4NGNiMDE5/MjNmMjljNzM0ZTc0/YzlmMTZmNDNkYmRj/OTRhZDM4ZGI3OWVj/NzU2M2U4NWFiYjA2/NDkxNDc4ZC93d3cu/YmwudWsv" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Maurice Ravel | The British Library
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">bl.uk</span>
+      <span class="url-path">› people  › maurice-ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            You need to enable JavaScript to run this app
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="17" data-type="web" data-ref-pos="11" >
+  <a href="https://www.udiscovermusic.com/classical-features/best-ravel-works/" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/kC4O20YocgiCr96pOkZkLYlQT5RNiw7Ut-3qGI_09i8/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjI5YmM5OTNi/MDQ0NjNkNDcwZDEy/NTcyZDNhZjlmM2M3/NDIxYjI4MGJjNjNh/MTYwMWFjOWJhNWNk/MWNjZjhmMi93d3cu/dWRpc2NvdmVybXVz/aWMuY29tLw" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Best Ravel Works: 10 Essential Pieces By The Great Composer |
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">udiscovermusic.com</span>
+      <span class="url-path">  › best ravel works: 10 essential pieces by the great composer</span>
+          </cite>
+  </a>
+    <div class="video-snippet flex mt-5" data-macro="video">
+  <a href="https://www.udiscovermusic.com/classical-features/best-ravel-works/" class="video-thumb" target="_self" rel="noopener">
+    <img src="https://imgs.search.brave.com/Q0hCEyDYe5QTQw7RvkLrCN-YnS-x9AHDDhFmd3fsvwU/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/dWRpc2NvdmVybXVz/aWMuY29tL3dwLWNv/bnRlbnQvcGx1Z2lu/cy93cC15b3V0dWJl/LWx5dGUvbHl0ZUNh/Y2hlLnBocD9vcmln/VGh1bWJVcmw9aHR0/cHMlM0ElMkYlMkZp/Lnl0aW1nLmNvbSUy/RnZpJTJGblNOR0s2/ZEowcXMlMkZocWRl/ZmF1bHQuanBn" loading="lazy" alt=" "/>
+    <div class="play-icon">
+      <span class="icon-wrapper" style="--size: 40px">
+        <svg class="icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path d="M8.897 16.307a8 8 0 100-16 8 8 0 000 16zm-1.291-4.94a.4.4 0 01-.63-.328V5.575a.4.4 0 01.63-.327l3.902 2.731a.4.4 0 010 .656l-3.902 2.731z"/></svg>      </span>
+    </div>
+        <div class="duration">05:27</div>
+      </a>
+  <div class="min-w-0">
+    <p class="snippet-description">
+      Discover our selection of the best <strong>Ravel</strong> works including &#x27;Boléro&#x27;, &#x27;Daphnis Et Chloé&#x27; and &#x27;Pavane Pour Une Infante Défunte&#x27;.</p>
+    <p class="snippet-description published-time">
+            <span class="text-bold">Published: </span> March 7, 2022
+      <span class="mr-15"></span>
+                </p>
+  </div>
+</div>
+
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="18" data-type="web" data-ref-pos="12" >
+  <a href="https://www.w3resource.com/numpy/manipulation/ravel.php" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/bnmmM6bM2v_hNVtsrHrS__vMe_sXFxRqP2v6Di4NP4c/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzZkYjVmOTY1/NWZkODdjNDMxZjBh/OGQ1MThiN2JkYmY0/ZmZjY2RiYmE0YzBh/NzMzMWQ4YTFhMjg4/OTNhMDgxOS93d3cu/dzNyZXNvdXJjZS5j/b20v" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>NumPy: ravel() function - w3resource
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">w3resource.com</span>
+      <span class="url-path">› numpy  › manipulation  › ravel.php</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                            <p class="snippet-description">
+            August 19, 2022 -
+            NumPy Array manipulation: <strong>ravel</strong>() function, example - The <strong>ravel</strong>() function is used to create a contiguous flattened array.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="19" data-type="web" data-ref-pos="13" >
+  <a href="https://www.sharpsightlabs.com/blog/numpy-ravel/" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/rqIJquNrkVLzmV0DO_lps5Yr38HW3VH8yhjaSagm_Jg/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTNlMzJlYTQ4/YjAxYWEyMGVhZTk4/ZTJlYzA3ZGVhM2Vk/YTAxMjIyYmIxZDlk/ZTJhZjEwZDE3YzBl/MDQ1YWVkMi93d3cu/c2hhcnBzaWdodGxh/YnMuY29tLw" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Numpy Ravel, Explained - Sharp Sight
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">sharpsightlabs.com</span>
+      <span class="url-path">› blog  › numpy-ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                            <p class="snippet-description">
+            November 7, 2022 -
+            This tutorial will show you how to use Numpy <strong>ravel</strong> to flatten a Numpy array. It explains the syntax and shows step-by-step examples.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="20" data-type="web" data-ref-pos="14" >
+  <a href="https://www.youtube.com/watch?v=r30D3SW4OVw" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/Ux4Hee4evZhvjuTKwtapBycOGjGDci2Gvn2pbSzvbC0/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Maurice Ravel - Bolero - YouTube
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">youtube.com</span>
+      <span class="url-path">  › the wicked north</span>
+          </cite>
+  </a>
+    <div class="video-snippet flex mt-5" data-macro="video">
+  <a href="https://www.youtube.com/watch?v=r30D3SW4OVw" class="video-thumb" target="_self" rel="noopener">
+    <img src="https://imgs.search.brave.com/ufXG9wDMElvdhSifONL6268yGhdqOEHxTyOR4HKe2xw/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9y/MzBEM1NXNE9Wdy9t/YXhyZXNkZWZhdWx0/LmpwZw" loading="lazy" alt=" "/>
+    <div class="play-icon">
+      <span class="icon-wrapper" style="--size: 40px">
+        <svg class="icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path d="M8.897 16.307a8 8 0 100-16 8 8 0 000 16zm-1.291-4.94a.4.4 0 01-.63-.328V5.575a.4.4 0 01.63-.327l3.902 2.731a.4.4 0 010 .656l-3.902 2.731z"/></svg>      </span>
+    </div>
+        <div class="duration">14:50</div>
+      </a>
+  <div class="min-w-0">
+    <p class="snippet-description">
+      Boléro is a one-movement orchestral piece by Maurice <strong>Ravel</strong> (1875--1937). Originally composed as a ballet commissioned by Russian ballerina Ida Rubinstein, th...</p>
+    <p class="snippet-description published-time">
+            <span class="text-bold">Published: </span> December 2, 2011
+      <span class="mr-15"></span>
+                  <span class="text-bold">Views: </span> 17M
+          </p>
+  </div>
+</div>
+
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="21" data-type="web" data-ref-pos="15" >
+  <a href="https://open.spotify.com/artist/17hR0sYHpx7VYTMRfFUOmY" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/WHOwdur76otS2SiFY6oLQKilXu1j5thjPTB0lyHTgWU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDExZTQ1OTU0/NTllYzVjMzBiOTcy/N2Y2NTkzYzEyM2Nm/ZDY5ZTIxZGUyZmEz/ZGEzYzY5ZmE4ZTcw/M2ZjMWViYS9vcGVu/LnNwb3RpZnkuY29t/Lw" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Maurice Ravel | Spotify
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">open.spotify.com</span>
+      <span class="url-path">› artist  › 17hR0sYHpx7VYTMRfFUOmY</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                            <p class="snippet-description">
+            Listen to Maurice <strong>Ravel</strong> on Spotify. Artist · 2.4M monthly listeners.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="22" data-type="web" data-ref-pos="16" >
+  <a href="https://www.prestomusic.com/classical/composers/1658--ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/cIjuQU6rXi2VjOtOMmT1bpjotKDwm9GoRfATmmg1BvE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmE4YzZkNGUy/N2M3ZGVmNzM0MmI4/ODViMWUyMmJmMmI5/M2FiODA1MDc4MTVj/Y2NmNjBmYjhiMmU4/MTAxNmZiOS93d3cu/cHJlc3RvbXVzaWMu/Y29tLw" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Maurice Ravel (composer) - Buy recordings | Presto Music
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">prestomusic.com</span>
+      <span class="url-path">› classical  › composers  › 1658--ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            Composer Maurice <strong>Ravel</strong> (1875-1937), with works available to browse and buy. French composer who studied with Fauré at the Paris Conservatoire, failing to win the coveted Prix de Rome on several occasions. A gifted pianist he...
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="23" data-type="web" data-ref-pos="17" >
+  <a href="https://www.educative.io/answers/what-is-the-numpyravel-function-from-numpy-in-python" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/1HAAwJPgXZddsQmUsKf5NRyNmwbHTR8Dgcql6-e0d-Q/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzVkMWVjNTMz/MmFlNmEzYjQ4ZmEw/ZjBlYjdjNzk2YzA4/YWUxZTA5NWY2MWM4/YWNlODI3ZGI4NWU1/YzQxYjM5NC93d3cu/ZWR1Y2F0aXZlLmlv/Lw" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>What is the numpy.ravel() function from NumPy in Python?
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">educative.io</span>
+      <span class="url-path">› answers  › what-is-the-numpyravel-function-from-numpy-in-python</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                    <p class="snippet-description">
+            Python’s <strong>ravel</strong>() function is used to return a contiguous array. This function returns a 1D array that contains the input elements.
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="24" data-type="web" data-ref-pos="18" >
+  <a href="https://www.vocabulary.com/dictionary/ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/pmUEM2lHNQg8Abd8ccikY_LrAt2x52nPlMluyqpaPik/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWVjZDY4MDky/YzdmYTgxOGVlZGNm/YWZjMWQzNWYwMjUx/OWY4ZjU1ZTE5YTFk/Y2M4NzI3ZGUxNTg1/YzI4ZmI4NS93d3cu/dm9jYWJ1bGFyeS5j/b20v" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Ravel - Definition, Meaning &amp; Synonyms | Vocabulary.com
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">vocabulary.com</span>
+      <span class="url-path">› dictionary  › ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                            <p class="snippet-description">
+            <strong>Ravel</strong> is a contronym, a word that has two meanings that are the opposite of each other. Confusingly, <strong>ravel</strong> can mean both &quot;tangle&quot; and &quot;untangle.&quot; It&#x27;s perfectly understandable to tangle up the meanings of <strong>ravel</strong>!
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+                              <div
+  class="snippet fdb  "
+  data-loc="main" data-pos="25" data-type="web" data-ref-pos="19" >
+  <a href="https://www.laphil.com/musicdb/artists/4400/maurice-ravel" class="result-header" target="_self" rel="noopener">
+    <span class="snippet-title">
+      <div class="favicon-wrapper">
+        <img alt="🌐" class="favicon" src="https://imgs.search.brave.com/FuJPJqhYzSWg5hYasUZvv2lphtX0NiF8mFRQwqb2SwE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzRjOThhNjU5/MDNhMTBjNWEzOGUw/MjIwMTNlMzYzNWY2/NDVkZTE2NWQ4ZTY0/ZGEyNTE1ODUwNWEz/OGQ4OTAwYi93d3cu/bGFwaGlsLmNvbS8" loading="lazy" width="16" height="16" />
+      </div>
+      <em></em>Maurice Ravel | LA Phil
+    </span>
+    <cite class="snippet-url">
+      <span class="netloc">laphil.com</span>
+      <span class="url-path">› musicdb  › artists  › 4400  › maurice-ravel</span>
+          </cite>
+  </a>
+    <div class="snippet-content">
+                            <p class="snippet-description">
+            Along with Debussy, Maurice <strong>Ravel</strong> was one of the pioneering musicians of the early 20th century. He, like his contemporary, was an impeccable orchestrator. His fascination with the exotic and the past can be heard in works such as the Rapsodie espagnole and Le tombeau de Couperin, the former ...
+    </p>
+  </div>
+
+  
+  
+    
+
+
+  
+    
+
+    
+</div>
+
+      
+      
+            <div id="pagination">
+        <a
+    class="btn ml-15 "
+    href="/search?q=ravel&amp;offset=1&amp;spellcheck=0"
+  >
+    Next
+    <div class="icon-wrapper ml-10 icon-right">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path fill-rule="evenodd" d="M13.604 7.189a.868.868 0 01-.268.626l-6.19 5.932a.868.868 0 11-1.2-1.253l4.63-4.437H.872a.868.868 0 110-1.736h9.704l-4.63-4.438A.868.868 0 117.145.63l6.19 5.932c.171.164.268.39.268.627z" clip-rule="evenodd"/></svg>    </div>
+  </a>
+</div>
+
+          </div>
+
+
+        <div id="side-right" class="section">
+      
+          </div>
+  </div>
+
+
+    <div id="debug"></div>
+
+    <style>
+  footer {
+    background-color: var(--search-bgd-04);
+    color: var(--color-primary);
+    height: fit-content;
+    padding: 2rem 0px;
+    margin-top: 2rem;
+  }
+
+  footer .content {
+    display: flex;
+    align-items: baseline;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  footer h6 {
+    color: var(--color-gray-3);
+    font-family: var(--brand-font);
+  }
+
+  footer .text-sm {
+    font-size: var(--text-sm);
+  }
+
+  footer .text-gray {
+    color: var(--color-gray-3) !important;
+  }
+
+  footer .container-sm {
+    max-width: 1000px;
+    padding-left: 175px;
+  }
+
+  footer .content .block {
+    margin-bottom: 1rem;
+  }
+
+  footer .block a.flex-row {
+    align-items: center;
+    gap: 6px;
+  }
+
+  footer .block a.flex-row > .icon {
+    --size: 15px;
+  }
+</style>
+<footer>
+  <div class="container-sm">
+    <div class="content">
+      <div class="block">
+        <h6>Resources</h6>
+        <div>
+          <a
+            class="text-gray text-sm flex-row"
+            href="https://account.brave.com/?intent=checkout&amp;product=search"
+            target="_self"
+          >
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none" viewBox="0 0 19 19"><g filter="url(#a)"><path fill="url(#b)" fill-opacity=".36" d="M16.099 13.319a10.47 10.47 0 0 1-2.372 2.386 24.66 24.66 0 0 1-4.274 2.565.25.25 0 0 1-.257 0 25.507 25.507 0 0 1-4.038-2.4 11.615 11.615 0 0 1-2.38-2.252 4.02 4.02 0 0 1-.929-2.182v-6.76c0-.477 0-.953-.015-1.429 0-.187.087-.245.257-.307 1.485-.54 2.967-1.083 4.446-1.63C7.422.986 8.303.655 9.19.328a.477.477 0 0 1 .292 0c1.72.626 3.438 1.262 5.157 1.893.663.25 1.33.49 2 .72.06.014.112.048.148.096a.238.238 0 0 1 .045.166v7.843a3.808 3.808 0 0 1-.734 2.273Z" style="mix-blend-mode:multiply"/><path fill="url(#c)" d="M9.33 16.805a.762.762 0 0 1-.328-.078A20.085 20.085 0 0 1 5.764 14.8a9.482 9.482 0 0 1-1.977-1.859 3.637 3.637 0 0 1-.826-1.96V4.601a.683.683 0 0 1 .13-.457.742.742 0 0 1 .403-.277l3.463-1.26.715-.262 1.363-.49a.92.92 0 0 1 .602 0c.88.319 1.77.647 2.63.96l1.4.513c.46.169 1.002.365 1.542.558.15.046.28.137.37.26a.66.66 0 0 1 .13.421v6.09a3.437 3.437 0 0 1-.656 2.045 8.64 8.64 0 0 1-1.965 1.96 19.906 19.906 0 0 1-3.423 2.06.763.763 0 0 1-.334.083ZM4.01 4.758V10.924c.058.525.278 1.022.633 1.428a8.539 8.539 0 0 0 1.774 1.658c.914.665 1.89 1.25 2.914 1.747a18.658 18.658 0 0 0 3.104-1.882 7.55 7.55 0 0 0 1.738-1.732c.316-.43.485-.944.484-1.47V4.759c-.486-.171-.962-.343-1.371-.49l-1.396-.514c-.839-.306-1.703-.625-2.556-.933-.427.151-.86.31-1.286.465l-.715.265L4.01 4.758Z"/></g><path fill="url(#d)" fill-rule="evenodd" d="M11.268 12.148a.428.428 0 0 1-.242-.083l-1.825-1.248-.039.002-1.82 1.246c-.185.126-.395.098-.504-.046-.05-.066-.098-.18-.05-.352L7.34 9.72a.146.146 0 0 0-.022-.085L5.9 8.192c-.118-.12-.159-.275-.108-.413.05-.137.18-.229.349-.244l1.877-.176a.146.146 0 0 0 .066-.05l.754-1.738c.069-.158.198-.252.347-.252.149 0 .279.095.347.254l.755 1.739c.009.016.048.044.067.048l1.876.174c.168.017.298.109.348.246.05.138.01.292-.108.412L11.05 9.635a.145.145 0 0 0-.021.085l.55 1.947c.05.172 0 .286-.049.352a.326.326 0 0 1-.262.129Z" clip-rule="evenodd"/><defs><linearGradient id="b" x1="1.834" x2="20.625" y1=".305" y2="11.612" gradientUnits="userSpaceOnUse"><stop stop-color="#392DD1"/><stop offset="1" stop-color="#22B8CF"/></linearGradient><linearGradient id="c" x1="2.959" x2="18.762" y1="1.805" y2="11.504" gradientUnits="userSpaceOnUse"><stop stop-color="#392DD1"/><stop offset="1" stop-color="#22B8CF"/></linearGradient><linearGradient id="d" x1="5.77" x2="13.429" y1="5.319" y2="10.849" gradientUnits="userSpaceOnUse"><stop stop-color="#392DD1"/><stop offset="1" stop-color="#22B8CF"/></linearGradient><filter id="a" width="18.781" height="21.781" x="-.056" y="-1.585" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/><feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/></filter></defs></svg>            Brave Search Premium
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="/help">
+            Brave Search Help
+          </a>
+        </div>
+        <div><a class="text-gray text-sm" href="https://brave.com/transparency/">
+            Transparency Report
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" target="_blank" rel="noopener" href="https://hackerone.com/brave">
+            Report a security issue
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://status.brave.com/">
+            Status
+          </a>
+        </div>
+      </div>
+      <div class="block">
+        <h6>Products</h6>
+        <div>
+          <a class="text-gray text-sm" href="https://brave.com/download/">
+            Brave Browser
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://search.brave.com">
+            Brave Search
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://brave.com/wallet">
+            Brave Wallet
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://talk.brave.com/">
+            Brave Talk
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://brave.com/firewall-vpn/">
+            Brave Firewall + VPN
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://brave.com/playlist/">
+            Brave Playlist
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://brave.com/brave-news/">
+            Brave News
+          </a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://brave.com/brave-rewards/">
+            Brave Rewards
+          </a>
+        </div>
+      </div>
+      <div class="block">
+        <h6>Policies</h6>
+        <div><a class="text-gray text-sm" href="/help/privacy-policy">
+            Privacy Policy</a>
+        </div>
+        <div>
+          <a class="text-gray text-sm" href="https://brave.com/terms-of-use/">
+            Terms of Use
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer></main>
+
+<div id="usage-metrics"></div>
+
+<script
+  id="js-shared"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/shared/52388423e1759633cda7331cbd10b87e2102111617525145b117257687ff039b-main.bundle.js"
+  data="{&#34;reproducible_parameters&#34;:{&#34;country&#34;:&#34;all&#34;,&#34;search_lang&#34;:&#34;en&#34;,&#34;spellcheck&#34;:1,&#34;external&#34;:&#34;1&#34;,&#34;show_local&#34;:1,&#34;unit&#34;:&#34;metric&#34;,&#34;geoloc&#34;:&#34;-16.5x-68.149&#34;},&#34;is_mobile&#34;:false,&#34;is_ios&#34;:false,&#34;browser&#34;:&#34;other&#34;,&#34;os&#34;:&#34;Other&#34;,&#34;paid&#34;:false,&#34;i18n&#34;:{&#34;Learn more&#34;:&#34;Learn more&#34;,&#34;Feedback&#34;:&#34;Feedback&#34;,&#34;Help us improve Brave Search&#34;:&#34;Help us improve Brave Search&#34;,&#34;What do you think of the information shown?&#34;:&#34;What do you think of the information shown?&#34;,&#34;This is helpful&#34;:&#34;This is helpful&#34;,&#34;This isn&#39;t relevant&#34;:&#34;This isn&#39;t relevant&#34;,&#34;Something is wrong&#34;:&#34;Something is wrong&#34;,&#34;This isn&#39;t useful&#34;:&#34;This isn&#39;t useful&#34;,&#34;The location is wrong&#34;:&#34;The location is wrong&#34;,&#34;The weather is wrong&#34;:&#34;The weather is wrong&#34;,&#34;The currency is wrong&#34;:&#34;The currency is wrong&#34;,&#34;The currency rate is wrong&#34;:&#34;The currency rate is wrong&#34;,&#34;The cryptocurrency is wrong&#34;:&#34;The cryptocurrency is wrong&#34;,&#34;The cryptocurrency price is wrong&#34;:&#34;The cryptocurrency price is wrong&#34;,&#34;The unit is wrong&#34;:&#34;The unit is wrong&#34;,&#34;The times are wrong&#34;:&#34;The times are wrong&#34;,&#34;The stock is wrong&#34;:&#34;The stock is wrong&#34;,&#34;The stock price is wrong&#34;:&#34;The stock price is wrong&#34;,&#34;Comments or suggestions?&#34;:&#34;Comments or suggestions?&#34;,&#34;Submit&#34;:&#34;Submit&#34;,&#34;Thank you for your feedback!&#34;:&#34;Thank you for your feedback!&#34;,&#34;Your feedback helps us improve the Brave Search experience for everyone&#34;:&#34;Your feedback helps us improve the Brave Search experience for everyone&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-umNotice"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/umNotice/b046442874a9328429f3a8e35172faa0d1492e762de7cd674be9b27b30f70594-main.bundle.js"
+  data="{&#34;i18n&#34;:{&#34;usage-metrics-notice&#34;:&#34;Brave Search uses private usage metrics to estimate overall activity and performance. You can turn off this option in &lt;a href=&#39;/settings&#39;&gt;Settings&lt;/a&gt;.&#34;,&#34;Learn more&#34;:&#34;Learn more&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-telemetry"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/telemetry/3812a63bed75adc0a564b8c629ae6c41ebfa3a86ba74413e624e0e02fdada5f7-main.bundle.js"
+  data="{&#34;os&#34;:&#34;Other&#34;,&#34;browser&#34;:&#34;Other&#34;,&#34;is_dev&#34;:false}"
+  defer="true">
+</script>
+<script
+  id="js-searchCTA"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/searchCTA/d311985f191bdc0cc395c6e7e3962d7d384aa407aa6dbf45a16944e4cd34b92e-main.bundle.js"
+  data="{&#34;environment&#34;:{&#34;device&#34;:null,&#34;platform&#34;:&#34;other&#34;,&#34;browser&#34;:&#34;other&#34;,&#34;default_possible&#34;:false},&#34;cta&#34;:{&#34;id&#34;:&#34;app.cta.default&#34;,&#34;lsItem&#34;:&#34;app.cta.default.shown&#34;,&#34;img&#34;:{&#34;show&#34;:true,&#34;srcDark&#34;:&#34;https://cdn.search.brave.com/serp/v1/static/img/ee5486e97258bf747b7166cb27071224c8c379c815589abd54d0a95f77c0571f-graphic-default-search-lion-dark.svg&#34;,&#34;srcLight&#34;:&#34;https://cdn.search.brave.com/serp/v1/static/img/c96ce31f5d822d8faf068c373bd28ffd74b5b591e6ddcc2131d5e4db2c73dbc4-graphic-default-search-lion-light.svg&#34;},&#34;title&#34;:&#34;Set Brave Search as default&#34;,&#34;description&#34;:&#34;Help beat big tech. Make all your searches fast, unbiased, and private.&#34;,&#34;primaryButtonText&#34;:&#34;Set default&#34;,&#34;dismissText&#34;:&#34;Maybe later&#34;,&#34;footerMessageHTML&#34;:&#34;&lt;strong&gt;Already default?&lt;/strong&gt; You can close this message.&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-definitions"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/definitions/749b326dc987c2e3913af82291f440da9be440950b3f280ac857fe50ae816f43-main.bundle.js"
+  data="{&#34;props&#34;:{&#34;word&#34;:&#34;ravel&#34;,&#34;type&#34;:&#34;definitions&#34;,&#34;first_url_position&#34;:2},&#34;data&#34;:{&#34;definitions&#34;:{&#34;intransitive verb&#34;:[&#34;To separate the fibers or threads of (cloth, for example); unravel.&#34;,&#34;To clarify by separating the aspects of.&#34;,&#34;To tangle or complicate.&#34;,&#34;To become separated into its component threads; unravel or fray.&#34;,&#34;To become tangled or confused.&#34;],&#34;noun&#34;:[&#34;A raveling.&#34;,&#34;A broken or discarded thread.&#34;,&#34;A tangle.&#34;]},&#34;sourceDict&#34;:&#34;ahd-5&#34;,&#34;attributionText&#34;:&#34;from The American Heritage® Dictionary of the English Language, 5th Edition.&#34;,&#34;attributionUrl&#34;:&#34;https://ahdictionary.com/&#34;,&#34;pronunciation&#34;:&#34;răv′əl&#34;,&#34;audio_available&#34;:true},&#34;theme&#34;:null,&#34;provider&#34;:{&#34;type&#34;:&#34;external&#34;,&#34;name&#34;:&#34;Wordnik&#34;,&#34;url&#34;:&#34;https://www.wordnik.com&#34;,&#34;long_name&#34;:null,&#34;img&#34;:null},&#34;is_mobile&#34;:false,&#34;i18n&#34;:{&#34;Show more&#34;:&#34;Show more&#34;,&#34;Show less&#34;:&#34;Show less&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-infobox"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/infobox/1980736c78aa041b4693a2486bea28109a8550b7c5cd21c52c48709626285bae-main.bundle.js"
+  data="{&#34;hidden_content&#34;:false,&#34;title&#34;:&#34;Maurice Ravel&#34;,&#34;i18n&#34;:{&#34;Show more&#34;:&#34;Show more&#34;,&#34;Show less&#34;:&#34;Show less&#34;,&#34;More about {title}&#34;:&#34;More about {title}&#34;,&#34;Less about {title}&#34;:&#34;Less about {title}&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-discussions"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/discussions/3ee64d77445dbcc7c73649bd12b3bb43d1d659afca4d3c26927d4d0e6bd65a9a-main.bundle.js"
+  data="{&#34;results&#34;:[{&#34;title&#34;:&#34;Ravel vs. Debussy : classicalmusic&#34;,&#34;url&#34;:&#34;https://www.reddit.com/r/classicalmusic/comments/882lrt/&#34;,&#34;is_source_local&#34;:false,&#34;is_source_both&#34;:false,&#34;description&#34;:&#34;&lt;p&gt;Ravel, hands down. He didn&#39;t invent Impressionism, but his work is so much more than Impressionist.&lt;/p&gt;\n&lt;p&gt;First, Ravel’s work is seriously gorgeous. For solo piano, few pieces match the outpouring of sound and feeling in Une Barque sur l’Ocean or Gaspard de la Nuit – Ondine. Beyond that, Ravel had a knack for using instruments to capture just about any sound in the world, or the essence of another composer.&lt;/p&gt;\n&lt;p&gt;Related to this, is Ravel’s incredible range. For a relatively small output, his work includes pieces typically defined as Impressionist, but other works that merely treat tonality in a sophisticated way, still others that are very dissonant, sometimes in the same piece. Compare the beautiful, tonally simple Adagio movement of his G Major Piano Concerto with the exciting, more dissonant finale.&lt;/p&gt;\n&lt;p&gt;I can only think of two or three composers I know I&#39;d rate above Ravel in history.&lt;/p&gt;\n&#34;,&#34;page_age&#34;:null,&#34;page_fetched&#34;:null,&#34;profile&#34;:null,&#34;language&#34;:&#34;en&#34;,&#34;family_friendly&#34;:true,&#34;bo_debug&#34;:{&#34;score&#34;:1,&#34;ngram_match&#34;:1.0,&#34;pos&#34;:1,&#34;language&#34;:&#34;en-US&#34;,&#34;seen_country&#34;:&#34;au&#34;,&#34;popularity&#34;:{&#34;au&#34;:0.003336486406624317},&#34;filters&#34;:{&#34;language_pre&#34;:{&#34;langs&#34;:[&#34;en&#34;],&#34;reason&#34;:&#34;Data Pipeline language match&#34;,&#34;confident&#34;:false},&#34;dedup&#34;:{},&#34;safesearch&#34;:false,&#34;private&#34;:{&#34;status&#34;:false,&#34;reason&#34;:&#34;whitelist_domains&#34;},&#34;status&#34;:{},&#34;language_post&#34;:{&#34;detected&#34;:[&#34;en&#34;]}},&#34;sketchy_title&#34;:false,&#34;fetch_timestamp&#34;:1669769264541,&#34;last_success&#34;:1669769264541,&#34;status&#34;:200,&#34;retries&#34;:0,&#34;original_url&#34;:&#34;https://www.reddit.com/r/classicalmusic/comments/882lrt/&#34;,&#34;snippets&#34;:[&#34;Create an account to follow your favorite communities and start taking part in conversations.Join Reddit ... i know how cliche this question is but i still want to see who people prefer overall- for me it differs depending on the category ... Ravel, hands down.&#34;,&#34;First, Ravel’s work is seriously gorgeous. For solo piano, few pieces match the outpouring of sound and feeling in Une Barque sur l’Ocean or Gaspard de la Nuit – Ondine. Beyond that, Ravel had a knack for using instruments to capture just about any sound in the world, or the essence of another composer.&#34;,&#34;Related to this, is Ravel’s incredible range. For a relatively small output, his work includes pieces typically defined as Impressionist, but other works that merely treat tonality in a sophisticated way, still others that are very dissonant, sometimes in the same piece.&#34;,&#34;If I could only take one composer&#39;s works to my desert island, it would be Debussy, but I&#39;d be seriously pissed at having to leave Ravel behind. If I get to have concerto as a genre, then I&#39;ll take Ravel&#39;s concerti. So now I do have some Ravel. Yay!&#34;],&#34;rerankers&#34;:{&#34;exact&#34;:{}},&#34;pos_boost&#34;:0,&#34;description_length&#34;:914},&#34;type&#34;:&#34;discussion&#34;,&#34;subtype&#34;:&#34;generic&#34;,&#34;deep_results&#34;:null,&#34;schemas&#34;:null,&#34;meta_url&#34;:{&#34;scheme&#34;:&#34;https&#34;,&#34;netloc&#34;:&#34;reddit.com&#34;,&#34;hostname&#34;:&#34;www.reddit.com&#34;,&#34;favicon&#34;:&#34;https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8&#34;,&#34;path&#34;:&#34;› r  › classicalmusic  › comments  › 882lrt&#34;},&#34;thumbnail&#34;:null,&#34;age&#34;:&#34;November 30, 2017&#34;,&#34;restaurant&#34;:null,&#34;locations&#34;:null,&#34;video&#34;:null,&#34;movie&#34;:null,&#34;faq&#34;:null,&#34;recipe&#34;:null,&#34;qa&#34;:null,&#34;book&#34;:null,&#34;rating&#34;:null,&#34;article&#34;:null,&#34;product&#34;:null,&#34;product_cluster&#34;:null,&#34;cluster_type&#34;:null,&#34;cluster&#34;:null,&#34;creative_work&#34;:null,&#34;music_recording&#34;:null,&#34;review&#34;:null,&#34;software&#34;:null,&#34;content_type&#34;:null,&#34;bo_source&#34;:null,&#34;extra_snippets&#34;:null,&#34;data&#34;:{&#34;forum_name&#34;:&#34;r/classicalmusic&#34;,&#34;num_answers&#34;:6,&#34;score&#34;:&#34;55% Upvoted | 1 vote&#34;,&#34;title&#34;:&#34;Ravel vs. Debussy : classicalmusic&#34;,&#34;question&#34;:&#34;&lt;p&gt;My girlfriend wasn’t raised with it in the same way I was but seems to show an interest in it nonetheless! (Whether it’s genuine or not is anyone’s guess!)&lt;/p&gt;\n&lt;p&gt;I’ve taken her to a couple of concerts (Mahler and a Beethoven) and an Opera (Tosca) and even watched Amadeus with her! (Super film for those who haven’t seen it)&lt;/p&gt;\n&lt;p&gt;There are certain works which I’m constantly completely gobsmacked by - Ring Cycle, Mahler symphonies, Beethoven.. etc and would love for her to find the same amount of enjoyment in them that I do!&lt;/p&gt;\n&lt;p&gt;Any tips on how to get someone who’s new into it? Start with certain composers? Genres? I know it’s not a one size fits all but I’d love to hear your thoughts!&lt;/p&gt;\n&lt;p&gt;Thanks in advance :)&lt;/p&gt;\n&#34;,&#34;top_comment&#34;:&#34;&lt;p&gt;Ravel, hands down. He didn&#39;t invent Impressionism, but his work is so much more than Impressionist.&lt;/p&gt;\n&lt;p&gt;First, Ravel’s work is seriously gorgeous. For solo piano, few pieces match the outpouring of sound and feeling in Une Barque sur l’Ocean or Gaspard de la Nuit – Ondine. Beyond that, Ravel had a knack for using instruments to capture just about any sound in the world, or the essence of another composer.&lt;/p&gt;\n&lt;p&gt;Related to this, is Ravel’s incredible range. For a relatively small output, his work includes pieces typically defined as Impressionist, but other works that merely treat tonality in a sophisticated way, still others that are very dissonant, sometimes in the same piece. Compare the beautiful, tonally simple Adagio movement of his G Major Piano Concerto with the exciting, more dissonant finale.&lt;/p&gt;\n&lt;p&gt;I can only think of two or three composers I know I&#39;d rate above Ravel in history.&lt;/p&gt;\n&#34;}},{&#34;title&#34;:&#34;Is Ravel overshadowed by Debussy in terms of popularity? : classicalmusic&#34;,&#34;url&#34;:&#34;https://www.reddit.com/r/classicalmusic/comments/rba1qq/&#34;,&#34;is_source_local&#34;:false,&#34;is_source_both&#34;:false,&#34;description&#34;:&#34;&lt;p&gt;Both are two of the most celebrated composers of all time, with hundreds of concerts, recordings, and books about them. Neither is overshadowed by anything.&lt;/p&gt;\n&#34;,&#34;page_age&#34;:null,&#34;page_fetched&#34;:null,&#34;profile&#34;:null,&#34;language&#34;:&#34;fr&#34;,&#34;family_friendly&#34;:true,&#34;bo_debug&#34;:{&#34;score&#34;:1,&#34;ngram_match&#34;:1.0,&#34;pos&#34;:1,&#34;language&#34;:&#34;en-US&#34;,&#34;seen_country&#34;:&#34;au&#34;,&#34;popularity&#34;:{&#34;au&#34;:0.002574838697910309},&#34;filters&#34;:{&#34;language_pre&#34;:{&#34;langs&#34;:[&#34;en&#34;],&#34;reason&#34;:&#34;Title language match&#34;,&#34;confident&#34;:false},&#34;dedup&#34;:{},&#34;safesearch&#34;:false,&#34;private&#34;:{&#34;status&#34;:false,&#34;reason&#34;:&#34;whitelist_domains&#34;},&#34;status&#34;:{},&#34;language_post&#34;:{&#34;detected&#34;:[&#34;en&#34;]}},&#34;sketchy_title&#34;:false,&#34;fetch_timestamp&#34;:1672178806578,&#34;last_success&#34;:1672178806578,&#34;status&#34;:200,&#34;retries&#34;:0,&#34;original_url&#34;:&#34;https://www.reddit.com/r/classicalmusic/comments/rba1qq/&#34;,&#34;snippets&#34;:[&#34;Créez un compte pour suivre vos communautés préférées et participer aux conversations.Rejoignez Reddit ... I just thought to check Spotify and it turns out Debussy triumphs in terms of popularity (on Spotify, at least) with nearly 3 million more monthly listeners than Ravel.&#34;,&#34;I think that it has gone back and forth between them for a long time. Sometimes it&#39;s \&#34;Ravel and Debussy\&#34;, sometimes it&#39;s \&#34;Debussy and Ravel\&#34;. I think it depends on who has made a recording recently of one composer or the other. I think that they are equal, myself, and I enjoy both.&#34;,&#34;I don&#39;t think Debussy overshadows Ravel. I think they are both extremely and rightfully well-known and well-appreciated composers, but Debussy is both a more historically significant composer (he is rightfully regarded as the \&#34;first modern composer\&#34;) and a far more prolific composer.&#34;,&#34;I might be wrong, but I believe more people are familiar with Ravel’s Boléro over anything by Debussy, even Clair de Lune. I remember reading an article a couple years back about how his Boléro is, oddly enough, popular music to have sex to, according to some poll.&#34;],&#34;rerankers&#34;:{&#34;exact&#34;:{}},&#34;pos_boost&#34;:0,&#34;description_length&#34;:164},&#34;type&#34;:&#34;discussion&#34;,&#34;subtype&#34;:&#34;generic&#34;,&#34;deep_results&#34;:null,&#34;schemas&#34;:null,&#34;meta_url&#34;:{&#34;scheme&#34;:&#34;https&#34;,&#34;netloc&#34;:&#34;reddit.com&#34;,&#34;hostname&#34;:&#34;www.reddit.com&#34;,&#34;favicon&#34;:&#34;https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8&#34;,&#34;path&#34;:&#34;› r  › classicalmusic  › comments  › rba1qq&#34;},&#34;thumbnail&#34;:null,&#34;age&#34;:&#34;December 27, 2021&#34;,&#34;restaurant&#34;:null,&#34;locations&#34;:null,&#34;video&#34;:null,&#34;movie&#34;:null,&#34;faq&#34;:null,&#34;recipe&#34;:null,&#34;qa&#34;:null,&#34;book&#34;:null,&#34;rating&#34;:null,&#34;article&#34;:null,&#34;product&#34;:null,&#34;product_cluster&#34;:null,&#34;cluster_type&#34;:null,&#34;cluster&#34;:null,&#34;creative_work&#34;:null,&#34;music_recording&#34;:null,&#34;review&#34;:null,&#34;software&#34;:null,&#34;content_type&#34;:null,&#34;bo_source&#34;:null,&#34;extra_snippets&#34;:null,&#34;data&#34;:{&#34;forum_name&#34;:&#34;r/classicalmusic&#34;,&#34;num_answers&#34;:27,&#34;score&#34;:&#34;88 upvotes | 6 votes&#34;,&#34;title&#34;:&#34;Is Ravel overshadowed by Debussy in terms of popularity? : classicalmusic&#34;,&#34;question&#34;:&#34;&lt;p&gt;I’m tired of the stereotype “classical music=relaxing”. Give me the heaviest piece you know.&lt;/p&gt;\n&lt;p&gt;Something like Verdi’s Dies irae.&lt;/p&gt;\n&#34;,&#34;top_comment&#34;:&#34;&lt;p&gt;Both are two of the most celebrated composers of all time, with hundreds of concerts, recordings, and books about them. Neither is overshadowed by anything.&lt;/p&gt;\n&#34;}},{&#34;title&#34;:&#34;Hi everyone, I made an ‘8 Levels’ ranking the difficulty of pieces by Ravel, hope you enjoy! 😀 : piano&#34;,&#34;url&#34;:&#34;https://www.reddit.com/r/piano/comments/k7cwlx/hi_everyone_i_made_an_8_levels_ranking_the/&#34;,&#34;is_source_local&#34;:false,&#34;is_source_both&#34;:false,&#34;description&#34;:&#34;How much a day should you realistically practice to get pretty doggone good at piano · 14 years ago at age 52 I took up piano as a complete beginner. During the past decade I’ve faithfully averaged about 30 minutes a day for a lifetime total of 2,000 hours (I log all my daily/weekly/mon...&#34;,&#34;page_age&#34;:null,&#34;page_fetched&#34;:null,&#34;profile&#34;:null,&#34;language&#34;:&#34;en&#34;,&#34;family_friendly&#34;:true,&#34;bo_debug&#34;:{&#34;score&#34;:1,&#34;ngram_match&#34;:1.0,&#34;pos&#34;:1,&#34;language&#34;:&#34;en-US&#34;,&#34;seen_country&#34;:&#34;au&#34;,&#34;popularity&#34;:{&#34;au&#34;:0.0014620153233408928},&#34;filters&#34;:{&#34;language_pre&#34;:{&#34;langs&#34;:[&#34;en&#34;],&#34;reason&#34;:&#34;Title language match&#34;,&#34;confident&#34;:false},&#34;dedup&#34;:{},&#34;safesearch&#34;:false,&#34;private&#34;:{&#34;status&#34;:false,&#34;reason&#34;:&#34;whitelist_domains&#34;},&#34;status&#34;:{},&#34;language_post&#34;:{&#34;detected&#34;:[&#34;en&#34;]}},&#34;sketchy_title&#34;:false,&#34;fetch_timestamp&#34;:1669631974168,&#34;last_success&#34;:1669631974168,&#34;status&#34;:200,&#34;retries&#34;:0,&#34;original_url&#34;:&#34;https://www.reddit.com/r/piano/comments/k7cwlx/hi_everyone_i_made_an_8_levels_ranking_the/&#34;,&#34;snippets&#34;:[],&#34;rerankers&#34;:{&#34;exact&#34;:{}},&#34;pos_boost&#34;:0,&#34;description_length&#34;:290},&#34;type&#34;:&#34;discussion&#34;,&#34;subtype&#34;:&#34;generic&#34;,&#34;deep_results&#34;:null,&#34;schemas&#34;:null,&#34;meta_url&#34;:{&#34;scheme&#34;:&#34;https&#34;,&#34;netloc&#34;:&#34;reddit.com&#34;,&#34;hostname&#34;:&#34;www.reddit.com&#34;,&#34;favicon&#34;:&#34;https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8&#34;,&#34;path&#34;:&#34;› r  › piano  › comments  › k7cwlx  › hi_everyone_i_made_an_8_levels_ranking_the&#34;},&#34;thumbnail&#34;:null,&#34;age&#34;:null,&#34;restaurant&#34;:null,&#34;locations&#34;:null,&#34;video&#34;:null,&#34;movie&#34;:null,&#34;faq&#34;:null,&#34;recipe&#34;:null,&#34;qa&#34;:null,&#34;book&#34;:null,&#34;rating&#34;:null,&#34;article&#34;:null,&#34;product&#34;:null,&#34;product_cluster&#34;:null,&#34;cluster_type&#34;:null,&#34;cluster&#34;:null,&#34;creative_work&#34;:null,&#34;music_recording&#34;:null,&#34;review&#34;:null,&#34;software&#34;:null,&#34;content_type&#34;:null,&#34;bo_source&#34;:null,&#34;extra_snippets&#34;:null,&#34;data&#34;:{&#34;forum_name&#34;:&#34;r/piano&#34;,&#34;num_answers&#34;:null,&#34;score&#34;:null,&#34;title&#34;:null,&#34;question&#34;:null,&#34;top_comment&#34;:null}},{&#34;title&#34;:&#34;Difficulty of Ravel \&#34;La Valse\&#34; vs. Liszt \&#34;Rhapsodie Espagnole\&#34;? : piano&#34;,&#34;url&#34;:&#34;https://www.reddit.com/r/piano/comments/q5pkdv/difficulty_of_ravel_la_valse_vs_liszt_rhapsodie/&#34;,&#34;is_source_local&#34;:false,&#34;is_source_both&#34;:false,&#34;description&#34;:&#34;&lt;p&gt;My experience is that you don&#39;t win competitions with big showoff virtuoso pieces, but with immense musicality in easier, manageable pieces. The only competition I ever won was when I played relatively easier pieces for my level and played them with the intent to make ppl cry and be touched.&lt;/p&gt;\n&#34;,&#34;page_age&#34;:null,&#34;page_fetched&#34;:null,&#34;profile&#34;:null,&#34;language&#34;:&#34;en&#34;,&#34;family_friendly&#34;:true,&#34;bo_debug&#34;:{&#34;score&#34;:1,&#34;ngram_match&#34;:1.0,&#34;pos&#34;:1,&#34;language&#34;:&#34;en-US&#34;,&#34;seen_country&#34;:&#34;au&#34;,&#34;popularity&#34;:{&#34;au&#34;:0.0014615058898925781},&#34;filters&#34;:{&#34;language_pre&#34;:{&#34;langs&#34;:[&#34;en&#34;],&#34;reason&#34;:&#34;Data Pipeline language match&#34;,&#34;confident&#34;:false},&#34;dedup&#34;:{},&#34;safesearch&#34;:false,&#34;private&#34;:{&#34;status&#34;:false,&#34;reason&#34;:&#34;whitelist_domains&#34;},&#34;status&#34;:{},&#34;language_post&#34;:{&#34;detected&#34;:[&#34;en&#34;]}},&#34;sketchy_title&#34;:false,&#34;fetch_timestamp&#34;:1658083114631,&#34;last_success&#34;:1658083114631,&#34;status&#34;:200,&#34;retries&#34;:0,&#34;original_url&#34;:&#34;https://www.reddit.com/r/piano/comments/q5pkdv/difficulty_of_ravel_la_valse_vs_liszt_rhapsodie/&#34;,&#34;snippets&#34;:[&#34;Weekly ThreadPiano JamQuestionDiscussionSeeking FeedbackPlaying (redditor)Other performancePhotoEducational VideoResource ... I will be choosing some new repertoire in a few months and have been brainstorming ideas on which virtuosic pieces to learn. So far, two such works I would love to learn would be Ravel \&#34;La Valse\&#34; (the difficult piano transcription) or Liszt \&#34;Rhapsodie Espagnole.\&#34;&#34;,&#34;Granted you haven&#39;t played Ravel before based on what you&#39;ve shown, it&#39;s not a wise choice to choose La Valse as a first piece. Similarly, something challenging from Ravel that is approachable is the Jeux D&#39;eau, or Oiseau Tristes from Mirroirs. ... All things piano related! ... Reddit Inc © 2022. All rights reserved&#34;,&#34;I would guess that the Ravel is more difficult, as it is known as one of the hardest solo piano pieces. The most difficult pieces I have played so far are Chopin Scherzo No. 2, Ballade No. 1, Etude Op. 10 (No. 1, 4, 5, 10, 12), Op. 25 (No. 1, 2, 5, 12), Liszt Transcendental Etude No.&#34;,&#34;Thank you for your comment! I have been thinking about my repertoire choice and decided to go with the Ravel, and I&#39;m currently looking for some smaller but beautiful pieces to add to my repertoire. Sorry for the late reply 😅&#34;],&#34;rerankers&#34;:{&#34;exact&#34;:{}},&#34;pos_boost&#34;:0,&#34;description_length&#34;:300},&#34;type&#34;:&#34;discussion&#34;,&#34;subtype&#34;:&#34;generic&#34;,&#34;deep_results&#34;:null,&#34;schemas&#34;:null,&#34;meta_url&#34;:{&#34;scheme&#34;:&#34;https&#34;,&#34;netloc&#34;:&#34;reddit.com&#34;,&#34;hostname&#34;:&#34;www.reddit.com&#34;,&#34;favicon&#34;:&#34;https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8&#34;,&#34;path&#34;:&#34;› r  › piano  › comments  › q5pkdv  › difficulty_of_ravel_la_valse_vs_liszt_rhapsodie&#34;},&#34;thumbnail&#34;:null,&#34;age&#34;:&#34;October 14, 2021&#34;,&#34;restaurant&#34;:null,&#34;locations&#34;:null,&#34;video&#34;:null,&#34;movie&#34;:null,&#34;faq&#34;:null,&#34;recipe&#34;:null,&#34;qa&#34;:null,&#34;book&#34;:null,&#34;rating&#34;:null,&#34;article&#34;:null,&#34;product&#34;:null,&#34;product_cluster&#34;:null,&#34;cluster_type&#34;:null,&#34;cluster&#34;:null,&#34;creative_work&#34;:null,&#34;music_recording&#34;:null,&#34;review&#34;:null,&#34;software&#34;:null,&#34;content_type&#34;:null,&#34;bo_source&#34;:null,&#34;extra_snippets&#34;:null,&#34;data&#34;:{&#34;forum_name&#34;:&#34;r/piano&#34;,&#34;num_answers&#34;:5,&#34;score&#34;:&#34;67% Upvoted | 1 vote&#34;,&#34;title&#34;:&#34;Difficulty of Ravel \&#34;La Valse\&#34; vs. Liszt \&#34;Rhapsodie Espagnole\&#34;? : piano&#34;,&#34;question&#34;:&#34;&lt;p&gt;Hello,&lt;/p&gt;\n&lt;p&gt;I will be choosing some new repertoire in a few months and have been brainstorming ideas on which virtuosic pieces to learn. So far, two such works I would love to learn would be Ravel \&#34;La Valse\&#34; (the difficult piano transcription) or Liszt \&#34;Rhapsodie Espagnole.\&#34; Has anyone here played either of these (or both!) and what are your thoughts on which is more difficult, or just how each are difficult?&lt;/p&gt;\n&lt;p&gt;I would guess that the Ravel is more difficult, as it is known as one of the hardest solo piano pieces. The most difficult pieces I have played so far are Chopin Scherzo No. 2, Ballade No. 1, Etude Op. 10 (No. 1, 4, 5, 10, 12), Op. 25 (No. 1, 2, 5, 12), Liszt Transcendental Etude No. 11, Chopin Concerto No. 1, and Beethoven Appassionata, over a decade of study. For having strong pieces for piano competitions and auditions, do you think it would be worth it to devote time to learning such difficult piece like the Ravel, or should I pick the Liszt and a few other show pieces? Any other recommendations for pieces at this level of difficulty? I am willing to spend quite a bit of time (several months) to just learning the notes, so I would appreciate your advice!&lt;/p&gt;\n&lt;p&gt;Thanks,&lt;/p&gt;\n&lt;p&gt;-C.L&lt;/p&gt;\n&#34;,&#34;top_comment&#34;:&#34;&lt;p&gt;My experience is that you don&#39;t win competitions with big showoff virtuoso pieces, but with immense musicality in easier, manageable pieces. The only competition I ever won was when I played relatively easier pieces for my level and played them with the intent to make ppl cry and be touched.&lt;/p&gt;\n&#34;}},{&#34;title&#34;:&#34;Here&#39;s the full piece! Maurice Ravel&#39;s Prelude for Piano M.65 (arr. for 8-string Brahms Guitar) : classicalguitar&#34;,&#34;url&#34;:&#34;https://www.reddit.com/r/classicalguitar/comments/zzyob2/&#34;,&#34;is_source_local&#34;:false,&#34;is_source_both&#34;:false,&#34;description&#34;:&#34;&lt;p&gt;I love the fanned frets, what brand and model is this guitar?&lt;/p&gt;\n&#34;,&#34;page_age&#34;:null,&#34;page_fetched&#34;:null,&#34;profile&#34;:null,&#34;language&#34;:&#34;en&#34;,&#34;family_friendly&#34;:true,&#34;bo_debug&#34;:{&#34;score&#34;:1,&#34;ngram_match&#34;:1.0,&#34;pos&#34;:1,&#34;language&#34;:&#34;de-DE&#34;,&#34;seen_country&#34;:&#34;at&#34;,&#34;popularity&#34;:{&#34;at&#34;:0.05116330832242966},&#34;filters&#34;:{&#34;language_pre&#34;:{&#34;langs&#34;:[&#34;en&#34;],&#34;reason&#34;:&#34;Title language match&#34;,&#34;confident&#34;:false},&#34;dedup&#34;:{},&#34;safesearch&#34;:false,&#34;private&#34;:{&#34;status&#34;:false,&#34;reason&#34;:&#34;whitelist_domains&#34;},&#34;status&#34;:{},&#34;language_post&#34;:{&#34;detected&#34;:[&#34;en&#34;]}},&#34;sketchy_title&#34;:false,&#34;fetch_timestamp&#34;:1672928315967,&#34;last_success&#34;:1672928315967,&#34;status&#34;:200,&#34;retries&#34;:0,&#34;original_url&#34;:&#34;https://www.reddit.com/r/classicalguitar/comments/zzyob2/&#34;,&#34;snippets&#34;:[&#34;85 votes, 10 comments. 48.8k members in the classicalguitar community. The classical guitar subreddit - a gathering place for practicing classical …&#34;,&#34;85 votes and 10 comments so far on Reddit&#34;],&#34;rerankers&#34;:{&#34;exact&#34;:{}},&#34;pos_boost&#34;:0,&#34;description_length&#34;:69},&#34;type&#34;:&#34;discussion&#34;,&#34;subtype&#34;:&#34;generic&#34;,&#34;deep_results&#34;:null,&#34;schemas&#34;:null,&#34;meta_url&#34;:{&#34;scheme&#34;:&#34;https&#34;,&#34;netloc&#34;:&#34;reddit.com&#34;,&#34;hostname&#34;:&#34;www.reddit.com&#34;,&#34;favicon&#34;:&#34;https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8&#34;,&#34;path&#34;:&#34;› r  › classicalguitar  › comments  › zzyob2&#34;},&#34;thumbnail&#34;:null,&#34;age&#34;:&#34;December 31, 2022&#34;,&#34;restaurant&#34;:null,&#34;locations&#34;:null,&#34;video&#34;:null,&#34;movie&#34;:null,&#34;faq&#34;:null,&#34;recipe&#34;:null,&#34;qa&#34;:null,&#34;book&#34;:null,&#34;rating&#34;:null,&#34;article&#34;:null,&#34;product&#34;:null,&#34;product_cluster&#34;:null,&#34;cluster_type&#34;:null,&#34;cluster&#34;:null,&#34;creative_work&#34;:null,&#34;music_recording&#34;:null,&#34;review&#34;:null,&#34;software&#34;:null,&#34;content_type&#34;:null,&#34;bo_source&#34;:null,&#34;extra_snippets&#34;:null,&#34;data&#34;:{&#34;forum_name&#34;:&#34;r/classicalguitar&#34;,&#34;num_answers&#34;:10,&#34;score&#34;:&#34;99% Upvoted | 85 votes&#34;,&#34;title&#34;:&#34;Here&#39;s the full piece! Maurice Ravel&#39;s Prelude for Piano M.65 (arr. for 8-string Brahms Guitar) : classicalguitar&#34;,&#34;question&#34;:null,&#34;top_comment&#34;:&#34;&lt;p&gt;I love the fanned frets, what brand and model is this guitar?&lt;/p&gt;\n&#34;}},{&#34;title&#34;:&#34;Ravel and TTO conversation : planescape&#34;,&#34;url&#34;:&#34;https://www.reddit.com/r/planescape/comments/cqnknd/ravel_and_tto_conversation/&#34;,&#34;is_source_local&#34;:false,&#34;is_source_both&#34;:false,&#34;description&#34;:&#34;&lt;p&gt;It&#39;s been a long time since I played the PS:T but it always struck me that she was trying to escape the maze. But the Lady is not easily deceived. Ravel couldn&#39;t just kill herself. To escape, she would need the key or to die.&lt;/p&gt;\n&lt;p&gt;Night Hags die and get transported back to Gehenna like other fiends. But I&#39;m guessing she got into a loop with dying/killing herself and waking up right back in the maze.&lt;/p&gt;\n&lt;p&gt;I always assumed she came to the conclusion that being killed by a &#39;Deathless&#39; like TNO was her &#39;Portal Key&#39; to getting out of the maze. She was wrong...kinda...as TTO (as an aspect of TNO) did manage to give her the final death.&lt;/p&gt;\n&lt;p&gt;All conjecture and personal opinion so take it with a pinch of salt.&lt;/p&gt;\n&#34;,&#34;page_age&#34;:null,&#34;page_fetched&#34;:null,&#34;profile&#34;:null,&#34;language&#34;:&#34;en&#34;,&#34;family_friendly&#34;:true,&#34;bo_debug&#34;:{&#34;score&#34;:1,&#34;ngram_match&#34;:1.0,&#34;pos&#34;:1,&#34;language&#34;:&#34;es-ES&#34;,&#34;seen_country&#34;:&#34;es&#34;,&#34;popularity&#34;:{&#34;es&#34;:0.02965220995247364},&#34;filters&#34;:{&#34;language_pre&#34;:{&#34;langs&#34;:[&#34;es&#34;],&#34;reason&#34;:&#34;Short Title match&#34;,&#34;confident&#34;:false},&#34;dedup&#34;:{},&#34;safesearch&#34;:false,&#34;private&#34;:{&#34;status&#34;:false,&#34;reason&#34;:&#34;whitelist_domains&#34;},&#34;status&#34;:{},&#34;language_post&#34;:{&#34;detected&#34;:[&#34;en&#34;]}},&#34;sketchy_title&#34;:false,&#34;fetch_timestamp&#34;:1672233489432,&#34;last_success&#34;:1672233489432,&#34;status&#34;:200,&#34;retries&#34;:0,&#34;original_url&#34;:&#34;https://www.reddit.com/r/planescape/comments/cqnknd/ravel_and_tto_conversation/&#34;,&#34;snippets&#34;:[&#34;Maybe i&#39;m diggin too much into it and it didn&#39;t have any deeper meaning. In the short conversation with TTO, Ravel says something about fulfilling the requirements by dying at TNO hands. What is it about? Why did she fake her death exactly? Why did TTO appear to kill her at that moment and not any other before TNO could even find her?&#34;,&#34;It&#39;s been a long time since I played the PS:T but it always struck me that she was trying to escape the maze. But the Lady is not easily deceived. Ravel couldn&#39;t just kill herself. To escape, she would need the key or to die.&#34;,&#34;Hello. I recently played PS:T for the first time ever. The game is great. At least the important thing which is the story and dialogues but there is …&#34;,&#34;6 votes and 7 comments so far on Reddit&#34;],&#34;rerankers&#34;:{&#34;exact&#34;:{}},&#34;pos_boost&#34;:0,&#34;description_length&#34;:725},&#34;type&#34;:&#34;discussion&#34;,&#34;subtype&#34;:&#34;generic&#34;,&#34;deep_results&#34;:null,&#34;schemas&#34;:null,&#34;meta_url&#34;:{&#34;scheme&#34;:&#34;https&#34;,&#34;netloc&#34;:&#34;reddit.com&#34;,&#34;hostname&#34;:&#34;www.reddit.com&#34;,&#34;favicon&#34;:&#34;https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8&#34;,&#34;path&#34;:&#34;› r  › planescape  › comments  › cqnknd  › ravel_and_tto_conversation&#34;},&#34;thumbnail&#34;:null,&#34;age&#34;:&#34;December 28, 2019&#34;,&#34;restaurant&#34;:null,&#34;locations&#34;:null,&#34;video&#34;:null,&#34;movie&#34;:null,&#34;faq&#34;:null,&#34;recipe&#34;:null,&#34;qa&#34;:null,&#34;book&#34;:null,&#34;rating&#34;:null,&#34;article&#34;:null,&#34;product&#34;:null,&#34;product_cluster&#34;:null,&#34;cluster_type&#34;:null,&#34;cluster&#34;:null,&#34;creative_work&#34;:null,&#34;music_recording&#34;:null,&#34;review&#34;:null,&#34;software&#34;:null,&#34;content_type&#34;:null,&#34;bo_source&#34;:null,&#34;extra_snippets&#34;:null,&#34;data&#34;:{&#34;forum_name&#34;:&#34;r/planescape&#34;,&#34;num_answers&#34;:7,&#34;score&#34;:&#34;88% Upvoted | 6 votes&#34;,&#34;title&#34;:&#34;Ravel and TTO conversation : planescape&#34;,&#34;question&#34;:&#34;&lt;p&gt;Hello. I recently played PS:T for the first time ever. The game is great. At least the important thing which is the story and dialogues but there is one thing that i didn&#39;t quite understand and i couldn&#39;t find any explanation anywhere. Maybe i&#39;m diggin too much into it and it didn&#39;t have any deeper meaning. In the short conversation with TTO, Ravel says something about fulfilling the requirements by dying at TNO hands. What is it about? Why did she fake her death exactly? Why did TTO appear to kill her at that moment and not any other before TNO could even find her? Was it because he gained knowledge about her maze through that incarnation?&lt;/p&gt;\n&#34;,&#34;top_comment&#34;:&#34;&lt;p&gt;It&#39;s been a long time since I played the PS:T but it always struck me that she was trying to escape the maze. But the Lady is not easily deceived. Ravel couldn&#39;t just kill herself. To escape, she would need the key or to die.&lt;/p&gt;\n&lt;p&gt;Night Hags die and get transported back to Gehenna like other fiends. But I&#39;m guessing she got into a loop with dying/killing herself and waking up right back in the maze.&lt;/p&gt;\n&lt;p&gt;I always assumed she came to the conclusion that being killed by a &#39;Deathless&#39; like TNO was her &#39;Portal Key&#39; to getting out of the maze. She was wrong...kinda...as TTO (as an aspect of TNO) did manage to give her the final death.&lt;/p&gt;\n&lt;p&gt;All conjecture and personal opinion so take it with a pinch of salt.&lt;/p&gt;\n&#34;}},{&#34;title&#34;:&#34;Which work by Maurice Ravel should I listen to? : classicalmusic&#34;,&#34;url&#34;:&#34;https://www.reddit.com/r/classicalmusic/comments/kii0l/which_work_by_maurice_ravel_should_i_listen_to/&#34;,&#34;is_source_local&#34;:false,&#34;is_source_both&#34;:false,&#34;description&#34;:&#34;&lt;p&gt;Gaspard De La Nuit.&lt;/p&gt;\n&#34;,&#34;page_age&#34;:null,&#34;page_fetched&#34;:null,&#34;profile&#34;:null,&#34;language&#34;:&#34;en&#34;,&#34;family_friendly&#34;:true,&#34;bo_debug&#34;:{&#34;score&#34;:10.0,&#34;pos&#34;:0.0001671097124926746,&#34;language&#34;:&#34;en&#34;,&#34;seen_country&#34;:&#34;us&#34;,&#34;matching_queries&#34;:[[&#34;ravel reddit&#34;,0.0],[&#34;maurice ravel reddit&#34;,0.14309632778167725]],&#34;filters&#34;:{&#34;language_pre&#34;:{&#34;langs&#34;:[&#34;en&#34;],&#34;reason&#34;:&#34;Title language match&#34;,&#34;confident&#34;:false},&#34;dedup&#34;:{},&#34;safesearch&#34;:false,&#34;private&#34;:{&#34;status&#34;:false,&#34;reason&#34;:&#34;whitelist_domains&#34;},&#34;status&#34;:{},&#34;language_post&#34;:{&#34;detected&#34;:[&#34;en&#34;]}},&#34;sketchy_title&#34;:false,&#34;fetch_timestamp&#34;:1658892211620,&#34;last_success&#34;:1658892211620,&#34;status&#34;:200,&#34;retries&#34;:0,&#34;original_url&#34;:&#34;https://www.reddit.com/r/classicalmusic/comments/kii0l/which_work_by_maurice_ravel_should_i_listen_to/&#34;,&#34;snippets&#34;:[&#34;Ravel is my favorite composer so I&#39;ll try not to inundate you with a list of everything he ever composed. His Introduction and Allegro for Harp, Flute, Clarinet, and String Quartet as well as his Piano Trio are beautiful chamber works. If you liked that, then a really great work for just two melodic instruments is the Sonata for Violin and Cello.&#34;,&#34;Bolero is definitely not his best work, it&#39;s simply Ravel saying \&#34;I am the best orchestrator ever and here&#39;s why.\&#34; The order of the solos, the combination of instruments he begins using, all brilliant.&#34;,&#34;What should I start out with? What&#39;s his BEST work? He&#39;s done so much stuff..I don&#39;t know where to start. already listened to bolero.&#34;,&#34;4 votes and 22 comments so far on Reddit&#34;],&#34;rerankers&#34;:{&#34;exact&#34;:{}},&#34;pos_boost&#34;:0,&#34;description_length&#34;:27},&#34;type&#34;:&#34;discussion&#34;,&#34;subtype&#34;:&#34;generic&#34;,&#34;deep_results&#34;:null,&#34;schemas&#34;:null,&#34;meta_url&#34;:{&#34;scheme&#34;:&#34;https&#34;,&#34;netloc&#34;:&#34;reddit.com&#34;,&#34;hostname&#34;:&#34;www.reddit.com&#34;,&#34;favicon&#34;:&#34;https://imgs.search.brave.com/mAZYEK9Wi13WLDUge7XZ8YuDTwm6DP6gBjvz1GdYZVY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8&#34;,&#34;path&#34;:&#34;› r  › classicalmusic  › comments  › kii0l  › which_work_by_maurice_ravel_should_i_listen_to&#34;},&#34;thumbnail&#34;:null,&#34;age&#34;:&#34;July 27, 2011&#34;,&#34;restaurant&#34;:null,&#34;locations&#34;:null,&#34;video&#34;:null,&#34;movie&#34;:null,&#34;faq&#34;:null,&#34;recipe&#34;:null,&#34;qa&#34;:null,&#34;book&#34;:null,&#34;rating&#34;:null,&#34;article&#34;:null,&#34;product&#34;:null,&#34;product_cluster&#34;:null,&#34;cluster_type&#34;:null,&#34;cluster&#34;:null,&#34;creative_work&#34;:null,&#34;music_recording&#34;:null,&#34;review&#34;:null,&#34;software&#34;:null,&#34;content_type&#34;:null,&#34;bo_source&#34;:null,&#34;extra_snippets&#34;:null,&#34;data&#34;:{&#34;forum_name&#34;:&#34;r/classicalmusic&#34;,&#34;num_answers&#34;:22,&#34;score&#34;:&#34;84% Upvoted | 4 votes&#34;,&#34;title&#34;:&#34;Which work by Maurice Ravel should I listen to? : classicalmusic&#34;,&#34;question&#34;:&#34;&lt;p&gt;What should I start out with?&lt;/p&gt;\n&lt;p&gt;What&#39;s his BEST work? He&#39;s done so much stuff..I don&#39;t know where to start. already listened to bolero.&lt;/p&gt;\n&#34;,&#34;top_comment&#34;:&#34;&lt;p&gt;Gaspard De La Nuit.&lt;/p&gt;\n&#34;}}],&#34;strength&#34;:&#34;high&#34;,&#34;i18n&#34;:{&#34;Discussions&#34;:&#34;Discussions&#34;,&#34;Show more&#34;:&#34;Show more&#34;,&#34;Show less&#34;:&#34;Show less&#34;,&#34;Disable this feature&#34;:&#34;Disable this feature&#34;,&#34;discussions_feature_introduction&#34;:&#34;Discussions is a new feature of Brave Search, highlighting search results around which there are conversations&#34;,&#34;Got it&#34;:&#34;Got it&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-suggest"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/suggest/6aadc4131d4a5be5cb0f5b861309f1f55a89e2a362e9a286673f94bbceef912e-main.bundle.js"
+  data="{&#34;is_mobile&#34;:false,&#34;is_dev&#34;:false}"
+  defer="true">
+</script>
+<script
+  id="js-sticky-header"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/sticky-header/c69dd6e4ba1d19b5d756445e57e7a55f049d0c528da601d4ddb6e889d2f25617-main.bundle.js"
+  data="{&#34;is_mobile&#34;:false}"
+  defer="true">
+</script>
+<script
+  id="js-filters"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/filters/3c94c0e28e33ce55bde84537b45f37eeef02d78f59c21a318e38cab83e2d5bbe-main.bundle.js"
+  data="{&#34;is_pc&#34;:false,&#34;page&#34;:&#34;search&#34;,&#34;city&#34;:&#34;La Paz&#34;,&#34;country&#34;:&#34;BO&#34;,&#34;state&#34;:&#34;L&#34;,&#34;postal_code&#34;:&#34;&#34;,&#34;lat&#34;:-16.5,&#34;long&#34;:-68.149,&#34;indepMetric&#34;:1.0,&#34;custom_location_label&#34;:&#34;La Paz, La Paz, BO&#34;,&#34;fss&#34;:false,&#34;i18n&#34;:{&#34;Info&#34;:&#34;Info&#34;,&#34;Tools&#34;:&#34;Tools&#34;,&#34;Response took {seconds} seconds&#34;:&#34;Response took {responseTime} seconds&#34;,&#34;Learn more&#34;:&#34;Learn more&#34;,&#34;All results from Brave&#34;:&#34;All results from Brave&#34;,&#34;{thirdPartyPercentage}% of results mixed from Bing&#34;:&#34;{thirdPartyPercentage}% of results mixed from Bing&#34;,&#34;Results from Bing&#34;:&#34;Results from Bing&#34;,&#34;All regions&#34;:&#34;All regions&#34;,&#34;Argentina&#34;:&#34;Argentina&#34;,&#34;Australia&#34;:&#34;Australia&#34;,&#34;Austria&#34;:&#34;Austria&#34;,&#34;Belgium&#34;:&#34;Belgium&#34;,&#34;Brazil&#34;:&#34;Brazil&#34;,&#34;Canada&#34;:&#34;Canada&#34;,&#34;Chile&#34;:&#34;Chile&#34;,&#34;Country&#34;:&#34;Country&#34;,&#34;Time&#34;:&#34;Time&#34;,&#34;Sizes&#34;:&#34;Sizes&#34;,&#34;Types&#34;:&#34;Types&#34;,&#34;Resolution&#34;:&#34;Resolution&#34;,&#34;Length&#34;:&#34;Length&#34;,&#34;Layouts&#34;:&#34;Layouts&#34;,&#34;Colors&#34;:&#34;Colors&#34;,&#34;License&#34;:&#34;License&#34;,&#34;Denmark&#34;:&#34;Denmark&#34;,&#34;Finland&#34;:&#34;Finland&#34;,&#34;France&#34;:&#34;France&#34;,&#34;Germany&#34;:&#34;Germany&#34;,&#34;Hong Kong&#34;:&#34;Hong Kong&#34;,&#34;India&#34;:&#34;India&#34;,&#34;Indonesia&#34;:&#34;Indonesia&#34;,&#34;Italy&#34;:&#34;Italy&#34;,&#34;Japan&#34;:&#34;Japan&#34;,&#34;Korea&#34;:&#34;Korea&#34;,&#34;Malaysia&#34;:&#34;Malaysia&#34;,&#34;Mexico&#34;:&#34;Mexico&#34;,&#34;Netherlands&#34;:&#34;Netherlands&#34;,&#34;New Zealand&#34;:&#34;New Zealand&#34;,&#34;Norway&#34;:&#34;Norway&#34;,&#34;China&#34;:&#34;China&#34;,&#34;Poland&#34;:&#34;Poland&#34;,&#34;Portugal&#34;:&#34;Portugal&#34;,&#34;Philippines&#34;:&#34;Philippines&#34;,&#34;Russia&#34;:&#34;Russia&#34;,&#34;Saudi Arabia&#34;:&#34;Saudi Arabia&#34;,&#34;South Africa&#34;:&#34;South Africa&#34;,&#34;Spain&#34;:&#34;Spain&#34;,&#34;Sweden&#34;:&#34;Sweden&#34;,&#34;Switzerland&#34;:&#34;Switzerland&#34;,&#34;Taiwan&#34;:&#34;Taiwan&#34;,&#34;Turkey&#34;:&#34;Turkey&#34;,&#34;United Kingdom&#34;:&#34;United Kingdom&#34;,&#34;United States&#34;:&#34;United States&#34;,&#34;clear-verb&#34;:&#34;Clear&#34;,&#34;Safe search&#34;:&#34;Safe search&#34;,&#34;Any time&#34;:&#34;Any time&#34;,&#34;Past day&#34;:&#34;Past day&#34;,&#34;Past week&#34;:&#34;Past week&#34;,&#34;Past month&#34;:&#34;Past month&#34;,&#34;Past year&#34;:&#34;Past year&#34;,&#34;Custom&#34;:&#34;Custom&#34;,&#34;Custom range&#34;:&#34;Custom range&#34;,&#34;Choose date range&#34;:&#34;Choose date range&#34;,&#34;Start date&#34;:&#34;Start date&#34;,&#34;End date&#34;:&#34;End date&#34;,&#34;Search&#34;:&#34;Search&#34;,&#34;Moderate&#34;:&#34;Moderate&#34;,&#34;Strict&#34;:&#34;Strict&#34;,&#34;Off&#34;:&#34;Off&#34;,&#34;All sizes&#34;:&#34;All sizes&#34;,&#34;Small&#34;:&#34;Small&#34;,&#34;Medium&#34;:&#34;Medium&#34;,&#34;Large&#34;:&#34;Large&#34;,&#34;Wallpaper&#34;:&#34;Wallpaper&#34;,&#34;All types&#34;:&#34;All types&#34;,&#34;Photograph&#34;:&#34;Photograph&#34;,&#34;Clipart&#34;:&#34;Clipart&#34;,&#34;Animated GIF&#34;:&#34;Animated GIF&#34;,&#34;Transparent&#34;:&#34;Transparent&#34;,&#34;All layouts&#34;:&#34;All layouts&#34;,&#34;Square&#34;:&#34;Square&#34;,&#34;Tall&#34;:&#34;Tall&#34;,&#34;Wide&#34;:&#34;Wide&#34;,&#34;All colors&#34;:&#34;All colors&#34;,&#34;Black and white&#34;:&#34;Black and white&#34;,&#34;Color only&#34;:&#34;Color only&#34;,&#34;Red&#34;:&#34;Red&#34;,&#34;Orange&#34;:&#34;Orange&#34;,&#34;Yellow&#34;:&#34;Yellow&#34;,&#34;Green&#34;:&#34;Green&#34;,&#34;Blue&#34;:&#34;Blue&#34;,&#34;Purple&#34;:&#34;Purple&#34;,&#34;Pink&#34;:&#34;Pink&#34;,&#34;Brown&#34;:&#34;Brown&#34;,&#34;Black&#34;:&#34;Black&#34;,&#34;Gray&#34;:&#34;Gray&#34;,&#34;Teal&#34;:&#34;Teal&#34;,&#34;White&#34;:&#34;White&#34;,&#34;All licenses&#34;:&#34;All licenses&#34;,&#34;Public Domain&#34;:&#34;Public Domain&#34;,&#34;Free to Share and Use&#34;:&#34;Free to Share and Use&#34;,&#34;Free to Share and Use Commercially&#34;:&#34;Free to Share and Use Commercially&#34;,&#34;Free to Modify, Share and Use&#34;:&#34;Free to Modify, Share and Use&#34;,&#34;Free to Modify, Share and Use Commercially&#34;:&#34;Free to Modify, Share and Use Commercially&#34;,&#34;Any resolution&#34;:&#34;Any resolution&#34;,&#34;1080p&#34;:&#34;1080p&#34;,&#34;720p&#34;:&#34;720p&#34;,&#34;480p&#34;:&#34;480p&#34;,&#34;360p&#34;:&#34;360p&#34;,&#34;Any duration&#34;:&#34;Any duration&#34;,&#34;Short (less than 5 min)&#34;:&#34;Short (less than 5 min)&#34;,&#34;Medium (5 - 20 min)&#34;:&#34;Medium (5 - 20 min)&#34;,&#34;Long (over 20 min)&#34;:&#34;Long (over 20 min)&#34;,&#34;Anonymous local results&#34;:&#34;Anonymous local results&#34;,&#34;anonymous_local_results_description_short&#34;:&#34;Location information is derived from your IP address for more accurate results. It&#39;s stored only on your device. Brave never stores your IP or geo coordinates&#34;,&#34;Set manually&#34;:&#34;Set manually&#34;,&#34;Location set manually&#34;:&#34;Location set manually&#34;,&#34;Set location manually&#34;:&#34;Set location manually&#34;,&#34;No location&#34;:&#34;No location&#34;,&#34;Clear and get current location&#34;:&#34;Clear and get current location&#34;,&#34;Disable&#34;:&#34;Disable&#34;,&#34;Enable anonymous local results&#34;:&#34;Enable anonymous local results&#34;,&#34;On&#34;:&#34;On&#34;,&#34;Before-{date}&#34;:&#34;From {date}&#34;,&#34;From-{start_date}-to-{end_date}&#34;:&#34;From {start_date} to {end_date}&#34;,&#34;Move map to adjust current location&#34;:&#34;Move map to adjust current location&#34;,&#34;Done&#34;:&#34;Done&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-settings"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/settings/3c0419abd05c9610e87cd5e47cd39e3bc28fbb785c9826573c54c9aa211ccdd9-main.bundle.js"
+  data="{&#34;is_mobile&#34;:false,&#34;default_possible&#34;:false,&#34;premium_href&#34;:&#34;https://account.brave.com/?intent=checkout&amp;product=search&#34;,&#34;i18n&#34;:{&#34;See all settings&#34;:&#34;See all settings&#34;,&#34;Appearance&#34;:&#34;Appearance&#34;,&#34;Theme&#34;:&#34;Theme&#34;,&#34;Change the look of Brave Search&#34;:&#34;Change the look of Brave Search&#34;,&#34;General&#34;:&#34;General&#34;,&#34;Set language&#34;:&#34;Set language&#34;,&#34;Set as default&#34;:&#34;Set as default&#34;,&#34;Set default&#34;:&#34;Set default&#34;,&#34;Set Brave Search as default&#34;:&#34;Set Brave Search as default&#34;,&#34;Preferred language for Brave Search&#34;:&#34;Preferred language for Brave Search&#34;,&#34;Coming soon&#34;:&#34;Coming soon&#34;,&#34;Open links in new tab&#34;:&#34;Open links in new tab&#34;,&#34;olnt-description&#34;:&#34;Links clicked from search will open in a new browser tab&#34;,&#34;Learn more&#34;:&#34;Learn more&#34;,&#34;Your results independence&#34;:&#34;Your results independence&#34;,&#34;Global results independence&#34;:&#34;Global results independence&#34;,&#34;% of search results from Brave Index&#34;:&#34;% of search results from Brave Index&#34;,&#34;indep-metric-more-searches&#34;:&#34;More searches are needed to calculate your value&#34;,&#34;Info&#34;:&#34;Info&#34;,&#34;Tools&#34;:&#34;Tools&#34;,&#34;Response took {seconds} seconds&#34;:&#34;Response took {responseTime} seconds&#34;,&#34;All results from Brave&#34;:&#34;All results from Brave&#34;,&#34;{thirdPartyPercentage}% of results mixed from Bing&#34;:&#34;{thirdPartyPercentage}% of results mixed from Bing&#34;,&#34;All regions&#34;:&#34;All regions&#34;,&#34;Argentina&#34;:&#34;Argentina&#34;,&#34;Australia&#34;:&#34;Australia&#34;,&#34;Austria&#34;:&#34;Austria&#34;,&#34;Belgium&#34;:&#34;Belgium&#34;,&#34;Brazil&#34;:&#34;Brazil&#34;,&#34;Canada&#34;:&#34;Canada&#34;,&#34;Chile&#34;:&#34;Chile&#34;,&#34;Denmark&#34;:&#34;Denmark&#34;,&#34;Finland&#34;:&#34;Finland&#34;,&#34;France&#34;:&#34;France&#34;,&#34;Germany&#34;:&#34;Germany&#34;,&#34;Hong Kong&#34;:&#34;Hong Kong&#34;,&#34;India&#34;:&#34;India&#34;,&#34;Indonesia&#34;:&#34;Indonesia&#34;,&#34;Italy&#34;:&#34;Italy&#34;,&#34;Japan&#34;:&#34;Japan&#34;,&#34;Korea&#34;:&#34;Korea&#34;,&#34;Malaysia&#34;:&#34;Malaysia&#34;,&#34;Mexico&#34;:&#34;Mexico&#34;,&#34;Netherlands&#34;:&#34;Netherlands&#34;,&#34;New Zealand&#34;:&#34;New Zealand&#34;,&#34;Norway&#34;:&#34;Norway&#34;,&#34;China&#34;:&#34;China&#34;,&#34;Poland&#34;:&#34;Poland&#34;,&#34;Portugal&#34;:&#34;Portugal&#34;,&#34;Philippines&#34;:&#34;Philippines&#34;,&#34;Russia&#34;:&#34;Russia&#34;,&#34;Saudi Arabia&#34;:&#34;Saudi Arabia&#34;,&#34;South Africa&#34;:&#34;South Africa&#34;,&#34;Spain&#34;:&#34;Spain&#34;,&#34;Sweden&#34;:&#34;Sweden&#34;,&#34;Switzerland&#34;:&#34;Switzerland&#34;,&#34;Taiwan&#34;:&#34;Taiwan&#34;,&#34;Turkey&#34;:&#34;Turkey&#34;,&#34;United Kingdom&#34;:&#34;United Kingdom&#34;,&#34;United States&#34;:&#34;United States&#34;,&#34;clear-verb&#34;:&#34;Clear&#34;,&#34;Safe search&#34;:&#34;Safe search&#34;,&#34;Search&#34;:&#34;Search&#34;,&#34;Moderate&#34;:&#34;Moderate&#34;,&#34;Strict&#34;:&#34;Strict&#34;,&#34;Off&#34;:&#34;Off&#34;,&#34;Make Brave Search default&#34;:&#34;Make Brave Search default&#34;,&#34;Show more&#34;:&#34;Show more&#34;,&#34;Search settings&#34;:&#34;Search settings&#34;,&#34;Quick settings&#34;:&#34;Quick settings&#34;,&#34;Search results independence&#34;:&#34;Search results independence&#34;,&#34;Search results independence description&#34;:&#34;&lt;strong&gt;Search results delivered solely from Brave Index&lt;/strong&gt; as opposed to mixing with big tech index. Private, not tracked.&#34;,&#34;All searches across all Brave Search users&#34;:&#34;All searches across all Brave Search users&#34;,&#34;System&#34;:&#34;System&#34;,&#34;Light&#34;:&#34;Light&#34;,&#34;Dark&#34;:&#34;Dark&#34;,&#34;Country&#34;:&#34;Country&#34;,&#34;Want ad-free search results?&#34;:&#34;Want ad-free search results?&#34;,&#34;Upgrade to Brave Search Premium.&#34;:&#34;Upgrade to Brave Search Premium.&#34;,&#34;Go Premium&#34;:&#34;Go Premium&#34;,&#34;You&#39;re a Brave Supporter&#34;:&#34;You&#39;re a Brave Supporter&#34;,&#34;You&#39;re a Brave Supporter_formatted&#34;:&#34;You&#39;re a &lt;span class=&#39;brave-supporter__label&#39;&gt;Brave Supporter&lt;/span&gt;&#34;,&#34;Manage&#34;:&#34;Manage&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-feedback"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/feedback/d4a4b13dd3bbad03523b26bd2e0b42609e371c65c2e10fff5280fb41796b19ee-main.bundle.js"
+  data="{&#34;is_mobile&#34;:false,&#34;page&#34;:&#34;search&#34;,&#34;i18n&#34;:{&#34;Thank you!&#34;:&#34;Thank you!&#34;,&#34;How were the search results?&#34;:&#34;How were the search results?&#34;,&#34;Help us improve Brave Search&#34;:&#34;Help us improve Brave Search&#34;,&#34;What do you think of the information shown?&#34;:&#34;What do you think of the information shown?&#34;,&#34;Comments or suggestions?&#34;:&#34;Comments or suggestions?&#34;,&#34;Submit&#34;:&#34;Submit&#34;,&#34;Feedback&#34;:&#34;Feedback&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-searchElsewhere"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/searchElsewhere/53d0dfc835f6b22c175ce7b3e9c4c0c38a84ef475a57e0966d5b977f9455efe1-main.bundle.js"
+  data="{&#34;is_mobile&#34;:false,&#34;is_fallback_api_available&#34;:false,&#34;query&#34;:&#34;ravel&#34;,&#34;is_bad_query&#34;:false,&#34;i18n&#34;:{&#34;Learn more&#34;:&#34;Learn more&#34;,&#34;Find elsewhere&#34;:&#34;Find elsewhere&#34;,&#34;Dismiss and search in Google&#34;:&#34;Dismiss and search in Google&#34;,&#34;bad-results-header&#34;:&#34;Not many great matches came back for your search&#34;,&#34;Try more general keywords&#34;:&#34;Try more general keywords&#34;,&#34;Try fewer keywords&#34;:&#34;Try fewer keywords&#34;,&#34;Try other Goggles&#34;:&#34;Try other Goggles&#34;,&#34;bad-results-for-query-{query}&#34;:&#34;We&#39;re sorry you are not finding the results you wanted for {query}&#34;,&#34;Enable Google Fallback Mixing&#34;:&#34;Enable Google Fallback Mixing&#34;,&#34;serp-fallback-cta-desc&#34;:&#34;For queries where Brave Search is not yet refined, your browser will anonymously check Google for the same query, mix the results for you and send the query data back to us so we can improve Brave Search for everyone.&#34;,&#34;Dismiss&#34;:&#34;Dismiss&#34;}}"
+  defer="true">
+</script>
+<script
+  id="js-gmix"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/gmix/15e0404e4524c70f11bae8cf2f3f3703df2d04abbcd2ff0bd772ddd89661dc0c-main.bundle.js"
+  data="{&#34;score&#34;:1.0,&#34;search&#34;:{&#34;query&#34;:{&#34;sf&#34;:false},&#34;mixed&#34;:{&#34;main&#34;:[{&#34;type&#34;:&#34;bo_cta&#34;,&#34;index&#34;:0},{&#34;type&#34;:&#34;rich&#34;,&#34;index&#34;:0},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:0},{&#34;type&#34;:&#34;infobox&#34;,&#34;index&#34;:0},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:1},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:2},{&#34;type&#34;:&#34;discussions&#34;,&#34;index&#34;:null},{&#34;type&#34;:&#34;videos&#34;,&#34;index&#34;:null},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:3},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:4},{&#34;type&#34;:&#34;search-elsewhere&#34;,&#34;index&#34;:0},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:5},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:6},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:7},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:8},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:9},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:10},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:11},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:12},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:13},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:14},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:15},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:16},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:17},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:18},{&#34;type&#34;:&#34;web&#34;,&#34;index&#34;:19}]},&#34;web&#34;:{&#34;results&#34;:[{&#34;url&#34;:&#34;https://en.wikipedia.org/wiki/Maurice_Ravel&#34;,&#34;title&#34;:&#34;Maurice Ravel - Wikipedia&#34;,&#34;description&#34;:&#34;Joseph Maurice &lt;strong&gt;Ravel&lt;/strong&gt; (7 March 1875 – 28 December 1937) was a French composer, pianist and conductor. He is often associated with Impressionism along with his elder contemporary Claude Debussy, although both composers rejected the term. In the 1920s and 1930s &lt;strong&gt;Ravel&lt;/strong&gt; was internationally regarded ...&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.britannica.com/biography/Maurice-Ravel&#34;,&#34;title&#34;:&#34;Maurice Ravel | Biography, Music, Bolero, Compositions, &amp; Facts ...&#34;,&#34;description&#34;:&#34;Maurice &lt;strong&gt;Ravel&lt;/strong&gt;, in full Joseph-Maurice &lt;strong&gt;Ravel&lt;/strong&gt;, (born March 7, 1875, Ciboure, France—died December 28, 1937, Paris), French composer of Swiss-Basque descent, noted for his musical craftsmanship and perfection of form and style in such works as Boléro (1928), Pavane pour une infante défunte ...&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.merriam-webster.com/dictionary/ravel&#34;,&#34;title&#34;:&#34;Ravel Definition &amp; Meaning - Merriam-Webster&#34;,&#34;description&#34;:&#34;The meaning of &lt;strong&gt;RAVEL&lt;/strong&gt; is to become unwoven, untwisted, or unwound : fray. How to use &lt;strong&gt;ravel&lt;/strong&gt; in a sentence.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.dictionary.com/browse/ravel&#34;,&#34;title&#34;:&#34;Ravel Definition &amp; Meaning | Dictionary.com&#34;,&#34;description&#34;:&#34;&lt;strong&gt;Ravel&lt;/strong&gt; definition, to disentangle or unravel the threads or fibers of (a woven or knitted fabric, rope, etc.). See more.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.classical-music.com/reviews/chamber/dutilleux-stephen-hough-ravel-string-quartets-etc/&#34;,&#34;title&#34;:&#34;Dutilleux • Stephen Hough • Ravel: String Quartets etc - Chamber ...&#34;,&#34;description&#34;:&#34;Dutilleux • Stephen Hough • &lt;strong&gt;Ravel&lt;/strong&gt; Stephen Hough: String Quartet No. 1, ‘Les Six recontres’; Dutilleux: String Quartet, ‘Ainsi la nuit’; &lt;strong&gt;Ravel&lt;/strong&gt;: String Quartet Takács Quartet Hyperion CDA68400 67:48 mins&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.youtube.com/watch?v=3tQs6l4d8hM&#34;,&#34;title&#34;:&#34;The Best of Maurice Ravel - YouTube&#34;,&#34;description&#34;:&#34;Enjoy the best music of Maurice &lt;strong&gt;Ravel&lt;/strong&gt;! A tracklist is below. The pieces which are marked with a star I see as exceptional interpretations. (click show more)*...&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.classicfm.com/composers/ravel/&#34;,&#34;title&#34;:&#34;Ravel - Composers - Classic FM&#34;,&#34;description&#34;:&#34;Listen live to Classic FM online radio. Discover classical music and find out more about the best classical composers, musicians and their works.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.geeksforgeeks.org/numpy-ravel-python/&#34;,&#34;title&#34;:&#34;numpy.ravel() in Python - GeeksforGeeks&#34;,&#34;description&#34;:&#34;A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://en.wiktionary.org/wiki/ravel&#34;,&#34;title&#34;:&#34;ravel - Wiktionary&#34;,&#34;description&#34;:&#34;The verb is borrowed from Dutch ravelen, rafelen (“to tangle, become entangled; to fray; to unweave”) [and other forms]; further etymology uncertain. It has been suggested that the verb is originally derived from the noun, but the Oxford English Dictionary regards this as “very ...&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.javatpoint.com/numpy-ravel&#34;,&#34;title&#34;:&#34;numpy.ravel() in Python - Javatpoint&#34;,&#34;description&#34;:&#34;numpy.&lt;strong&gt;ravel&lt;/strong&gt;() in Python with NumPy Introduction, Environment Setup, ndarray, Data Types, Array Creation, Attributes, Existing Data, Indexing and Slicing, Advanced Indexing, Broadcasting, Array Manipulation, Matrix Library, Matplotlib etc.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.bl.uk/people/maurice-ravel&#34;,&#34;title&#34;:&#34;Maurice Ravel | The British Library&#34;,&#34;description&#34;:&#34;You need to enable JavaScript to run this app&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.udiscovermusic.com/classical-features/best-ravel-works/&#34;,&#34;title&#34;:&#34;Best Ravel Works: 10 Essential Pieces By The Great Composer |&#34;,&#34;description&#34;:&#34;Discover our selection of the best &lt;strong&gt;Ravel&lt;/strong&gt; works including &amp;#x27;Boléro&amp;#x27;, &amp;#x27;Daphnis Et Chloé&amp;#x27; and &amp;#x27;Pavane Pour Une Infante Défunte&amp;#x27;.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.w3resource.com/numpy/manipulation/ravel.php&#34;,&#34;title&#34;:&#34;NumPy: ravel() function - w3resource&#34;,&#34;description&#34;:&#34;NumPy Array manipulation: &lt;strong&gt;ravel&lt;/strong&gt;() function, example - The &lt;strong&gt;ravel&lt;/strong&gt;() function is used to create a contiguous flattened array.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.sharpsightlabs.com/blog/numpy-ravel/&#34;,&#34;title&#34;:&#34;Numpy Ravel, Explained - Sharp Sight&#34;,&#34;description&#34;:&#34;This tutorial will show you how to use Numpy &lt;strong&gt;ravel&lt;/strong&gt; to flatten a Numpy array. It explains the syntax and shows step-by-step examples.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.youtube.com/watch?v=r30D3SW4OVw&#34;,&#34;title&#34;:&#34;Maurice Ravel - Bolero - YouTube&#34;,&#34;description&#34;:&#34;Boléro is a one-movement orchestral piece by Maurice &lt;strong&gt;Ravel&lt;/strong&gt; (1875--1937). Originally composed as a ballet commissioned by Russian ballerina Ida Rubinstein, th...&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://open.spotify.com/artist/17hR0sYHpx7VYTMRfFUOmY&#34;,&#34;title&#34;:&#34;Maurice Ravel | Spotify&#34;,&#34;description&#34;:&#34;Listen to Maurice &lt;strong&gt;Ravel&lt;/strong&gt; on Spotify. Artist · 2.4M monthly listeners.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.prestomusic.com/classical/composers/1658--ravel&#34;,&#34;title&#34;:&#34;Maurice Ravel (composer) - Buy recordings | Presto Music&#34;,&#34;description&#34;:&#34;Composer Maurice &lt;strong&gt;Ravel&lt;/strong&gt; (1875-1937), with works available to browse and buy. French composer who studied with Fauré at the Paris Conservatoire, failing to win the coveted Prix de Rome on several occasions. A gifted pianist he...&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.educative.io/answers/what-is-the-numpyravel-function-from-numpy-in-python&#34;,&#34;title&#34;:&#34;What is the numpy.ravel() function from NumPy in Python?&#34;,&#34;description&#34;:&#34;Python’s &lt;strong&gt;ravel&lt;/strong&gt;() function is used to return a contiguous array. This function returns a 1D array that contains the input elements.&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.vocabulary.com/dictionary/ravel&#34;,&#34;title&#34;:&#34;Ravel - Definition, Meaning &amp; Synonyms | Vocabulary.com&#34;,&#34;description&#34;:&#34;&lt;strong&gt;Ravel&lt;/strong&gt; is a contronym, a word that has two meanings that are the opposite of each other. Confusingly, &lt;strong&gt;ravel&lt;/strong&gt; can mean both &amp;quot;tangle&amp;quot; and &amp;quot;untangle.&amp;quot; It&amp;#x27;s perfectly understandable to tangle up the meanings of &lt;strong&gt;ravel&lt;/strong&gt;!&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null},{&#34;url&#34;:&#34;https://www.laphil.com/musicdb/artists/4400/maurice-ravel&#34;,&#34;title&#34;:&#34;Maurice Ravel | LA Phil&#34;,&#34;description&#34;:&#34;Along with Debussy, Maurice &lt;strong&gt;Ravel&lt;/strong&gt; was one of the pioneering musicians of the early 20th century. He, like his contemporary, was an impeccable orchestrator. His fascination with the exotic and the past can be heard in works such as the Rapsodie espagnole and Le tombeau de Couperin, the former ...&#34;,&#34;ls&#34;:true,&#34;tc&#34;:true,&#34;ft&#34;:true,&#34;bt&#34;:null}]}}}"
+  defer="true">
+</script>
+<script
+  id="js-paid"
+  src="https://cdn.search.brave.com/serp/v1/static/serp-js/paid/7f567b08fdcfa062c402e5d2b812af9c49486ce0166ea00dc5747d6030ec525b-main.bundle.js"
+  data="{&#34;i18n&#34;:{&#34;Thanks for supporting independent search!&#34;:&#34;Thanks for supporting independent search!&#34;,&#34;You now have full access to Brave Search&#34;:&#34;You now have full access to Brave Search Premium, and ad-free search results. Enjoy!&#34;,&#34;You&#39;re a Brave Supporter&#34;:&#34;You&#39;re a Brave Supporter&#34;,&#34;You&#39;re a Brave Supporter_formatted&#34;:&#34;You&#39;re a &lt;span class=&#39;brave-supporter__label&#39;&gt;Brave Supporter&lt;/span&gt;&#34;}}"
+  defer="true">
+</script>
+
+
+        <script src="/e2239008cef366d8bc4cfbe80821d2011ac5502e4a7e00b0007ae10bd1a3324d-sw.bundle.js" defer="true"></script>
+    
+          </body>
+</html>
