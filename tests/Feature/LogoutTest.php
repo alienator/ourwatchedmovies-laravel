@@ -17,9 +17,9 @@ class LogoutTest extends TestCase
             'token' => 'ABCD123'
         ];
 
-        $res  = $this->json('POST', 'api/v1/logout', $data);
+        $res = $this->json('POST', 'api/v1/logout', $data);
 
         $res->assertStatus(200);
-        dump($res->json());
+        $this->assertTrue($res->json());
     }
 }

@@ -45,6 +45,12 @@ class AuthController extends Controller
             $sha256
         );
 
-        return $auth->logout($token);
+        return ($auth->logout($token)) ? 'true' : 'false';
+    }
+
+    public function isUserLoged()
+    {
+        if(!session_id()) session_start();
+        return array_key_exists('token', $_SESSION);
     }
 }
