@@ -22,9 +22,29 @@ class AuthController extends Controller
             $userRepository,
             $netCient,
             $authRepository,
-            $sha256);
+            $sha256
+        );
 
         $token = $auth->login($req->email, $sha256->hash($req->password), $dt);
         return ['token' => $token];
+    }
+
+    public function logout(Request $req)
+    {
+        $token = $req->token;
+
+        $userRepository = new UserRepository();
+        $netCient       = new NetClient($req);
+        $authRepository = new AuthRepository();
+        $sha256         = new Sha256();
+
+        $auth = new \Core\Auth\AuthService(
+            $userRepository,
+            $netCient,
+            $authRepository,
+            $sha256
+        );
+
+        return $auth->logout($token);
     }
 }
