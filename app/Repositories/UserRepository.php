@@ -25,12 +25,19 @@ class UserRepository implements \Core\User\UserRepository
     }
 
     public function save(\Core\User\User $user, string $password = ''):void {
-        $model = User::create([
-            'name' => $user->getName(),
-            'email' => $user->getEmail(),
-            'password' => $password
-        ]);
-
+        if ($user->getId() == 0) {
+            $model = User::create([
+                'name' => $user->getName(),
+                'email' => $user->getEmail(),
+                'password' => $password
+            ]);
+        } else {
+            $model = User::find($user->getId());
+            $model->name = $user->getName();
+            $model->email = $user->getEmail();
+            $model->password = ($password) ? $password : $model->password;
+        }
+        
         $model->save();
     }
 }
