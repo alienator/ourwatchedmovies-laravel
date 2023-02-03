@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use Faker\Core\Uuid;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

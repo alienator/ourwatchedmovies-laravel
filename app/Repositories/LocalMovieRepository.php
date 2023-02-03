@@ -10,6 +10,7 @@ use App\Models\Movie;
 class LocalMovieRepository implements MovieLocalRepository
 {
     public function find(string $criteria) {
+        // TODO: return a movei entity
         return Movie::where('title', 'LIKE', '%' . $criteria . '%')->get();
     }
     
