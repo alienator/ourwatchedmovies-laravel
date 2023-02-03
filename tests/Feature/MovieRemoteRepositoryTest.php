@@ -4,7 +4,6 @@ namespace Tests\Feature;
 
 use App\Repositories\RemoteMovieRepository;
 use Tests\TestCase;
-use Core\Movie\Movie as Entity;
 
 class MovieRemoteRepositoryTest extends TestCase
 {
