@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
-use Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface;
+use App\Http\Controllers\MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +25,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/v1/login', [AuthController::class, 'login']);
 Route::post('/v1/logout', [AuthController::class, 'logout']);
 Route::get('/v1/isUserLoged', [AuthController::class, 'isUserLoged']);
+
+Route::get('/v1/movie', [MovieController::class, 'find']);

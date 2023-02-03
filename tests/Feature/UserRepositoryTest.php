@@ -8,7 +8,7 @@ use App\Repositories\UserRepository;
 use Database\Seeders\UserSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class UserRepositroyTest extends TestCase
+class UserRepositoryTest extends TestCase
 {
     use RefreshDatabase;
 
