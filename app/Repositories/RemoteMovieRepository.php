@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Remote Repository using OMDb API
  */
@@ -11,17 +12,18 @@ use Core\Movie\MovieRemoteRepository;
 class RemoteMovieRepository implements MovieRemoteRepository
 {
     private string $url = 'http://www.omdbapi.com/?apikey=';
-    
-    public function find(string $criteria): array {
+
+    public function find(string $criteria): array
+    {
         $this->url .=  env('OMDbAPIKey', 'TEST') . '&plot=short&';
         $ch = curl_init($this->url . 's=' . $criteria);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
-        
-        $movies = array();    
+
+        $movies = array();
         $res    =  json_decode($response, true);
-        foreach($res['Search'] as $item) {
+        foreach ($res['Search'] as $item) {
             $movies[] = new Movie(
                 $item['imdbID'],
                 $item['Title'],
@@ -37,7 +39,29 @@ class RemoteMovieRepository implements MovieRemoteRepository
 
         return $movies;
     }
-    
-    
-    public function findById(string $id) {}
+
+
+    public function findById(string $id): Movie
+    {
+        $this->url .=  env('OMDbAPIKey', 'TEST') . '&plot=short&';
+        $ch = curl_init($this->url . 'i=' . $id);
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+
+        $res    =  json_decode($response, true);
+        $movie = new Movie(
+            $res['imdbID'],
+            $res['Title'],
+            '',
+            $res['Year'],
+            $res['Poster'],
+            0,
+            '',
+            '',
+            0
+        );
+        
+        return $movie;
+    }
 }
