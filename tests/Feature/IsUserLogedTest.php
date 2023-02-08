@@ -22,20 +22,20 @@ class IsUserLogedTest extends TestCase
             'password' => $pass,
         ];
 
-        $this->json('POST', '/api/v1/login', $data);
-
-        $res = $this->json('GET', '/api/v1/isUserLoged', $data);
-
+        $token = $this->json('POST', '/api/v1/login', $data);
+        $token = $token->json()['token'];
+        
+        $res = $this->json('GET', '/api/v1/isUserLoged?token=' . $token);
         $res->assertStatus(200);
+        
         $this->assertEquals($res->json(), 1);
     }
 
     public function test_it_should_return_false_when_a_user_is_not_loged()
     {
-        if(!session_id()) session_start();
-        session_destroy();
+        $token = 'BAD_TOKEN';
         
-        $res = $this->json('GET', '/api/v1/isUserLoged');
+        $res = $this->json('GET', '/api/v1/isUserLoged?token=' .$token);
 
         $res->assertStatus(200);
         $res->assertContent('');

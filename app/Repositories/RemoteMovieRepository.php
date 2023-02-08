@@ -53,10 +53,10 @@ class RemoteMovieRepository implements MovieRemoteRepository
         $movie = new Movie(
             $res['imdbID'],
             $res['Title'],
-            '',
+            $res['Plot'],
             $res['Year'],
             $res['Poster'],
-            0,
+            (float)$res['Ratings'][0]['Value'],
             '',
             '',
             0

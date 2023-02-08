@@ -64,7 +64,7 @@ class MovieController extends Controller
             'summary' => $res->getSummary(),
             'releaseDate' => $res->getReleaseDate(),
             'imagePath' => $res->getImagePath(),
-            'globalScore' => $res->getGlobalSCore(),
+            'globalScore' => $res->getGlobalScore(),
             'moreInfo' => $res->getMoreInfo(),
             'watchedDate' => $res->getWatchedDate(),
             'ourScore' => $res->getOurScore()

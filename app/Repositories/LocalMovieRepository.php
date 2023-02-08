@@ -7,7 +7,6 @@ use Core\Movie\MovieLocalRepository;
 
 use App\Models\Movie;
 use Core\Movie\Movie as MovieMovie;
-use Dotenv\Parser\Entry;
 
 class LocalMovieRepository implements MovieLocalRepository
 {

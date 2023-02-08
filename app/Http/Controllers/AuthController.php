@@ -26,6 +26,7 @@ class AuthController extends Controller
         );
 
         $token = $auth->login($req->email, $sha256->hash($req->password), $dt);
+
         return ['token' => $token];
     }
 
@@ -48,9 +49,12 @@ class AuthController extends Controller
         return ($auth->logout($token)) ? 'true' : 'false';
     }
 
-    public function isUserLoged()
+    public function isUserLoged(Request $req)
     {
-        if(!session_id()) session_start();
-        return array_key_exists('token', $_SESSION);
+        $token = $req->query('token');
+        $authRepository = new AuthRepository();
+        $authSession    = $authRepository->get($token);
+        
+        return array_key_exists('token', $authSession);
     }
 }
