@@ -6,7 +6,6 @@ use Core\Movie\Movie as Entity;
 use Core\Movie\MovieLocalRepository;
 
 use App\Models\Movie;
-use Core\Movie\Movie as MovieMovie;
 
 class LocalMovieRepository implements MovieLocalRepository
 {
@@ -16,7 +15,7 @@ class LocalMovieRepository implements MovieLocalRepository
 
         $movies = array();
         foreach ($res as $item) {
-            $movies[] = new MovieMovie(
+            $movies[] = new Entity(
                 $item->id,
                 $item->title,
                 $item->summary,
@@ -36,9 +35,9 @@ class LocalMovieRepository implements MovieLocalRepository
     {
         $res = Movie::where('id', $id)->first();
 
-        if(!$res) return null;
-        
-        $movie = new Entity (
+        if (!$res) return null;
+
+        $movie = new Entity(
             $res->id,
             $res->title,
             $res->summary,
@@ -52,11 +51,24 @@ class LocalMovieRepository implements MovieLocalRepository
 
         return $movie;
     }
-    
-    public function save(Entity $movie)
+
+    public function save(Entity $entity)
     {
+        $movie = new Movie();
+        
+        $movie->id = $entity->getId();
+        $movie->title = $entity->getTitle();
+        $movie->summary = $entity->getSummary();
+        $movie->releaseDate = $entity->getReleaseDate();
+        $movie->imagePath = $entity->getImagePath();
+        $movie->globalScore = $entity->getGlobalScore();
+        $movie->moreInfo = $entity->getMoreInfo();
+        $movie->watchedDate = $entity->getWatchedDate();
+        $movie->ourScore = $entity->getOurScore();
+
+        $movie->save();
     }
-    
+
     public function getLastInsertedId(): int
     {
         return 0;

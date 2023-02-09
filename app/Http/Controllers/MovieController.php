@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Repositories\LocalMovieRepository;
 use App\Repositories\RemoteMovieRepository;
+use Core\Movie\Movie;
 use Core\Movie\MovieService;
 use Illuminate\Http\Request;
 
@@ -69,5 +70,23 @@ class MovieController extends Controller
             'watchedDate' => $res->getWatchedDate(),
             'ourScore' => $res->getOurScore()
         ];
+    }
+
+    public function edit(Request $req)
+    {
+        $movie = new Movie(
+            $req->id,
+            $req->title,
+            $req->summary,
+            $req->releaseDate,
+            $req->imagePath,
+            $req->globalScore,
+            (string)$req->moreInfo,
+            (string)$req->watchedDate,
+            $req->ourScore
+        );
+        
+        $res = $this->movieService->add($movie);
+        return $res;
     }
 }
