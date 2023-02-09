@@ -10,10 +10,10 @@ use Core\Score\ScoreService;
 
 class ScoreController extends Controller
 {
-    public function save(Request $req)
+    public function save(Request $req, $id = 0)
     {
         $score = new Entity(
-            0,
+            $id,
             $req->movieId,
             $req->userId,
             $req->value,

@@ -10,8 +10,11 @@ class ScoreRepository implements ScoreScoreRepository
 {
     public function save(Entity $score): void
     {
-        $model = new Score();
-        //$model->id = $score->getId();
+        if ($score->getId() > 0)
+            $model = Score::find($score->getId());
+        else
+            $model = new Score();
+        
         $model->userId = $score->getUserId();
         $model->movieId = $score->getMovieId();
         $model->value  = $score->getValue();
