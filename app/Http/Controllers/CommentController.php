@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\CommentRepository;
 use Core\Comment\Comment;
 use Illuminate\Http\Request;
 
@@ -17,6 +18,9 @@ class CommentController extends Controller
             $req->creationDate
         );
 
-        dd($comment);
+        $repo = new CommentRepository();
+        $repo->save($comment);
+
+        return ['true'];
     }
 }

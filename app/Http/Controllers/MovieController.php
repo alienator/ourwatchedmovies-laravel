@@ -87,6 +87,6 @@ class MovieController extends Controller
         );
         
         $res = $this->movieService->add($movie);
-        return $res;
+        return [$res];
     }
 }

@@ -16,6 +16,6 @@ class AddMovieTest extends TestCase
         $movie = $movie->toArray();
         $res = $this->json('POST', '/api/v1/movie', $movie);
         
-        $this->assertGreaterThan(0, $res->json());
+        $this->assertNotEmpty($res->json());
     }
 }

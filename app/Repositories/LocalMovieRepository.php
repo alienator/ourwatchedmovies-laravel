@@ -9,6 +9,8 @@ use App\Models\Movie;
 
 class LocalMovieRepository implements MovieLocalRepository
 {
+    private string $id;
+    
     public function find(string $criteria): array
     {
         $res = Movie::where('title', 'LIKE', '%' . $criteria . '%')->get();
@@ -31,11 +33,11 @@ class LocalMovieRepository implements MovieLocalRepository
         return $movies;
     }
 
-    public function findById(string $id)
+    public function findById(string $id): Entity
     {
         $res = Movie::where('id', $id)->first();
 
-        if (!$res) return null;
+        if (!$res) return new Entity('', '', '', '', '', 0.0, '', '', 0.0);
 
         $movie = new Entity(
             $res->id,
@@ -67,10 +69,12 @@ class LocalMovieRepository implements MovieLocalRepository
         $movie->ourScore = $entity->getOurScore();
 
         $movie->save();
+
+        $this->id = $movie->id;
     }
 
-    public function getLastInsertedId(): int
+    public function getLastInsertedId(): string
     {
-        return 0;
+        return $this->id;
     }
 }
