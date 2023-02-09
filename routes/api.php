@@ -8,6 +8,7 @@ use App\Http\Controllers\MovieController;
 
 use App\Http\Controllers\CommentController;
 
+use App\Http\Controllers\ScoreController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -34,3 +35,5 @@ Route::post('/v1/movie', [MovieController::class, 'edit']);
 
 Route::post('/v1/comment', [CommentController::class, 'save']);
 Route::post('/v1/comment/{id}', [CommentController::class, 'save']);
+
+Route::post('/v1/score', [ScoreController::class, 'save']);
