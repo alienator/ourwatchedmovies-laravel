@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    public function save(Request $req)
+    public function save(Request $req, $id = 0)
     {
         $comment = new Comment(
-            (int)$req->id,
+            $id,
             $req->movieId,
             $req->userId,
             $req->comment,

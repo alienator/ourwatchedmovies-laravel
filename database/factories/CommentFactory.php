@@ -17,6 +17,8 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
+            'userId' => fake()->randomNumber(),
+            'movieId' => fake()->uuid(),
             'comment' => fake()->text(),
             'creationDate' => fake()->date()
         ];

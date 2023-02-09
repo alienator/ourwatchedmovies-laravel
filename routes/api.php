@@ -33,3 +33,4 @@ Route::get('/v1/movie/{id}', [MovieController::class, 'details']);
 Route::post('/v1/movie', [MovieController::class, 'edit']);
 
 Route::post('/v1/comment', [CommentController::class, 'save']);
+Route::post('/v1/comment/{id}', [CommentController::class, 'save']);
