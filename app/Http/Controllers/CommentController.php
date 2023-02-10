@@ -4,15 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Repositories\CommentRepository;
 use Core\Comment\Comment;
+use Core\Comment\CommentService;
 use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    private CommentRepository $commentRepository;
+    private CommentService $commentService;
 
     public function __construct()
     {
-        $this->commentRepository = new CommentRepository();
+        $this->commentService = new CommentService(new CommentRepository);
     }
 
     public function save(Request $req, $id = 0)
@@ -25,7 +26,7 @@ class CommentController extends Controller
             $req->creationDate
         );
 
-        $this->commentRepository->save($comment);
+        $this->commentService->save($comment);
 
         return ['true'];
     }
@@ -35,7 +36,7 @@ class CommentController extends Controller
         $movieId = $req->movieId;
 
         $ret = array();
-        $comments = $this->commentRepository->findByMovieId($movieId);       
+        $comments = $this->commentService->findByMovieId($movieId);       
         foreach($comments as $comment) {
             $ret[] = [
                 'id' => $comment->getId(),
@@ -51,7 +52,7 @@ class CommentController extends Controller
 
     public function findById($id)
     {
-        $comment = $this->commentRepository->findById($id);
+        $comment = $this->commentService->findById($id);
 
         $ret = array();
         if ($comment->getId() > 0) {

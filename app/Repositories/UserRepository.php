@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\User;
+use Core\User\User as Entity;
 
 class UserRepository implements \Core\User\UserRepository
 {
@@ -39,6 +40,11 @@ class UserRepository implements \Core\User\UserRepository
         }
         
         $model->save();
+    }
+
+    public function findById(int $id): Entity
+    {
+        return new Entity(0, '', '');
     }
 }
 
