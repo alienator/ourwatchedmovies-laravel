@@ -18,4 +18,27 @@ class CommentRepository implements CommentCommentRepository
 
         $model->save();
     }
+
+    public function findByMovieId(string $movieId): array
+    {
+        $model = Comment::where('movieId', $movieId)->get();
+        dd($movieId);
+        $comments =array();
+        foreach($model as $item) {
+            $comments[] = new Entity(
+                $item->id,
+                $item->movieId,
+                $item->userId,
+                $item->comment,
+                $item->creatinDate
+            );
+        }
+
+        return $comments;
+    }
+
+    public function findById(int $id): Entity
+    {
+        return new Entity(0, 0, 0, '', '');
+    }
 }

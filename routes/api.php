@@ -35,6 +35,7 @@ Route::post('/v1/movie', [MovieController::class, 'edit']);
 
 Route::post('/v1/comment', [CommentController::class, 'save']);
 Route::post('/v1/comment/{id}', [CommentController::class, 'save']);
+Route::get('/v1/comment', [CommentController::class, 'findByMovieId']);
 
 Route::post('/v1/score', [ScoreController::class, 'save']);
 Route::post('/v1/score/{id}', [ScoreController::class, 'save']);

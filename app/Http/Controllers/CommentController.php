@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
+    private CommentRepository $commentRepository;
+
+    public function __construct()
+    {
+        $this->commentRepository = new CommentRepository();
+    }
+
     public function save(Request $req, $id = 0)
     {
         $comment = new Comment(
@@ -18,9 +25,15 @@ class CommentController extends Controller
             $req->creationDate
         );
 
-        $repo = new CommentRepository();
-        $repo->save($comment);
+        $this->commentRepository->save($comment);
 
         return ['true'];
+    }
+
+    public function findByMovieId(Request $req)
+    {
+        $movieId = $req->movieId;
+
+        $this->commentRepository->findByMovieId($movieId);
     }
 }
