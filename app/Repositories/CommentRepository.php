@@ -22,15 +22,15 @@ class CommentRepository implements CommentCommentRepository
     public function findByMovieId(string $movieId): array
     {
         $model = Comment::where('movieId', $movieId)->get();
-        dd($movieId);
-        $comments =array();
-        foreach($model as $item) {
+
+        $comments = array();
+        foreach ($model as $item) {
             $comments[] = new Entity(
                 $item->id,
                 $item->movieId,
                 $item->userId,
                 $item->comment,
-                $item->creatinDate
+                $item->creationDate
             );
         }
 
@@ -39,6 +39,16 @@ class CommentRepository implements CommentCommentRepository
 
     public function findById(int $id): Entity
     {
-        return new Entity(0, 0, 0, '', '');
+        $ret = new Entity(0, 0, 0, '', '');
+        $model = Comment::where('id', $id)->first();
+        if ($model) {
+            $ret->setId($model->id);
+            $ret->setMovieId($model->movieId);
+            $ret->setUserId($model->userId);
+            $ret->setComment($model->comment);
+            $ret->setCreationDate($model->creationDate);
+        }
+
+        return $ret;
     }
 }

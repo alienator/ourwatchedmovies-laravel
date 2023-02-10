@@ -34,6 +34,36 @@ class CommentController extends Controller
     {
         $movieId = $req->movieId;
 
-        $this->commentRepository->findByMovieId($movieId);
+        $ret = array();
+        $comments = $this->commentRepository->findByMovieId($movieId);       
+        foreach($comments as $comment) {
+            $ret[] = [
+                'id' => $comment->getId(),
+                'movieId' => $comment->getMovieId(),
+                'userId' => $comment->getUserId(),
+                'comment' => $comment->getComment(),
+                'creationDate' => $comment->getCreationDate()
+            ];
+        }
+
+        return $ret;
+    }
+
+    public function findById($id)
+    {
+        $comment = $this->commentRepository->findById($id);
+
+        $ret = array();
+        if ($comment->getId() > 0) {
+            $ret = [
+                'id' => $comment->getId(),
+                'movieId' => $comment->getMovieId(),
+                'userId' => $comment->getUserId(),
+                'comment' => $comment->getComment(),
+                'creationDate' => $comment->getCreationDate(),
+            ];
+        }
+
+        return $ret;
     }
 }
