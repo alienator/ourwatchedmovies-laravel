@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MovieController;
-
 use App\Http\Controllers\CommentController;
-
 use App\Http\Controllers\ScoreController;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -42,3 +42,5 @@ Route::post('/v1/score', [ScoreController::class, 'save']);
 Route::post('/v1/score/{id}', [ScoreController::class, 'save']);
 Route::get('/v1/score', [ScoreController::class, 'findByMovieId']);
 Route::get('/v1/score/{id}', [ScoreController::class, 'findById']);
+
+Route::post('/v1/user', [UserController::class, 'save']);

@@ -44,7 +44,14 @@ class UserRepository implements \Core\User\UserRepository
 
     public function findById(int $id): Entity
     {
-        return new Entity(0, '', '');
+        $entity = new Entity(0, '', '');
+        $model = User::where('id', $id)->first();
+
+        if ($model) {
+            $entity = new Entity($model->id, $model->name, $model->email);
+        }
+
+        return $entity;
     }
 }
 
