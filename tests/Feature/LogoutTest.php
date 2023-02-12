@@ -13,11 +13,21 @@ class LogoutTest extends TestCase
     
     public function test_users_can_logout()
     {
+        $pass = hash('sha256', '123');
+        $user = User::factory()->create(['password' => $pass]);
+        $res = $this->json('POST',
+                           '/api/v1/login',
+                           ['email' => $user->email, 'password' => '123']);
+        $token = $res->json('token');
+        
         $data = [
             'token' => 'ABCD123'
         ];
 
-        $res = $this->json('POST', 'api/v1/logout', $data);
+        $res = $this->json('POST',
+                           'api/v1/logout',
+                           $data,
+                           ['token' => $token]);
 
         $res->assertStatus(200);
         $this->assertTrue($res->json());

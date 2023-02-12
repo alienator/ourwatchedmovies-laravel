@@ -12,7 +12,6 @@ class UserRepository implements \Core\User\UserRepository
     public function findByEmailAndPassword(string $email, string $password)
     {
         $user = User::where('password', $password)->first();
-        
         if ($user) {
             $this->entity = new \Core\User\User(
                 $user->id,
