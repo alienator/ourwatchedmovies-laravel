@@ -44,3 +44,4 @@ Route::get('/v1/score', [ScoreController::class, 'findByMovieId']);
 Route::get('/v1/score/{id}', [ScoreController::class, 'findById']);
 
 Route::post('/v1/user', [UserController::class, 'save']);
+Route::get('/v1/user/{id}', [UserController::class, 'findById']);
