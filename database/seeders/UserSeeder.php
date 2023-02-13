@@ -17,6 +17,7 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'test',
             'email' => 'aa@aa.com',
+            'imagePath' => 'user.png',
             'password' => 'A665A45920422F9D417eE4867EFDC4FB8A04A1F3FFF1FA07E998E86F7F7A27AE3' // sha256(123)
         ]);
 

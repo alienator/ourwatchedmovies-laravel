@@ -16,7 +16,8 @@ class UserRepository implements \Core\User\UserRepository
             $this->entity = new \Core\User\User(
                 $user->id,
                 $user->name,
-                $user->email);
+                $user->email,
+                $user->imagePath);
         } else {
             return null;
         }
@@ -29,12 +30,14 @@ class UserRepository implements \Core\User\UserRepository
             $model = User::create([
                 'name' => $user->getName(),
                 'email' => $user->getEmail(),
+                'imagePath' => $user->getImagePath(),
                 'password' => $password
             ]);
         } else {
             $model = User::find($user->getId());
             $model->name = $user->getName();
             $model->email = $user->getEmail();
+            $model->imagePath = $user->getImagePath();
             $model->password = ($password) ? $password : $model->password;
         }
         
@@ -47,7 +50,12 @@ class UserRepository implements \Core\User\UserRepository
         $model = User::where('id', $id)->first();
 
         if ($model) {
-            $entity = new Entity($model->id, $model->name, $model->email);
+            $entity = new Entity(
+                $model->id,
+                $model->name,
+                $model->email,
+                $model->imagePath
+            );
         }
 
         return $entity;

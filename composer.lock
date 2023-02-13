@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/alienator/ourwatchedmovies.git",
-                "reference": "7199824a26c534510fbcc31b591739702bca3960"
+                "reference": "1e2962bbb498d5fe41a7abb653fa3851370f909d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alienator/ourwatchedmovies/zipball/7199824a26c534510fbcc31b591739702bca3960",
-                "reference": "7199824a26c534510fbcc31b591739702bca3960",
+                "url": "https://api.github.com/repos/alienator/ourwatchedmovies/zipball/1e2962bbb498d5fe41a7abb653fa3851370f909d",
+                "reference": "1e2962bbb498d5fe41a7abb653fa3851370f909d",
                 "shasum": ""
             },
             "require-dev": {
@@ -39,7 +39,7 @@
                 "source": "https://github.com/alienator/ourwatchedmovies/tree/main",
                 "issues": "https://github.com/alienator/ourwatchedmovies/issues"
             },
-            "time": "2023-02-12T15:45:11+00:00"
+            "time": "2023-02-13T14:06:20+00:00"
         },
         {
             "name": "brick/math",

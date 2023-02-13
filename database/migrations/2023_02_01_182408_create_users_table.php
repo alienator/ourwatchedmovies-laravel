@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 200);
             $table->string('email', 255);
+            $table->string('imagePath', 255);
             $table->string('password', 64); // hash256
         });
     }

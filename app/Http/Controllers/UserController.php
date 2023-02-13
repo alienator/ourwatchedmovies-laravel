@@ -35,7 +35,8 @@ class UserController extends Controller
             $ret = [
                 'id' => $user->getId(),
                 'name' => $user->getName(),
-                'email' => $user->getEmail()
+                'email' => $user->getEmail(),
+                'imagePath' => $user->getImagePath()
             ];
         }
 

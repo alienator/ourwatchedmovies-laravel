@@ -22,9 +22,10 @@ class UserRepositoryTest extends TestCase
 
         $name  = 'test';
         $email = 'aa@aa.com';
+        $iamgePath = 'user.png';
         $pass  = 'A665A45920422F9D417eE4867EFDC4FB8A04A1F3FFF1FA07E998E86F7F7A27AE3'; // sha256(123)
         
-        $expected = new \Core\User\User(1, $name, $email);
+        $expected = new \Core\User\User(1, $name, $email, $iamgePath);
         
         $repo = new UserRepository();
         $user = $repo->findByEmailAndPassword($email, $pass);
